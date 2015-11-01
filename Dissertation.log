@@ -1,0 +1,1893 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.13)  27 OCT 2015 22:22
+entering extended mode
+**D:/学习/数学/论文/博士/ABC/dissertation/Dissertation.tex
+(D:/学习/数学/论文/博士/ABC/dissertation/Dissertation.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsbook.cls"
+Document Class: amsbook 2009/07/02 v2.20.1
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 367.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert233
+\abstractbox=\box28
+\listisep=\skip45
+\c@part=\count91
+\c@chapter=\count92
+\c@section=\count93
+\c@subsection=\count94
+\c@subsubsection=\count95
+\c@paragraph=\count96
+\c@subparagraph=\count97
+\c@figure=\count98
+\c@table=\count99
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count100
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks27
+\verbatim@line=\toks28
+\verbatim@in@stream=\read1
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\refstyle\refstyle.sty"
+Package: refstyle 2010/11/02 v0.5 Reference formatting (DNJ Els)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks29
+)
+Package refstyle Info: Config file refstyle.cfg used on input line 322.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\refstyle\refstyle.cfg"
+File: refstyle.cfg 2010/11/02 0.5 Configuration file for refstyle (DNJ Els)
+Package refstyle Info: New reference template \newref{part} on input line 468.
+Package refstyle Info: \partkey created on input line 468.
+Package refstyle Info: \partlabel created on input line 468.
+Package refstyle Info: \partref created on input line 468.
+Package refstyle Info: \Partref created on input line 468.
+Package refstyle Info: \partrangeref created on input line 468.
+Package refstyle Info: \Partrangeref created on input line 468.
+Package refstyle Info: \partpageref created on input line 468.
+Package refstyle Info: New reference template \newref{chap} on input line 501.
+Package refstyle Info: \chapkey created on input line 501.
+Package refstyle Info: \chaplabel created on input line 501.
+Package refstyle Info: \chapref created on input line 501.
+Package refstyle Info: \Chapref created on input line 501.
+Package refstyle Info: \chaprangeref created on input line 501.
+Package refstyle Info: \Chaprangeref created on input line 501.
+Package refstyle Info: \chappageref created on input line 501.
+Package refstyle Info: New reference template \newref{sec} on input line 511.
+Package refstyle Info: \seckey created on input line 511.
+Package refstyle Info: \seclabel created on input line 511.
+Package refstyle Info: \secref created on input line 511.
+Package refstyle Info: \Secref created on input line 511.
+Package refstyle Info: \secrangeref created on input line 511.
+Package refstyle Info: \Secrangeref created on input line 511.
+Package refstyle Info: \secpageref created on input line 511.
+Package refstyle Info: New reference template \newref{eq} on input line 526.
+Package refstyle Info: \eqkey created on input line 526.
+Package refstyle Info: \eqlabel created on input line 526.
+Package refstyle Info: \eqref created on input line 526.
+Package refstyle Info: \Eqref created on input line 526.
+Package refstyle Info: \eqrangeref created on input line 526.
+Package refstyle Info: \Eqrangeref created on input line 526.
+Package refstyle Info: \eqpageref created on input line 526.
+Package refstyle Info: New reference template \newref{fig} on input line 544.
+Package refstyle Info: \figkey created on input line 544.
+Package refstyle Info: \figlabel created on input line 544.
+Package refstyle Info: \figref created on input line 544.
+Package refstyle Info: \Figref created on input line 544.
+Package refstyle Info: \figrangeref created on input line 544.
+Package refstyle Info: \Figrangeref created on input line 544.
+Package refstyle Info: \figpageref created on input line 544.
+Package refstyle Info: New reference template \newref{tab} on input line 553.
+Package refstyle Info: \tabkey created on input line 553.
+Package refstyle Info: \tablabel created on input line 553.
+Package refstyle Info: \tabref created on input line 553.
+Package refstyle Info: \Tabref created on input line 553.
+Package refstyle Info: \tabrangeref created on input line 553.
+Package refstyle Info: \Tabrangeref created on input line 553.
+Package refstyle Info: \tabpageref created on input line 553.
+Package refstyle Info: New reference template \newref{fn} on input line 568.
+Package refstyle Info: \fnkey created on input line 568.
+Package refstyle Info: \fnlabel created on input line 568.
+Package refstyle Info: \fnref created on input line 568.
+Package refstyle Info: \Fnref created on input line 568.
+Package refstyle Info: \fnrangeref created on input line 568.
+Package refstyle Info: \Fnrangeref created on input line 568.
+Package refstyle Info: \fnpageref created on input line 568.
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks30
+\float@box=\box29
+\@float@everytoks=\toks31
+\@floatcapt=\box30
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\tipa.sty"
+Package: tipa 2002/08/08 TIPA version 1.1
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 357.
+
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)))
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\tipx.sty"
+Package: tipx 2003/01/01 TIPX version 1.2
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\esint\esint.sty"
+Package: esint 
+\symlargesymbolsA=\mathgroup7
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count102
+)
+\@float@every@algorithm=\toks32
+\c@algorithm=\count103
+Package refstyle Info: New reference template \newref{sub} on input line 33.
+Package refstyle Info: \subkey created on input line 33.
+Package refstyle Info: \sublabel created on input line 33.
+Package refstyle Info: \subref created on input line 33.
+Package refstyle Info: \Subref created on input line 33.
+Package refstyle Info: \subrangeref created on input line 33.
+Package refstyle Info: \Subrangeref created on input line 33.
+Package refstyle Info: \subpageref created on input line 33.
+Package refstyle Info: New reference template \newref{thm} on input line 36.
+Package refstyle Info: \thmkey created on input line 36.
+Package refstyle Info: \thmlabel created on input line 36.
+Package refstyle Info: \thmref created on input line 36.
+Package refstyle Info: \Thmref created on input line 36.
+Package refstyle Info: \thmrangeref created on input line 36.
+Package refstyle Info: \Thmrangeref created on input line 36.
+Package refstyle Info: \thmpageref created on input line 36.
+Package refstyle Info: New reference template \newref{lem} on input line 39.
+Package refstyle Info: \lemkey created on input line 39.
+Package refstyle Info: \lemlabel created on input line 39.
+Package refstyle Info: \lemref created on input line 39.
+Package refstyle Info: \Lemref created on input line 39.
+Package refstyle Info: \lemrangeref created on input line 39.
+Package refstyle Info: \Lemrangeref created on input line 39.
+Package refstyle Info: \lempageref created on input line 39.
+\c@lem=\count104
+\c@assumption=\count105
+\c@defn=\count106
+\c@thm=\count107
+\c@cor=\count108
+\c@rem=\count109
+\c@example=\count110
+\c@theorem=\count111
+\c@lemma=\count112
+\c@corollary=\count113
+\c@proposition=\count114
+\c@definition=\count115
+\c@remark=\count116
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count117
+\U@D=\dimen116
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.aux
+
+LaTeX Warning: Label `eq:constraint-el' multiply defined.
+
+
+LaTeX Warning: Label `eq:sol-emp-lik' multiply defined.
+
+
+LaTeX Warning: Label `eq:lambda-eq' multiply defined.
+
+
+LaTeX Warning: Label `eq:lag-mul-exp-tilt-el' multiply defined.
+
+
+LaTeX Warning: Label `eq:weight-cr-el' multiply defined.
+
+
+LaTeX Warning: Label `eq:lag-mul-cr-el' multiply defined.
+
+
+LaTeX Warning: Label `eq:poster-el-expression' multiply defined.
+
+
+LaTeX Warning: Label `lem:first-order-smooth-lagmul' multiply defined.
+
+
+LaTeX Warning: Label `eq:decreasing-theta-to-nu' multiply defined.
+
+
+LaTeX Warning: Label `eq:first-deri-lag-mult-exp-tilted-el' multiply defined.
+
+
+LaTeX Warning: Label `eq:first-der-lag-mul-crel' multiply defined.
+
+
+LaTeX Warning: Label `lem:mul-el-smooth-lagrange-mul-1' multiply defined.
+
+
+LaTeX Warning: Label `lem:bell-shape-el' multiply defined.
+
+
+LaTeX Warning: Label `eq:main-theorem-result-A' multiply defined.
+
+
+LaTeX Warning: Label `eq:main-theorem-result-Hn' multiply defined.
+
+
+LaTeX Warning: Label `eq:two-quotient-close' multiply defined.
+
+
+LaTeX Warning: Label `eq:quotient-serier-approx' multiply defined.
+
+
+LaTeX Warning: Label `lem:control-higher-order-derivative-l' multiply defined.
+
+
+LaTeX Warning: Label `lem:central-expansion-post-prod' multiply defined.
+
+
+LaTeX Warning: Label `eq:central-exp-post' multiply defined.
+
+
+LaTeX Warning: Label `eq:1' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 113.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 113.
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 113.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+esint on input line 113.
+
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\esint\uesint.fd"
+File: uesint.fd 
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count118
+\scratchdimen=\dimen117
+\scratchbox=\box31
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen118
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks34
+)
+Chapter 1
+
+Overfull \hbox (23.54156pt too wide) detected at line 147
+\OML/cmm/m/it/10 R [] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 ;
+ []
+
+[1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
+Overfull \hbox (2.72276pt too wide) in paragraph at lines 465--479
+ \T1/cmr/bx/n/10 1.3.1.Different Sam-pling Schemes.[] \T1/cmr/m/n/10 In prac-ti
+ce, if one uses non-informative
+ []
+
+[6]
+Overfull \hbox (1.70453pt too wide) in paragraph at lines 549--562
+\T1/cmr/m/n/10 i-bra-tion on $\OML/cmm/m/it/10 "$ \T1/cmr/m/n/10 is equiv-a-len
+t to cal-i-bra-tion of $\OML/cmm/m/it/10 k$\T1/cmr/m/n/10 . Their re-sults fa-v
+or $\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N[]$\T1/cmr/m/n/10 ,
+
+ []
+
+[7]
+
+LaTeX Warning: Command \: invalid in math mode on input line 624.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 624.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 624.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 624.
+
+[8]
+
+LaTeX Warning: Command \! invalid in math mode on input line 682.
+
+
+LaTeX Warning: Command \! invalid in math mode on input line 682.
+
+
+Overfull \hbox (6.53981pt too wide) detected at line 683
+[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10  [][]  \OT1/cmr/m/n/10 + \OML/cmm/m/it
+/10 E[] [][] :
+ []
+
+[9] [10] [11]
+Chapter 2
+
+Package natbib Warning: Citation `cornuet2008inferring' on page 12 undefined on
+ input line 861.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12
+
+
+]
+
+Package natbib Warning: Citation `clarke2010reference' on page 13 undefined on 
+input line 872.
+
+
+Package natbib Warning: Citation `godambe1960optimum' on page 13 undefined on i
+nput line 872.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 886.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 886.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 886.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 886.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 896.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 896.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 905.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 905.
+
+[13] [14]
+
+LaTeX Warning: Command \: invalid in math mode on input line 1004.
+
+
+LaTeX Font Warning: Font shape `T3/cmr/m/it' in size <10> not available
+(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 1004.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1004.
+
+[15]
+Overfull \hbox (68.33093pt too wide) in alignment at lines 1070--1073
+ [][][] []
+ []
+
+[16]
+Overfull \hbox (25.12201pt too wide) in paragraph at lines 1140--1142
+[]\T1/cmr/m/n/10 We be-gin with $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[] [
+][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] [] []  $
+ []
+
+[17]
+Overfull \hbox (88.90059pt too wide) in paragraph at lines 1154--1156
+[]\T1/cmr/m/n/10 Next we con-sider $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[
+] [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 n[] [][] 
+g [] \OMS/cmsy/m/n/10   [] [][] [] []$\T1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (126.28746pt too wide) in paragraph at lines 1168--1170
+[]\T1/cmr/m/n/10 Finally, for the Cressie--Read case, $[] [] \OT1/cmr/m/n/10 = 
+\OML/cmm/m/it/10 n[] [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] []
+[] [] []$\T1/cmr/m/n/10 .
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1187.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1187.
+
+[18]
+
+LaTeX Warning: Command \: invalid in math mode on input line 1191.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1191.
+
+
+Overfull \hbox (39.46643pt too wide) in alignment at lines 1194--1197
+ [][][] []
+ []
+
+[19]
+
+LaTeX Warning: Command \: invalid in math mode on input line 1248.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1248.
+
+
+Overfull \hbox (5.7286pt too wide) in alignment at lines 1258--1264
+ [][][] []
+ []
+
+
+Overfull \hbox (20.99153pt too wide) detected at line 1275
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[];  [] ;
+ []
+
+[20]
+Overfull \hbox (12.48123pt too wide) detected at line 1289
+\OT1/cmr/m/n/10  [] = []\OML/cmm/m/it/10 :
+ []
+
+
+Overfull \hbox (4.89032pt too wide) in alignment at lines 1297--1306
+ [][][] []
+ []
+
+[21]
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 1313.
+
+
+Overfull \hbox (47.21646pt too wide) detected at line 1351
+\OML/cmm/m/it/10 E [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 n[] \OT1/cmr/m/n/10
+ + \OML/cmm/m/it/10 O[] [] :
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1354.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1355.
+
+
+Overfull \hbox (27.03453pt too wide) detected at line 1356
+[] [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 y[]' []  \OT1/cmr/m/n/10 d\OML/cm
+m/m/it/10 y \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; [][][] \OT1/cmr/m/n/10 = [][]
+ \OML/cmm/m/it/10 y[]' []  \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 
+= 3\OML/cmm/m/it/10 :
+ []
+
+[22]
+Overfull \hbox (85.71173pt too wide) in alignment at lines 1370--1373
+ [][][] []
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1398.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1398.
+
+[23]
+Overfull \hbox (17.84857pt too wide) in alignment at lines 1411--1415
+ [][][] []
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1416.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1416.
+
+<n10bw.pdf, id=96, 505.89pt x 505.89pt>
+File: n10bw.pdf Graphic file (type pdf)
+ <use n10bw.pdf>
+Package pdftex.def Info: n10bw.pdf used on input line 1440.
+(pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
+
+<n80bw.pdf, id=97, 505.89pt x 505.89pt>
+File: n80bw.pdf Graphic file (type pdf)
+ <use n80bw.pdf>
+Package pdftex.def Info: n80bw.pdf used on input line 1447.
+(pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <D:/学习/数学/论文/博士/ABC/dissertation/n10bw.pdf>]
+
+Package natbib Warning: Citation `ghosal1999asymptotic' on page 26 undefined on
+ input line 1453.
+
+
+Package natbib Warning: Citation `ghosal2000asymptotic' on page 26 undefined on
+ input line 1453.
+
+[26 <D:/学习/数学/论文/博士/ABC/dissertation/n80bw.pdf>]
+Chapter 3
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27
+
+
+]
+Overfull \hbox (20.79347pt too wide) in paragraph at lines 1558--1569
+\T1/cmr/m/n/10 sat-is-fy-ing $\OML/cmm/m/it/10 Eg [] \OT1/cmr/m/n/10 = 0$\T1/cm
+r/m/n/10 , where $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]$ \T1/
+cmr/m/n/10 and $\OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 2$
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1571.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1571.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1571.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 1571.
+
+
+LaTeX Warning: Command \; invalid in math mode on input line 1581.
+
+
+LaTeX Warning: Command \; invalid in math mode on input line 1581.
+
+[28] [29] [30]
+Overfull \hbox (59.00423pt too wide) in alignment at lines 1770--1774
+ [][][] []
+ []
+
+[31]
+Overfull \hbox (75.66174pt too wide) in alignment at lines 1778--1796
+ [][][] []
+ []
+
+[32]
+
+LaTeX Warning: Command \! invalid in math mode on input line 1848.
+
+
+LaTeX Warning: Command \! invalid in math mode on input line 1848.
+
+
+Overfull \hbox (123.89818pt too wide) in alignment at lines 1871--1878
+ [][][] []
+ []
+
+
+Overfull \hbox (119.52753pt too wide) in alignment at lines 1882--1890
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 2368) has occurred while \output is active []
+
+ [33]
+Overfull \hbox (29.91104pt too wide) in paragraph at lines 1894--1898
+\T1/cmr/m/it/10 tion of $\OML/cmm/m/it/10 n[] [][] \OT1/cmr/m/n/10 	 [] = 0$\T1
+/cmr/m/it/10 . If we de-note the so-lu-tion as $[]$,
+ []
+
+[34]
+Overfull \hbox (38.85083pt too wide) in alignment at lines 1951--1954
+ [][][] []
+ []
+
+[35]
+
+LaTeX Warning: Command \: invalid in math mode on input line 2007.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2007.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2008.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2008.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2014.
+
+[36]
+
+LaTeX Warning: Reference `tab:mgele-mde' on page 37 undefined on input line 208
+6.
+
+
+Overfull \hbox (20.67755pt too wide) in paragraph at lines 2119--2121
+[]\T1/cmr/m/n/10 We be-gin with $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[] [
+][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] [] []  $
+ []
+
+
+Overfull \hbox (83.27414pt too wide) detected at line 2123
+[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10  [] [][] \OMS/cmsy/m/n/10   [] [] [][]
+ \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10  [] [] [][]:
+ []
+
+[37]
+Overfull \hbox (101.95604pt too wide) in paragraph at lines 2132--2134
+[]\T1/cmr/m/n/10 Next we con-sider $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[
+] [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   []$\T1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (39.77916pt too wide) in paragraph at lines 2146--2148
+[]\T1/cmr/m/n/10 Finally, for CR, $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[]
+ [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] [][] [] []$\T1/cmr/m/n
+/10 .
+ []
+
+[38]
+Overfull \hbox (3.69186pt too wide) detected at line 2210
+\OML/cmm/m/it/10 Z \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 :
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2232.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2232.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2242.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2242.
+
+
+Overfull \hbox (27.30003pt too wide) in paragraph at lines 2242--2243
+[]\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 = []$\T1/cmr/m/n/10 
+. 
+ []
+
+
+Overfull \hbox (76.98508pt too wide) in alignment at lines 2248--2254
+ [][][] []
+ []
+
+[39]
+Overfull \hbox (22.92293pt too wide) detected at line 2289
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[];  [] :
+ []
+
+
+Overfull \hbox (1.6497pt too wide) in alignment at lines 2310--2318
+ [][][] []
+ []
+
+[40]
+Overfull \hbox (11.6164pt too wide) detected at line 2328
+[][] [] [] \OML/cmm/m/it/10 [] []  \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 Y \OT1/cm
+r/m/n/10 = [] [][] [] [] \OML/cmm/m/it/10 [] []  \OT1/cmr/m/n/10 d\OML/cmm/m/i
+t/10 Y[] [] :
+ []
+
+
+Overfull \hbox (68.38377pt too wide) in alignment at lines 2331--2336
+ [][][] []
+ []
+
+
+Overfull \hbox (7.8893pt too wide) in paragraph at lines 2362--2365
+$\OT1/cmr/m/n/10 1$\T1/cmr/m/n/10 . In this case the first two terms in equa-ti
+on [] will be $\OT1/cmr/m/n/10 [] []$
+ []
+
+
+Overfull \hbox (109.80748pt too wide) in alignment at lines 2365--2369
+ [][][] []
+ []
+
+[41] [42]
+Chapter 4
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43
+
+
+]
+[44] [45] [46] [47] [48] <SP500.pdf, id=190, 614.295pt x 794.97pt>
+File: SP500.pdf Graphic file (type pdf)
+
+<use SP500.pdf>
+Package pdftex.def Info: SP500.pdf used on input line 2552.
+(pdftex.def)             Requested size: 288.0011pt x 372.71405pt.
+ [49 <D:/学习/数学/论文/博士/ABC/dissertation/SP500.pdf>]
+Chapter 5
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50
+
+
+] [51] [52] [53]
+
+LaTeX Warning: Command \: invalid in math mode on input line 2810.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 2810.
+
+
+Overfull \hbox (104.46684pt too wide) in alignment at lines 2807--2811
+ [][][] []
+ []
+
+
+Overfull \hbox (24.12546pt too wide) detected at line 2831
+[] \OML/cmm/m/it/10 P [] \OT1/cmr/m/n/10 =  [] \OML/cmm/m/it/10 ;  [] :
+ []
+
+[54] [55]
+Overfull \hbox (37.69604pt too wide) in paragraph at lines 2966--2970
+[][]\T1/cmr/m/sc/10 Assumption \T1/cmr/m/n/10 10\T1/cmr/m/sc/10 . []\T1/cmr/m/i
+t/10 There is a neigh-bour-hood $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2 \OML/cmm
+/m/it/10 O []$ \T1/cmr/m/it/10 such that $[][] \OML/cmm/m/it/10 g []  []  \OT1
+/cmr/m/n/10 d\OML/cmm/m/it/10 x$
+ []
+
+[56] [57]
+Overfull \hbox (62.45009pt too wide) has occurred while \output is active
+ \T1/cmr/m/n/7 5.3. APPROXIMATE BAYESIAN COMPUTATION   VIA  NONLINEAR SUFFICIEN
+T DIMENSION REDUCTION []
+ []
+
+[58]
+
+LaTeX Warning: Command \: invalid in math mode on input line 3166.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3166.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3191--3193
+[]\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 K [] \OT1/cmr/m/n/10 = []$ \T1/cmr/m/n/1
+0 be a $\OML/cmm/m/it/10 n$ \T1/cmr/m/n/10 di-
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 3191--3193
+\T1/cmr/m/n/10 men-sional vec-tor. Then the es-ti-mated trans-for-ma-tion $[] [
+] \OT1/cmr/m/n/10 =$
+ []
+
+
+Underfull \vbox (badness 2293) has occurred while \output is active []
+
+
+Overfull \hbox (62.45009pt too wide) has occurred while \output is active
+ \T1/cmr/m/n/7 5.3. APPROXIMATE BAYESIAN COMPUTATION   VIA  NONLINEAR SUFFICIEN
+T DIMENSION REDUCTION []
+ []
+
+[59] <ABCvsFull_100_1000_4.pdf, id=229, 505.89pt x 505.89pt>
+File: ABCvsFull_100_1000_4.pdf Graphic file (type pdf)
+
+<use ABCvsFull_100_1000_4.pdf>
+Package pdftex.def Info: ABCvsFull_100_1000_4.pdf used on input line 3262.
+(pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
+
+<ESSvsMLE_100_1000_4.pdf, id=230, 505.89pt x 505.89pt>
+File: ESSvsMLE_100_1000_4.pdf Graphic file (type pdf)
+
+<use ESSvsMLE_100_1000_4.pdf>
+Package pdftex.def Info: ESSvsMLE_100_1000_4.pdf used on input line 3268.
+(pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
+
+Overfull \hbox (62.45009pt too wide) has occurred while \output is active
+ \T1/cmr/m/n/7 5.3. APPROXIMATE BAYESIAN COMPUTATION   VIA  NONLINEAR SUFFICIEN
+T DIMENSION REDUCTION []
+ []
+
+[60] [61 <D:/学习/数学/论文/博士/ABC/dissertation/ABCvsFull_100_1000_4.
+pdf>] [62 <D:/学习/数学/论文/博士/ABC/dissertation/ESSvsMLE_100_1000_4.
+pdf>]
+Appendix A
+
+Overfull \hbox (111.91054pt too wide) in paragraph at lines 3325--3327
+\T1/cmr/m/n/10 for any $[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []$ \T1/cmr/m/n
+/10 and $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 H[]$\T1/cmr/m/n
+/10 , where $\OML/cmm/m/it/10 b \OT1/cmr/m/n/10 = [][]$ 
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3369.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3369.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3369.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3369.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3370.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3371.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3371.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3371.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3371.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3371.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3371.
+
+
+Overfull \hbox (16.38075pt too wide) detected at line 3373
+\OML/cmm/m/it/10 ![] [] \OT1/cmr/m/n/10 = []
+ []
+
+[63
+
+
+]
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3377.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3378.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3378.
+
+
+Overfull \hbox (79.79195pt too wide) detected at line 3380
+\OML/cmm/m/it/10 D \OT1/cmr/m/n/10 = []
+ []
+
+
+Overfull \hbox (48.55737pt too wide) in alignment at lines 3406--3409
+ [][][] []
+ []
+
+
+Overfull \hbox (17.67038pt too wide) in alignment at lines 3412--3414
+ [][][] []
+ []
+
+
+Overfull \hbox (18.46056pt too wide) in alignment at lines 3418--3421
+ [][][] []
+ []
+
+[64] [65]
+
+LaTeX Warning: Command \: invalid in math mode on input line 3512.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3512.
+
+
+Overfull \hbox (21.44032pt too wide) detected at line 3513
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
+ []
+
+
+Overfull \hbox (27.36049pt too wide) in alignment at lines 3518--3522
+ [][][] []
+ []
+
+[66]
+Overfull \hbox (1.76666pt too wide) in paragraph at lines 3530--3547
+$[]$\T1/cmr/m/n/10 . So with-out loss of gen-er-al-ity, we as-sume $[] [] \OMS/
+cmsy/m/n/10  $
+ []
+
+
+Overfull \hbox (19.50812pt too wide) in alignment at lines 3557--3565
+ [][][] []
+ []
+
+[67]
+Overfull \hbox (5.7524pt too wide) in alignment at lines 3580--3583
+ [][][] []
+ []
+
+
+Overfull \hbox (5.86842pt too wide) in alignment at lines 3592--3595
+ [][][] []
+ []
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3602.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 3602.
+
+
+Overfull \hbox (82.7098pt too wide) detected at line 3603
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
+ []
+
+
+Overfull \hbox (12.05215pt too wide) in alignment at lines 3611--3615
+ [][][] []
+ []
+
+[68]
+Overfull \hbox (75.73335pt too wide) in alignment at lines 3617--3623
+ [][][] []
+ []
+
+
+Overfull \hbox (35.95189pt too wide) in alignment at lines 3631--3635
+ [][][] []
+ []
+
+
+Overfull \hbox (81.23773pt too wide) in alignment at lines 3650--3654
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+ [69]
+Overfull \hbox (93.45995pt too wide) in alignment at lines 3656--3664
+ [][][] []
+ []
+
+
+Overfull \hbox (35.60191pt too wide) detected at line 3672
+[] [] \OML/cmm/m/it/10 n[]:
+ []
+
+
+Overfull \hbox (116.33305pt too wide) detected at line 3677
+[] [] \OML/cmm/m/it/10 n[]:
+ []
+
+
+Underfull \vbox (badness 3158) has occurred while \output is active []
+
+ [70]
+Overfull \hbox (68.21034pt too wide) in alignment at lines 3681--3685
+ [][][] []
+ []
+
+
+Overfull \hbox (30.75517pt too wide) in alignment at lines 3700--3705
+ [][][] []
+ []
+
+
+Overfull \hbox (69.79457pt too wide) in alignment at lines 3710--3717
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+Overfull \hbox (44.3632pt too wide) detected at line 3722
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]:
+ []
+
+
+Overfull \hbox (91.39896pt too wide) in alignment at lines 3727--3735
+ [][][] []
+ []
+
+
+Overfull \hbox (147.7156pt too wide) in alignment at lines 3738--3744
+ [][][] []
+ []
+
+[72]
+Overfull \hbox (156.76062pt too wide) in alignment at lines 3753--3758
+ [][][] []
+ []
+
+[73] [74]
+Appendix B
+[75
+
+
+]
+Overfull \hbox (65.20538pt too wide) detected at line 3846
+[] [] [][][] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 [] [] [] \OT
+1/cmr/m/n/10 + \OML/cmm/m/it/10 [] [] [];
+ []
+
+
+Overfull \hbox (180.3699pt too wide) has occurred while \output is active
+ \T1/cmr/m/n/7 B.2. THE BEHAVIOR OF THE LOGARITHM OF EMPIRICAL LIKELIHOOD AND H
+IGHER ORDER DERIVATIVES AROUND SAMPLE MEAN []
+ []
+
+[76]
+Overfull \hbox (107.95953pt too wide) detected at line 3908
+\OMS/cmsy/m/n/10 r[][] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[] [] ;
+ []
+
+
+Overfull \hbox (107.95953pt too wide) detected at line 3920
+\OMS/cmsy/m/n/10 r[][] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[] [] :
+ []
+
+
+Overfull \hbox (20.31679pt too wide) detected at line 3924
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 f[][] [] :
+ []
+
+
+Overfull \hbox (59.63177pt too wide) in alignment at lines 3926--3932
+ [][][] []
+ []
+
+
+Overfull \hbox (180.3699pt too wide) has occurred while \output is active
+ \T1/cmr/m/n/7 B.2. THE BEHAVIOR OF THE LOGARITHM OF EMPIRICAL LIKELIHOOD AND H
+IGHER ORDER DERIVATIVES AROUND SAMPLE MEAN []
+ []
+
+[77]
+Overfull \hbox (97.91898pt too wide) detected at line 3969
+[] \OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 < \OT1/cmr/m/n/1
+0 2\OML/cmm/m/it/10 ":
+ []
+
+
+Overfull \hbox (41.41978pt too wide) in alignment at lines 3990--3992
+ [][][] []
+ []
+
+
+Overfull \hbox (180.3699pt too wide) has occurred while \output is active
+ \T1/cmr/m/n/7 B.2. THE BEHAVIOR OF THE LOGARITHM OF EMPIRICAL LIKELIHOOD AND H
+IGHER ORDER DERIVATIVES AROUND SAMPLE MEAN []
+ []
+
+[78] [79]
+
+LaTeX Warning: Command \: invalid in math mode on input line 4112.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 4112.
+
+
+Overfull \hbox (56.63475pt too wide) detected at line 4113
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
+ []
+
+
+Overfull \hbox (16.02444pt too wide) in alignment at lines 4117--4121
+ [][][] []
+ []
+
+[80]
+Overfull \hbox (39.51831pt too wide) in alignment at lines 4124--4127
+ [][][] []
+ []
+
+[81]
+Overfull \hbox (29.93289pt too wide) in alignment at lines 4169--4175
+ [][][] []
+ []
+
+[82]
+
+LaTeX Warning: Command \: invalid in math mode on input line 4210.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 4210.
+
+
+Overfull \hbox (108.75793pt too wide) detected at line 4211
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
+ []
+
+
+Overfull \hbox (62.91129pt too wide) in alignment at lines 4218--4222
+ [][][] []
+ []
+
+
+Overfull \hbox (73.21237pt too wide) in alignment at lines 4224--4230
+ [][][] []
+ []
+
+
+Overfull \hbox (104.36151pt too wide) in alignment at lines 4239--4245
+ [][][] []
+ []
+
+[83]
+Overfull \hbox (26.66841pt too wide) in alignment at lines 4256--4260
+ [][][] []
+ []
+
+
+Overfull \hbox (82.38513pt too wide) in alignment at lines 4262--4269
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84]
+Overfull \hbox (51.85109pt too wide) in paragraph at lines 4269--4274
+\T1/cmr/m/n/10 For the third term in above equa-tion, we change the sum-ma-tion
+ in-dex. Let $[][] \OML/cmm/m/it/10 m[] [] \OT1/cmr/m/n/10 =$
+ []
+
+
+Overfull \hbox (6.91898pt too wide) detected at line 4281
+[] [] \OML/cmm/m/it/10 n[]:
+ []
+
+
+Overfull \hbox (84.01596pt too wide) in alignment at lines 4285--4288
+ [][][] []
+ []
+
+[85]
+Overfull \hbox (90.31201pt too wide) in alignment at lines 4312--4319
+ [][][] []
+ []
+
+
+Overfull \hbox (6.73209pt too wide) detected at line 4325
+[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]:
+ []
+
+
+Overfull \hbox (92.25854pt too wide) in alignment at lines 4330--4336
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
+Overfull \hbox (80.03633pt too wide) in alignment at lines 4339--4345
+ [][][] []
+ []
+
+
+Overfull \hbox (86.90865pt too wide) in alignment at lines 4354--4359
+ [][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+Overfull \hbox (85.46696pt too wide) in alignment at lines 4367--4371
+ [][][] []
+ []
+
+[88]
+Appendix C
+
+Overfull \hbox (18.37521pt too wide) in alignment at lines 4393--4396
+ [][][] []
+ []
+
+
+Overfull \hbox (30.53447pt too wide) in alignment at lines 4403--4407
+ [][][] []
+ []
+
+[89
+
+
+]
+
+LaTeX Warning: Command \: invalid in math mode on input line 4432.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 4432.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 4432.
+
+
+LaTeX Warning: Command \: invalid in math mode on input line 4432.
+
+
+Overfull \hbox (40.59155pt too wide) in alignment at lines 4428--4433
+ [][][] []
+ []
+
+[90] [91] [92]
+Overfull \hbox (43.98763pt too wide) in alignment at lines 4616--4619
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `THM:PARTIAL-POST-M-EST' on page 93 undefined on input
+ line 4631.
+
+[93]
+Overfull \hbox (119.0938pt too wide) detected at line 4665
+[] [] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;  [] ;
+ []
+
+
+Overfull \hbox (263.25342pt too wide) in paragraph at lines 4680--4685
+\T1/cmr/m/n/10 Let $\OT1/cmr/m/n/10 
+[] = []$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 C[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/
+10 E[]E[]I[] [] []$\T1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (86.165pt too wide) in alignment at lines 4685--4690
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `THM:PARTIAL-POST-M-EST' on page 94 undefined on input
+ line 4690.
+
+[94]
+Overfull \hbox (73.68962pt too wide) in paragraph at lines 4693--4697
+[]\T1/cmr/m/n/10 First con-sid-er-ing the sam-ples within $\OT1/cmr/m/n/10 
+[]$\T1/cmr/m/n/10 , by (C.3.4[]), $[] []$
+ []
+
+
+Overfull \hbox (36.64899pt too wide) detected at line 4699
+[] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] [];
+ []
+
+
+Overfull \hbox (95.90544pt too wide) detected at line 4715
+[] [] \OT1/cmr/m/n/10 = [] [] + [] [] \OML/cmm/m/it/10 ;
+ []
+
+
+Overfull \hbox (92.33162pt too wide) in alignment at lines 4722--4725
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `THM:PARTIAL-POST-M-EST' on page 95 undefined on input
+ line 4725.
+
+[95]
+Overfull \hbox (57.43182pt too wide) detected at line 4737
+[] \OML/cmm/m/it/10 f [] =f [] \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10  \OT1/
+cmr/m/n/10 1\OML/cmm/m/it/10 : []  []
+ []
+
+
+Overfull \hbox (95.1094pt too wide) in alignment at lines 4739--4742
+ [][][] []
+ []
+
+
+Overfull \hbox (144.2686pt too wide) detected at line 4757
+[] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] :
+ []
+
+
+Overfull \hbox (1.21504pt too wide) in paragraph at lines 4757--4767
+\T1/cmr/m/n/10 has an as-ymp-totic nor-mal dis-tri-bu-tion with vari-ance ma-tr
+ix as $[][] []$. Hence,
+ []
+
+
+Overfull \hbox (121.84201pt too wide) detected at line 4769
+[] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] :
+ []
+
+
+Overfull \hbox (66.73611pt too wide) detected at line 4775
+[] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] :
+ []
+
+
+LaTeX Warning: Reference `THM:BERNSTEN-VON-MISE-INCONSIST-MULTV' on page 96 und
+efined on input line 4780.
+
+[96]
+Reference
+(D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.bbl [97
+
+
+]
+Bibliography
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98
+
+
+]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 183.
+
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [99]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103]
+Underfull \hbox (badness 1383) in paragraph at lines 594--596
+[]\T1/cmr/m/n/10 Schennach, S. M., 2005. Bayesian ex-po-nen-tially tilted em-pi
+r-i-cal like-li-hood.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105])
+Underfull \vbox (badness 2828) has occurred while \output is active []
+
+ [106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107]
+
+Package natbib Warning: There were undefined citations.
+
+[108] (D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6104 strings out of 493921
+ 84135 string characters out of 3144869
+ 149229 words of memory out of 3000000
+ 9132 multiletter control sequences out of 15000+200000
+ 19207 words of font info for 58 fonts, out of 3000000 for 9000
+ 1002 hyphenation exceptions out of 8191
+ 35i,14n,32p,1368b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ectt1000.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbx0700.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\Lucifer\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1000.pk> <C:\Users\Lucife
+r\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\
+Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
+000.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
+dpi600\ecbx1440.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecrm1000.pk><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cmextra/cmex7.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi5.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr5.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y5.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb><D:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+<D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7
+.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/hoekwater/rsfs/rsfs10.pfb><
+D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tipa/tipa10.pfb>
+Output written on Dissertation.pdf (108 pages, 772688 bytes).
+PDF statistics:
+ 863 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

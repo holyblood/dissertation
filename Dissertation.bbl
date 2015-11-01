@@ -1,0 +1,811 @@
+\begin{thebibliography}{175}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Adimari(1995)}]{adimari1995empirical}
+Adimari, G., 1995. Empirical likelihood confidence intervals for the difference
+  between means. STATISTICA-BOLOGNA- 55, 87--94.
+
+\bibitem[{Adimari(1997)}]{adimari1997empirical}
+Adimari, G., 1997. Empirical likelihood type confidence intervals under random
+  censorship. Annals of the Institute of Statistical Mathematics 49~(3),
+  447--466.
+
+\bibitem[{Aeschbacher et~al.(2012)Aeschbacher, Beaumont, and
+  Futschik}]{aeschbacher2012novel}
+Aeschbacher, S., Beaumont, M.~A., Futschik, A., 2012. A novel approach for
+  choosing summary statistics in approximate bayesian computation. Genetics
+  192~(3), 1027--1047.
+
+\bibitem[{Aragon(1997)}]{aragon1997gauss}
+Aragon, Y., 1997. A gauss implementation of multivariate sliced inverse
+  regression. Computational Statistics 12~(3), 355--372.
+
+\bibitem[{Baggerly(1998)}]{baggerly1998empirical}
+Baggerly, K.~A., 1998. Empirical likelihood as a goodness-of-fit measure.
+  Biometrika 85~(3), 535--547.
+
+\bibitem[{Bandyopadhyay et~al.(2015)Bandyopadhyay, Lahiri, Nordman,
+  et~al.}]{bandyopadhyay2015frequency}
+Bandyopadhyay, S., Lahiri, S.~N., Nordman, D.~J., et~al., 2015. A frequency
+  domain empirical likelihood method for irregularly spaced spatial data. The
+  Annals of Statistics 43~(2), 519--545.
+
+\bibitem[{Baragatti et~al.(2013)Baragatti, Grimaud, and
+  Pommeret}]{baragatti2013likelihood}
+Baragatti, M., Grimaud, A., Pommeret, D., 2013. Likelihood-free parallel
+  tempering. Statistics and Computing 23~(4), 535--549.
+
+\bibitem[{Barthelm{\'e} and Chopin(2014)}]{barthelme2014expectation}
+Barthelm{\'e}, S., Chopin, N., 2014. Expectation propagation for
+  likelihood-free inference. Journal of the American Statistical Association
+  109~(505), 315--333.
+
+\bibitem[{Bartolucci(2007)}]{bartolucci2007penalized}
+Bartolucci, F., 2007. A penalized version of the empirical likelihood ratio for
+  the population mean. Statistics \& probability letters 77~(1), 104--110.
+
+\bibitem[{Beaumont et~al.(2009)Beaumont, Cornuet, Marin, and
+  Robert}]{beaumont2009adaptive}
+Beaumont, M.~A., Cornuet, J.-M., Marin, J.-M., Robert, C.~P., 2009. Adaptive
+  approximate bayesian computation. Biometrika, asp052.
+
+\bibitem[{Beaumont et~al.(2002)Beaumont, Zhang, and
+  Balding}]{beaumont2002approximate}
+Beaumont, M.~A., Zhang, W., Balding, D.~J., 2002. Approximate bayesian
+  computation in population genetics. Genetics 162~(4), 2025--2035.
+
+\bibitem[{Biao~Zhang(1998)}]{biao1998note}
+Biao~Zhang, B.~Z., 1998. A note on kernel density estimation with auxiliary
+  information. Communications in Statistics-Theory and Methods 27~(1), 1--11.
+
+\bibitem[{Biau et~al.(2012)Biau, C{\'e}rou, and Guyader}]{biau2012new}
+Biau, G., C{\'e}rou, F., Guyader, A., 2012. New insights into approximate
+  bayesian computation. arXiv preprint arXiv:1207.6461.
+
+\bibitem[{Blum and Fran{\c{c}}ois(2010)}]{blum2010non}
+Blum, M.~G., Fran{\c{c}}ois, O., 2010. Non-linear regression models for
+  approximate bayesian computation. Statistics and Computing 20~(1), 63--73.
+
+\bibitem[{Blum et~al.(2013)Blum, Nunes, Prangle, Sisson,
+  et~al.}]{blum2013comparative}
+Blum, M.~G., Nunes, M.~A., Prangle, D., Sisson, S.~A., et~al., 2013. A
+  comparative review of dimension reduction methods in approximate bayesian
+  computation. Statistical Science 28~(2), 189--208.
+
+\bibitem[{Bura and Cook(2001)}]{bura2001extending}
+Bura, E., Cook, R.~D., 2001. Extending sliced inverse regression: The weighted
+  chi-squared test. Journal of the American Statistical Association 96~(455),
+  996--1003.
+
+\bibitem[{Chang and Mukerjee(2008)}]{chang2008bayesian}
+Chang, I.~H., Mukerjee, R., 2008. Bayesian and frequentist confidence intervals
+  arising from empirical-type likelihoods. Biometrika 95~(1), 139--147.
+
+\bibitem[{Chang et~al.(2015)Chang, Chen, and Chen}]{chang2015high}
+Chang, J., Chen, S.~X., Chen, X., 2015. High dimensional generalized empirical
+  likelihood for moment restrictions with dependent data. Journal of
+  Econometrics 185~(1), 283--304.
+
+\bibitem[{Chen and Qin(1993)}]{chen1993empirical}
+Chen, J., Qin, J., 1993. Empirical likelihood estimation for finite populations
+  and the effective usage of auxiliary information. Biometrika 80~(1),
+  107--116.
+
+\bibitem[{Chen and Sitter(1999)}]{chen1999pseudo}
+Chen, J., Sitter, R., 1999. A pseudo empirical likelihood approach to the
+  effective use of auxiliary information in complex surveys. Statistica Sinica
+  9~(2), 385--406.
+
+\bibitem[{Chen et~al.(2008)Chen, Variyath, and Abraham}]{chen2008adjusted}
+Chen, J., Variyath, A.~M., Abraham, B., 2008. Adjusted empirical likelihood and
+  its properties. Journal of Computational and Graphical Statistics 17~(2),
+  426--443.
+
+\bibitem[{Chen(1993)}]{chen1993accuracy}
+Chen, S.~X., 1993. On the accuracy of empirical likelihood confidence regions
+  for linear regression model. Annals of the Institute of Statistical
+  Mathematics 45~(4), 621--637.
+
+\bibitem[{Chen(1994)}]{chen1994empirical}
+Chen, S.~X., 1994. Empirical likelihood confidence intervals for linear
+  regression coefficients. Journal of Multivariate Analysis 49~(1), 24--40.
+
+\bibitem[{Chen(1997)}]{chen1997empirical}
+Chen, S.~X., 1997. Empirical likelihood-based kernel density estimation.
+  Australian Journal of Statistics 39~(1), 47--56.
+
+\bibitem[{Chen and Cui(2006)}]{chen2006bartlett}
+Chen, S.~X., Cui, H., 2006. On bartlett correction of empirical likelihood in
+  the presence of nuisance parameters. Biometrika 93~(1), 215--220.
+
+\bibitem[{Chen and Hall(1993)}]{chen1993smoothed}
+Chen, S.~X., Hall, P., 1993. Smoothed empirical likelihood confidence intervals
+  for quantiles. The Annals of Statistics, 1166--1181.
+
+\bibitem[{Chen et~al.(2009)Chen, Peng, and Qin}]{chen2009effects}
+Chen, S.~X., Peng, L., Qin, Y.-L., 2009. Effects of data dimension on empirical
+  likelihood. Biometrika 96~(3), 711--722.
+
+\bibitem[{Chen and Qin(2000)}]{chen2000empirical}
+Chen, S.~X., Qin, Y.~S., 2000. Empirical likelihood confidence intervals for
+  local linear smoothers. Biometrika 87~(4), 946--953.
+
+\bibitem[{Chen and Wong(2009)}]{chen2009smoothed}
+Chen, S.~X., Wong, C.~M., 2009. Smoothed block empirical likelihood for
+  quantiles of weakly dependent processes. Statistica Sinica 19~(1), 71.
+
+\bibitem[{Chuang and Chan(2002)}]{chuang2002empirical}
+Chuang, C.-S., Chan, N.~H., 2002. Empirical likelihood for autoregressive
+  models, with applications to unstable time series. Statistica Sinica 12~(2),
+  387--408.
+
+\bibitem[{Cook(1994)}]{cook1994interpretation}
+Cook, R.~D., 1994. On the interpretation of regression plots. Journal of the
+  American Statistical Association 89~(425), 177--189.
+
+\bibitem[{Cook(1998)}]{cook1998principal}
+Cook, R.~D., 1998. Principal hessian directions revisited. Journal of the
+  American Statistical Association 93~(441), 84--94.
+
+\bibitem[{Cook and Forzani(2009)}]{cook2009likelihood}
+Cook, R.~D., Forzani, L., 2009. Likelihood-based sufficient dimension
+  reduction. Journal of the American Statistical Association 104~(485),
+  197--208.
+
+\bibitem[{Cook and Li(2002)}]{cook2002dimension}
+Cook, R.~D., Li, B., 2002. Dimension reduction for conditional mean in
+  regression. Annals of Statistics, 455--474.
+
+\bibitem[{Cook et~al.(2007)Cook, Li, and Chiaromonte}]{cook2007dimension}
+Cook, R.~D., Li, B., Chiaromonte, F., 2007. Dimension reduction in regression
+  without matrix inversion. Biometrika 94~(3), 569--584.
+
+\bibitem[{Cook et~al.(2004)Cook, Li, et~al.}]{cook2004determining}
+Cook, R.~D., Li, B., et~al., 2004. Determining the dimension of iterative
+  hessian transformation. The Annals of Statistics 32~(6), 2501--2531.
+
+\bibitem[{Cook and Ni(2005)}]{cook2005sufficient}
+Cook, R.~D., Ni, L., 2005. Sufficient dimension reduction via inverse
+  regression. Journal of the American Statistical Association 100~(470).
+
+\bibitem[{Cook and Setodji(2003)}]{cook2003model}
+Cook, R.~D., Setodji, C.~M., 2003. A model-free test for reduced rank in
+  multivariate regression. Journal of the American Statistical Association
+  98~(462), 340--351.
+
+\bibitem[{Cook and Weisberg(1991)}]{1991}
+Cook, R.~D., Weisberg, S., 1991. Sliced inverse regression for dimension
+  reduction: Comment. Journal of the American Statistical Association 86~(414),
+  pp. 328--332.
+\newline\urlprefix\url{http://www.jstor.org/stable/2290564}
+
+\bibitem[{Cook and Yin(2001)}]{cook2001special}
+Cook, R.~D., Yin, X., 2001. Special invited paper: Dimension reduction and
+  visualization in discriminant analysis. Australian and New Zealand Journal of
+  Statistics 43~(2), 147--199.
+
+\bibitem[{Davidian and Carroll(1987)}]{davidian1987variance}
+Davidian, M., Carroll, R.~J., 1987. Variance function estimation. Journal of
+  the American Statistical Association 82~(400), 1079--1091.
+
+\bibitem[{Dean et~al.(2014)Dean, Singh, Jasra, and Peters}]{dean2014parameter}
+Dean, T.~A., Singh, S.~S., Jasra, A., Peters, G.~W., 2014. Parameter estimation
+  for hidden markov models with intractable likelihoods. Scandinavian Journal
+  of Statistics 41~(4), 970--987.
+
+\bibitem[{DiCiccio et~al.(1991)DiCiccio, Hall, and
+  Romano}]{diciccio1991empirical}
+DiCiccio, T., Hall, P., Romano, J., 1991. Empirical likelihood is
+  bartlett-correctable. The Annals of Statistics, 1053--1061.
+
+\bibitem[{Dong and Li(2010)}]{dong2010dimension}
+Dong, Y., Li, B., 2010. Dimension reduction for non-elliptically distributed
+  predictors: second-order methods. Biometrika 97~(2), 279--294.
+
+\bibitem[{Efron et~al.(2004)Efron, Hastie, Johnstone, Tibshirani,
+  et~al.}]{efron2004least}
+Efron, B., Hastie, T., Johnstone, I., Tibshirani, R., et~al., 2004. Least angle
+  regression. The Annals of statistics 32~(2), 407--499.
+
+\bibitem[{Emerson et~al.(2009)Emerson, Owen, et~al.}]{emerson2009calibration}
+Emerson, S.~C., Owen, A.~B., et~al., 2009. Calibration of the empirical
+  likelihood method for a vector mean. Electronic Journal of Statistics 3,
+  1161--1192.
+
+\bibitem[{Fang and Mukerjee(2005)}]{fang2005expected}
+Fang, K.-t., Mukerjee, R., 2005. Expected lengths of confidence intervals based
+  on empirical discrepancy statistics. Biometrika 92~(2), 499--503.
+
+\bibitem[{Fang and Mukerjee(2006)}]{fang2006empirical}
+Fang, K.-T., Mukerjee, R., 2006. Empirical-type likelihoods allowing posterior
+  credible sets with frequentist validity: Higher-order asymptotics. Biometrika
+  93~(3), 723--733.
+
+\bibitem[{Fearnhead and Prangle(2012)}]{fearnhead2012constructing}
+Fearnhead, P., Prangle, D., 2012. Constructing summary statistics for
+  approximate bayesian computation: semi-automatic approximate bayesian
+  computation. Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology) 74~(3), 419--474.
+
+\bibitem[{Ghosh et~al.(1982)Ghosh, Sinha, and Joshi}]{ghosh1982expansions}
+Ghosh, J., Sinha, B., Joshi, S., 1982. Expansions for posterior probability and
+  integrated bayes risk. Statistical Decision Theory and Related Topics III 1,
+  403--456.
+
+\bibitem[{Ghosh and Liu(2011)}]{ghosh2011moment}
+Ghosh, M., Liu, R., 2011. Moment matching priors. Sankhya A 73~(2), 185--201.
+
+\bibitem[{Grelaud et~al.(2009)Grelaud, Robert, Marin, Rodolphe, Taly,
+  et~al.}]{grelaud2009abc}
+Grelaud, A., Robert, C.~P., Marin, J.-M., Rodolphe, F., Taly, J.-F., et~al.,
+  2009. Abc likelihood-free methods for model choice in gibbs random fields.
+  Bayesian Analysis 4~(2), 317--335.
+
+\bibitem[{Grend{\'a}r and Judge(2009)}]{grendar2009asymptotic}
+Grend{\'a}r, M., Judge, G., 2009. Asymptotic equivalence of empirical
+  likelihood and bayesian map. The Annals of Statistics, 2445--2457.
+
+\bibitem[{Hall and Owen(1993)}]{hall1993empirical}
+Hall, P., Owen, A.~B., 1993. Empirical likelihood confidence bands in density
+  estimation. Journal of Computational and Graphical Statistics 2~(3),
+  273--289.
+
+\bibitem[{Hall and Presnell(1999)}]{hall1999biased}
+Hall, P., Presnell, B., 1999. Biased bootstrap methods for reducing the effects
+  of contamination. Journal of the Royal Statistical Society. Series B,
+  Statistical Methodology, 661--680.
+
+\bibitem[{Hartley and Rao(1968)}]{hartley1968new}
+Hartley, H.~O., Rao, J., 1968. A new estimation theory for sample surveys.
+  Biometrika 55~(3), 547--557.
+
+\bibitem[{He and Wang(1995)}]{he1995law}
+He, X., Wang, G., 1995. Law of the iterated logarithm and invariance principle
+  for m-estimators. Proceedings of the American Mathematical Society 123~(2),
+  563--573.
+
+\bibitem[{Hern{\'a}ndez and Velilla(2005)}]{hernandez2005dimension}
+Hern{\'a}ndez, A., Velilla, S., 2005. Dimension reduction in nonparametric
+  kernel discriminant analysis. Journal of Computational and Graphical
+  Statistics 14~(4), 847--866.
+
+\bibitem[{Hjort et~al.(2009)Hjort, McKeague, and
+  Van~Keilegom}]{hjort2009extending}
+Hjort, N.~L., McKeague, I.~W., Van~Keilegom, I., 2009. Extending the scope of
+  empirical likelihood. The Annals of Statistics, 1079--1111.
+
+\bibitem[{Hollander et~al.(1997)Hollander, McKeague, and
+  McKeague}]{hollander1997likelihood}
+Hollander, M., McKeague, I.~W., McKeague, I.~W., 1997. Likelihood ratio-based
+  confidence bands for survival functions. Journal of the American Statistical
+  Association 92~(437), 215--226.
+
+\bibitem[{Hsing(1999)}]{hsing1999nearest}
+Hsing, T., 1999. Nearest neighbor inverse regression. Annals of statistics,
+  697--731.
+
+\bibitem[{Jaakkola and Jordan(2000)}]{jaakkola2000bayesian}
+Jaakkola, T.~S., Jordan, M.~I., 2000. Bayesian parameter estimation via
+  variational methods. Statistics and Computing 10~(1), 25--37.
+
+\bibitem[{Jasra et~al.(2012)Jasra, Singh, Martin, and
+  McCoy}]{jasra2012filtering}
+Jasra, A., Singh, S.~S., Martin, J.~S., McCoy, E., 2012. Filtering via
+  approximate bayesian computation. Statistics and Computing 22~(6),
+  1223--1237.
+
+\bibitem[{Jing(1995)}]{jing1995two}
+Jing, B.-Y., 1995. Two-sample empirical likelihood method. Statistics \&
+  probability letters 24~(4), 315--319.
+
+\bibitem[{Johnson(1970)}]{johnson1970asymptotic}
+Johnson, R.~A., 1970. Asymptotic expansions associated with posterior
+  distributions. The Annals of Mathematical Statistics 41~(3), 851--864.
+
+\bibitem[{Joyce and Marjoram(2008)}]{joyce2008approximately}
+Joyce, P., Marjoram, P., 2008. Approximately sufficient statistics and bayesian
+  computation. Statistical applications in genetics and molecular biology
+  7~(1).
+
+\bibitem[{Kitamura(2001)}]{kitamura2001asymptotic}
+Kitamura, Y., 2001. Asymptotic optimality of empirical likelihood for testing
+  moment restrictions. Econometrica 69~(6), 1661--1672.
+
+\bibitem[{Kitamura et~al.(1997)}]{kitamura1997empirical}
+Kitamura, Y., et~al., 1997. Empirical likelihood methods with weakly dependent
+  processes. The Annals of Statistics 25~(5), 2084--2102.
+
+\bibitem[{Kolaczyk(1994)}]{kolaczyk1994empirical}
+Kolaczyk, E.~D., 1994. Empirical likelihood for generalized linear models.
+  Statistica Sinica 4~(1), 199--218.
+
+\bibitem[{Kolaczyk(1995)}]{kolaczyk1995information}
+Kolaczyk, E.~D., 1995. An information criterion for empirical likelihood with
+  general estimating equations. Unpublished manuscript, Department of
+  Statistics, University of Chicago.
+
+\bibitem[{Lahiri et~al.(2012)Lahiri, Mukhopadhyay,
+  et~al.}]{lahiri2012penalized}
+Lahiri, S.~N., Mukhopadhyay, S., et~al., 2012. A penalized empirical likelihood
+  method in high dimensions. The Annals of Statistics 40~(5), 2511--2540.
+
+\bibitem[{Lancaster and Jae~Jun(2010)}]{lancaster2010bayesian}
+Lancaster, T., Jae~Jun, S., 2010. Bayesian quantile regression methods. Journal
+  of Applied Econometrics 25~(2), 287--307.
+
+\bibitem[{Lazar(2003)}]{lazar2003bayesian}
+Lazar, N.~A., 2003. Bayesian empirical likelihood. Biometrika 90~(2), 319--326.
+
+\bibitem[{Lazar and Mykland(1999)}]{lazar1999empirical}
+Lazar, N.~A., Mykland, P.~A., 1999. Empirical likelihood in the presence of
+  nuisance parameters. Biometrika 86~(1), 203--211.
+
+\bibitem[{Lee and {\L}atuszy{\'n}ski(2014)}]{lee2014variance}
+Lee, A., {\L}atuszy{\'n}ski, K., 2014. Variance bounding and geometric
+  ergodicity of markov chain monte carlo kernels for approximate bayesian
+  computation. Biometrika 101~(3), 655--671.
+
+\bibitem[{Lee et~al.(2013)Lee, Li, Chiaromonte, et~al.}]{lee2013general}
+Lee, K.-Y., Li, B., Chiaromonte, F., et~al., 2013. A general theory for
+  nonlinear sufficient dimension reduction: Formulation and estimation. The
+  Annals of Statistics 41~(1), 221--249.
+
+\bibitem[{Leng and Tang(2012)}]{leng2012penalized}
+Leng, C., Tang, C.~Y., 2012. Penalized empirical likelihood and growing
+  dimensional general estimating equations. Biometrika 99~(3), 703--716.
+
+\bibitem[{Leuenberger and Wegmann(2010)}]{leuenberger2010bayesian}
+Leuenberger, C., Wegmann, D., 2010. Bayesian computation and model selection
+  without likelihoods. Genetics 184~(1), 243--252.
+
+\bibitem[{Li et~al.(2011)Li, Artemiou, and Li}]{li2011principal}
+Li, B., Artemiou, A., Li, L., 2011. Principal support vector machines for
+  linear and nonlinear sufficient dimension reduction. The Annals of
+  Statistics, 3182--3210.
+
+\bibitem[{Li and Dong(2009)}]{li2009dimension}
+Li, B., Dong, Y., 2009. Dimension reduction for nonelliptically distributed
+  predictors. The Annals of Statistics, 1272--1298.
+
+\bibitem[{Li and Wang(2007)}]{li2007directional}
+Li, B., Wang, S., 2007. On directional regression for dimension reduction.
+  Journal of the American Statistical Association 102~(479), 997--1008.
+
+\bibitem[{Li et~al.(2008)Li, Wen, and Zhu}]{li2008projective}
+Li, B., Wen, S., Zhu, L., 2008. On a projective resampling method for dimension
+  reduction with multivariate responses. Journal of the American Statistical
+  Association 103~(483), 1177--1186.
+
+\bibitem[{Li et~al.(2005)Li, Zha, and Chiaromonte}]{li2005contour}
+Li, B., Zha, H., Chiaromonte, F., 2005. Contour regression: a general approach
+  to dimension reduction. Annals of statistics, 1580--1616.
+
+\bibitem[{Li(1991)}]{li1991sliced}
+Li, K.-C., 1991. Sliced inverse regression for dimension reduction. Journal of
+  the American Statistical Association 86~(414), 316--327.
+
+\bibitem[{Li(1992)}]{li1992principal}
+Li, K.-C., 1992. On principal hessian directions for data visualization and
+  dimension reduction: another application of stein's lemma. Journal of the
+  American Statistical Association 87~(420), 1025--1039.
+
+\bibitem[{Li and Duan(1989)}]{li1989regression}
+Li, K.-C., Duan, N., 1989. Regression analysis under link violation. The Annals
+  of Statistics, 1009--1052.
+
+\bibitem[{Li et~al.(2007)Li, Cook, and Tsai}]{li2007partial}
+Li, L., Cook, R.~D., Tsai, C.-L., 2007. Partial inverse regression. Biometrika.
+
+\bibitem[{Loh et~al.(1996)}]{loh1996latin}
+Loh, W.-L., et~al., 1996. On latin hypercube sampling. The annals of statistics
+  24~(5), 2058--2080.
+
+\bibitem[{Luo et~al.(2009)Luo, Wang, Tsai, et~al.}]{luo2009contour}
+Luo, R., Wang, H., Tsai, C.-L., et~al., 2009. Contour projected dimension
+  reduction. The Annals of Statistics 37~(6B), 3743--3778.
+
+\bibitem[{Ma and Zhu(2012)}]{ma2012semiparametric}
+Ma, Y., Zhu, L., 2012. A semiparametric approach to dimension reduction.
+  Journal of the American Statistical Association 107~(497), 168--179.
+
+\bibitem[{Ma and Zhu(2013)}]{ma2013review}
+Ma, Y., Zhu, L., 2013. A review on dimension reduction. International
+  Statistical Review 81~(1), 134--150.
+
+\bibitem[{Marin et~al.(2014)Marin, Pillai, Robert, and
+  Rousseau}]{marin2014relevant}
+Marin, J.-M., Pillai, N.~S., Robert, C.~P., Rousseau, J., 2014. Relevant
+  statistics for bayesian model choice. Journal of the Royal Statistical
+  Society: Series B (Statistical Methodology) 76~(5), 833--859.
+
+\bibitem[{Marin et~al.(2012)Marin, Pudlo, Robert, and
+  Ryder}]{marin2012approximate}
+Marin, J.-M., Pudlo, P., Robert, C.~P., Ryder, R.~J., 2012. Approximate
+  bayesian computational methods. Statistics and Computing 22~(6), 1167--1180.
+
+\bibitem[{Marjoram et~al.(2003)Marjoram, Molitor, Plagnol, and
+  Tavar{\'e}}]{marjoram2003markov}
+Marjoram, P., Molitor, J., Plagnol, V., Tavar{\'e}, S., 2003. Markov chain
+  monte carlo without likelihoods. Proceedings of the National Academy of
+  Sciences 100~(26), 15324--15328.
+
+\bibitem[{Martin and Liu(2013)}]{martin2013inferential}
+Martin, R., Liu, C., 2013. Inferential models: A framework for prior-free
+  posterior probabilistic inference. Journal of the American Statistical
+  Association 108~(501), 301--313.
+
+\bibitem[{Martin and Liu(2015)}]{martin2015conditional}
+Martin, R., Liu, C., 2015. Conditional inferential models: combining
+  information for prior-free probabilistic inference. Journal of the Royal
+  Statistical Society: Series B (Statistical Methodology) 77~(1), 195--217.
+
+\bibitem[{McKinley et~al.(2009)McKinley, Cook, and
+  Deardon}]{mckinley2009inference}
+McKinley, T., Cook, A.~R., Deardon, R., 2009. Inference in epidemic models
+  without likelihoods. The International Journal of Biostatistics 5~(1).
+
+\bibitem[{Mittelhammer et~al.(2000)Mittelhammer, Judge, and
+  Miller}]{mittelhammer2000econometric}
+Mittelhammer, R.~C., Judge, G.~G., Miller, D.~J., 2000. Econometric Foundations
+  Pack with CD-ROM. Vol.~1. Cambridge University Press.
+
+\bibitem[{Molanes~Lopez et~al.(2009)Molanes~Lopez, KEILEGOM, and
+  Veraverbeke}]{molanes2009empirical}
+Molanes~Lopez, E.~M., KEILEGOM, I.~V., Veraverbeke, N., 2009. Empirical
+  likelihood for non-smooth criterion functions. Scandinavian Journal of
+  Statistics 36~(3), 413--432.
+
+\bibitem[{Monti(1997)}]{monti1997empirical}
+Monti, A.~C., 1997. Empirical likelihood confidence regions in time series
+  models. Biometrika 84~(2), 395--405.
+
+\bibitem[{Murphy(1995)}]{murphy1995likelihood}
+Murphy, S., 1995. Likelihood ratio-based confidence intervals in survival
+  analysis. Journal of the American Statistical Association 90~(432),
+  1399--1405.
+
+\bibitem[{Murphy and van~der Vaart(1997)}]{murphy1997semiparametric}
+Murphy, S.~A., van~der Vaart, A.~W., 1997. Semiparametric likelihood ratio
+  inference. The Annals of Statistics, 1471--1509.
+
+\bibitem[{Mykland(1995)}]{mykland1995dual}
+Mykland, P.~A., 1995. Dual likelihood. The Annals of Statistics, 396--421.
+
+\bibitem[{Newey and Smith(2004)}]{newey2004higher}
+Newey, W.~K., Smith, R.~J., 2004. Higher order properties of gmm and
+  generalized empirical likelihood estimators. Econometrica 72~(1), 219--255.
+
+\bibitem[{Nordman et~al.(2007)Nordman, Sibbertsen, and
+  Lahiri}]{nordman2007empirical}
+Nordman, D.~J., Sibbertsen, P., Lahiri, S.~N., 2007. Empirical likelihood
+  confidence intervals for the mean of a long-range dependent process. Journal
+  of Time Series Analysis 28~(4), 576--599.
+
+\bibitem[{Owen(1991)}]{owen1991empirical}
+Owen, A., 1991. Empirical likelihood for linear models. The Annals of
+  Statistics, 1725--1747.
+
+\bibitem[{Owen(1988)}]{owen1988empirical}
+Owen, A.~B., 1988. Empirical likelihood ratio confidence intervals for a single
+  functional. Biometrika 75~(2), 237--249.
+
+\bibitem[{Owen(1995)}]{owen1995nonparametric}
+Owen, A.~B., 1995. Nonparametric likelihood confidence bands for a distribution
+  function. Journal of the American Statistical Association 90~(430), 516--521.
+
+\bibitem[{Owen(2010)}]{owen2010empirical}
+Owen, A.~B., 2010. Empirical likelihood. CRC press.
+
+\bibitem[{Pan and Zhou(2002)}]{pan2002empirical}
+Pan, X.-R., Zhou, M., 2002. Empirical likelihood ratio in terms of cumulative
+  hazard function for censored data. Journal of Multivariate Analysis 80~(1),
+  166--188.
+
+\bibitem[{Peng(2004)}]{peng2004empirical}
+Peng, L., 2004. Empirical-likelihood-based confidence interval for the mean
+  with a heavy-tailed distribution. Annals of Statistics, 1192--1214.
+
+\bibitem[{Picchini(2014)}]{picchini2014inference}
+Picchini, U., 2014. Inference for sde models via approximate bayesian
+  computation. Journal of Computational and Graphical Statistics 23~(4),
+  1080--1100.
+
+\bibitem[{Prangle et~al.(2014)Prangle, Fearnhead, Cox, Biggs, and
+  French}]{prangle2014semi}
+Prangle, D., Fearnhead, P., Cox, M.~P., Biggs, P.~J., French, N.~P., 2014.
+  Semi-automatic selection of summary statistics for abc model choice.
+  Statistical applications in genetics and molecular biology 13~(1), 67--82.
+
+\bibitem[{Pritchard et~al.(1999)Pritchard, Seielstad, Perez-Lezaun, and
+  Feldman}]{pritchard1999population}
+Pritchard, J.~K., Seielstad, M.~T., Perez-Lezaun, A., Feldman, M.~W., 1999.
+  Population growth of human y chromosomes: a study of y chromosome
+  microsatellites. Molecular biology and evolution 16~(12), 1791--1798.
+
+\bibitem[{Qin(1993)}]{qin1993empirical}
+Qin, J., 1993. Empirical likelihood in biased sample problems. The Annals of
+  Statistics, 1182--1196.
+
+\bibitem[{Qin(1998)}]{qin1998semiparametric}
+Qin, J., 1998. Semiparametric likelihood based method for goodness of fit tests
+  and estimation in upgraded mixture models. Scandinavian journal of statistics
+  25~(4), 681--691.
+
+\bibitem[{Qin and Lawless(1994)}]{qin1994empirical}
+Qin, J., Lawless, J., 1994. Empirical likelihood and general estimating
+  equations. The Annals of Statistics, 300--325.
+
+\bibitem[{Qin and Zhang(1997)}]{qin1997goodness}
+Qin, J., Zhang, B., 1997. A goodness-of-fit test for logistic regression models
+  based on case-control data. Biometrika 84~(3), 609--618.
+
+\bibitem[{Qin et~al.(1999)}]{qin1999empirical}
+Qin, J., et~al., 1999. Empirical likelihood ratio based confidence intervals
+  for mixture proportions. The Annals of Statistics 27~(4), 1368--1384.
+
+\bibitem[{Rao and Wu(2010)}]{rao2010bayesian}
+Rao, J., Wu, C., 2010. Bayesian pseudo-empirical-likelihood intervals for
+  complex surveys. Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology) 72~(4), 533--544.
+
+\bibitem[{Ratmann et~al.(2009)Ratmann, Andrieu, Wiuf, and
+  Richardson}]{ratmann2009model}
+Ratmann, O., Andrieu, C., Wiuf, C., Richardson, S., 2009. Model criticism based
+  on likelihood-free inference, with an application to protein network
+  evolution. Proceedings of the National Academy of Sciences 106~(26),
+  10576--10581.
+
+\bibitem[{Ratmann et~al.(2013)Ratmann, Camacho, Meijer, and
+  Donker}]{ratmann2013statistical}
+Ratmann, O., Camacho, A., Meijer, A., Donker, G., 2013. Statistical modelling
+  of summary values leads to accurate approximate bayesian computations. arXiv
+  preprint arXiv:1305.4283.
+
+\bibitem[{Rivoirard et~al.(2012)Rivoirard, Rousseau,
+  et~al.}]{rivoirard2012bernstein}
+Rivoirard, V., Rousseau, J., et~al., 2012. Bernstein--von mises theorem for
+  linear functionals of the density. The Annals of Statistics 40~(3),
+  1489--1523.
+
+\bibitem[{Robert and Casella(2013)}]{robert2013monte}
+Robert, C., Casella, G., 2013. Monte Carlo statistical methods. Springer
+  Science \& Business Media.
+
+\bibitem[{Rubin(1984)}]{rubin1984bayesianly}
+Rubin, D.~B., 1984. Bayesianly justifiable and relevant frequency calculations
+  for the applied statistician. The Annals of Statistics 12~(4), 1151--1172.
+
+\bibitem[{Rubin et~al.(1981)}]{rubin1981bayesian}
+Rubin, D.~B., et~al., 1981. The bayesian bootstrap. The annals of statistics
+  9~(1), 130--134.
+
+\bibitem[{Ruli et~al.(2013)Ruli, Sartori, and Ventura}]{ruli2013approximate}
+Ruli, E., Sartori, N., Ventura, L., 2013. Approximate bayesian computation with
+  composite score functions. Statistics and Computing, 1--14.
+
+\bibitem[{Saracco(2005)}]{saracco2005asymptotics}
+Saracco, J., 2005. Asymptotics for pooled marginal slicing estimator based on
+  sir$\alpha$ approach. Journal of multivariate Analysis 96~(1), 117--135.
+
+\bibitem[{Schennach(2005)}]{schennach2005bayesian}
+Schennach, S.~M., 2005. Bayesian exponentially tilted empirical likelihood.
+  Biometrika 92~(1), 31--46.
+
+\bibitem[{Schennach et~al.(2007)}]{schennach2007point}
+Schennach, S.~M., et~al., 2007. Point estimation with exponentially tilted
+  empirical likelihood. The Annals of Statistics 35~(2), 634--672.
+
+\bibitem[{Schott(1994)}]{schott1994determining}
+Schott, J.~R., 1994. Determining the dimensionality in sliced inverse
+  regression. Journal of the American Statistical Association 89~(425),
+  141--148.
+
+\bibitem[{Setodji and Cook(2004)}]{setodji2004k}
+Setodji, C.~M., Cook, R.~D., 2004. K-means inverse regression. Technometrics
+  46~(4), 421--429.
+
+\bibitem[{Sisson et~al.(2007)Sisson, Fan, and Tanaka}]{sisson2007sequential}
+Sisson, S.~A., Fan, Y., Tanaka, M.~M., 2007. Sequential monte carlo without
+  likelihoods. Proceedings of the National Academy of Sciences 104~(6),
+  1760--1765.
+
+\bibitem[{Su and Cook(2011)}]{su2011partial}
+Su, Z., Cook, R.~D., 2011. Partial envelopes for efficient estimation in
+  multivariate linear regression. Biometrika, asq063.
+
+\bibitem[{Su and Cook(2012)}]{su2012inner}
+Su, Z., Cook, R.~D., 2012. Inner envelopes: efficient estimation in
+  multivariate linear regression. Biometrika 99~(3), 687--702.
+
+\bibitem[{Tang and Leng(2010)}]{tang2010penalized}
+Tang, C.~Y., Leng, C., 2010. Penalized high-dimensional empirical likelihood.
+  Biometrika 97~(4), 905--920.
+
+\bibitem[{Tavar{\'e} et~al.(1997)Tavar{\'e}, Balding, Griffiths, and
+  Donnelly}]{tavare1997inferring}
+Tavar{\'e}, S., Balding, D.~J., Griffiths, R.~C., Donnelly, P., 1997. Inferring
+  coalescence times from dna sequence data. Genetics 145~(2), 505--518.
+
+\bibitem[{Thomas and Grunkemeier(1975)}]{thomas1975confidence}
+Thomas, D.~R., Grunkemeier, G.~L., 1975. Confidence interval estimation of
+  survival probabilities for censored data. Journal of the American Statistical
+  Association 70~(352), 865--871.
+
+\bibitem[{Tierney and Kadane(1986)}]{tierney1986accurate}
+Tierney, L., Kadane, J.~B., 1986. Accurate approximations for posterior moments
+  and marginal densities. Journal of the american statistical association
+  81~(393), 82--86.
+
+\bibitem[{Tsao and Wu(2014)}]{tsao2014extended}
+Tsao, M., Wu, F., 2014. Extended empirical likelihood for estimating equations.
+  Biometrika, asu014.
+
+\bibitem[{Tsao et~al.(2004)}]{tsao2004bounds}
+Tsao, M., et~al., 2004. Bounds on coverage probabilities of the empirical
+  likelihood ratio confidence regions. The Annals of Statistics 32~(3),
+  1215--1221.
+
+\bibitem[{Velilla(1998)}]{velilla1998assessing}
+Velilla, S., 1998. Assessing the number of linear components in a general
+  regression problem. Journal of the American Statistical Association 93~(443),
+  1088--1098.
+
+\bibitem[{Vexler et~al.(2013)Vexler, Deng, and
+  Wilding}]{vexler2013nonparametric}
+Vexler, A., Deng, W., Wilding, G.~E., 2013. Nonparametric bayes factors based
+  on empirical likelihood ratios. Journal of statistical planning and inference
+  143~(3), 611--620.
+
+\bibitem[{Vexler et~al.(2014)Vexler, Tao, and Hutson}]{vexler2014posterior}
+Vexler, A., Tao, G., Hutson, A., 2014. Posterior expectation based on empirical
+  likelihoods. Biometrika 101~(3), 711--718.
+
+\bibitem[{Wang and Xia(2008)}]{wang2008sliced}
+Wang, H., Xia, Y., 2008. Sliced regression for dimension reduction. Journal of
+  the American Statistical Association 103~(482), 811--821.
+
+\bibitem[{Wang and Zhu(2011)}]{wang2011empirical}
+Wang, H.~J., Zhu, Z., 2011. Empirical likelihood for quantile regression models
+  with longitudinal data. Journal of Statistical Planning and Inference
+  141~(4), 1603--1615.
+
+\bibitem[{Wang et~al.(2014)Wang, Guo, Zhu, and Xu}]{wang2014transformed}
+Wang, T., Guo, X., Zhu, L., Xu, P., 2014. Transformed sufficient dimension
+  reduction. Biometrika, asu037.
+
+\bibitem[{Whang(2006)}]{whang2006smoothed}
+Whang, Y.-J., 2006. Smoothed empirical likelihood methods for quantile
+  regression models. Econometric Theory 22~(02), 173--205.
+
+\bibitem[{Wilkinson(2011)}]{wilkinson2011stochastic}
+Wilkinson, D.~J., 2011. Stochastic modelling for systems biology. CRC press.
+
+\bibitem[{Wilkinson(2013)}]{wilkinson2013approximate}
+Wilkinson, R.~D., 2013. Approximate bayesian computation (abc) gives exact
+  results under the assumption of model error. Statistical applications in
+  genetics and molecular biology 12~(2), 129--141.
+
+\bibitem[{Wu and Sitter(2001)}]{wu2001model}
+Wu, C., Sitter, R.~R., 2001. A model-calibration approach to using complete
+  auxiliary information from survey data. Journal of the American Statistical
+  Association 96~(453), 185--193.
+
+\bibitem[{Wu(2008)}]{wu2008kernel}
+Wu, H.-M., 2008. Kernel sliced inverse regression with applications to
+  classification. Journal of Computational and Graphical Statistics 17~(3).
+
+\bibitem[{Wu et~al.(2008)Wu, Liang, and Mukherjee}]{wu2008consistency}
+Wu, Q., Liang, F., Mukherjee, S., 2008. Consistency of regularized sliced
+  inverse regression for kernel models. Tech. rep., Technical report. Duke
+  University and University of Illinois Urbana-Champaign.
+
+\bibitem[{Xia(2007)}]{xia2007constructive}
+Xia, Y., 2007. A constructive approach to the estimation of dimension reduction
+  directions. The Annals of Statistics, 2654--2690.
+
+\bibitem[{Xia et~al.(2002)Xia, Tong, Li, and Zhu}]{xia2002adaptive}
+Xia, Y., Tong, H., Li, W., Zhu, L.-X., 2002. An adaptive estimation of
+  dimension reduction space. Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology) 64~(3), 363--410.
+
+\bibitem[{Ye and Weiss(2003)}]{ye2003using}
+Ye, Z., Weiss, R.~E., 2003. Using the bootstrap to select one of a new class of
+  dimension reduction methods. Journal of the American Statistical Association
+  98~(464).
+
+\bibitem[{Yeh et~al.(2009)Yeh, Huang, and Lee}]{yeh2009nonlinear}
+Yeh, Y.-R., Huang, S.-Y., Lee, Y.-J., 2009. Nonlinear dimension reduction with
+  kernel sliced inverse regression. Knowledge and Data Engineering, IEEE
+  Transactions on 21~(11), 1590--1603.
+
+\bibitem[{Yin and Bura(2006)}]{yin2006moment}
+Yin, X., Bura, E., 2006. Moment-based dimension reduction for multivariate
+  response regression. Journal of Statistical Planning and Inference 136~(10),
+  3675--3688.
+
+\bibitem[{Yin and Cook(2002)}]{yin2002dimension}
+Yin, X., Cook, R.~D., 2002. Dimension reduction for the conditional kth moment
+  in regression. Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology) 64~(2), 159--175.
+
+\bibitem[{Yin and Cook(2005)}]{yin2005direction}
+Yin, X., Cook, R.~D., 2005. Direction estimation in single-index regressions.
+  Biometrika 92~(2), 371--384.
+
+\bibitem[{Yin et~al.(2008)Yin, Li, and Cook}]{yin2008successive}
+Yin, X., Li, B., Cook, R.~D., 2008. Successive direction extraction for
+  estimating the central subspace in a multiple-index regression. Journal of
+  Multivariate Analysis 99~(8), 1733--1757.
+
+\bibitem[{Zhang(1996{\natexlab{a}})}]{zhang1996confidence}
+Zhang, B., 1996{\natexlab{a}}. Confidence intervals for a distribution function
+  in the presence of auxiliary information. Computational statistics \& data
+  analysis 21~(3), 327--342.
+
+\bibitem[{Zhang(1996{\natexlab{b}})}]{zhang1996accuracy}
+Zhang, B., 1996{\natexlab{b}}. On the accuracy of empirical likelihood
+  confidence intervals for m-functionals. Journal of Nonparametric Statistics
+  6~(4), 311--321.
+
+\bibitem[{Zhang(1999)}]{zhang1999bootstrapping}
+Zhang, B., 1999. Bootstrapping with auxiliary information. Canadian Journal of
+  Statistics 27~(2), 237--249.
+
+\bibitem[{Zhu et~al.(2006)Zhu, Miao, and Peng}]{zhu2006sliced}
+Zhu, L., Miao, B., Peng, H., 2006. On sliced inverse regression with
+  high-dimensional covariates. Journal of the American Statistical Association
+  101~(474).
+
+\bibitem[{Zhu et~al.(2010{\natexlab{a}})Zhu, Wang, Zhu, and
+  Ferr{\'e}}]{zhu2010sufficient}
+Zhu, L., Wang, T., Zhu, L., Ferr{\'e}, L., 2010{\natexlab{a}}. Sufficient
+  dimension reduction through discretization-expectation estimation. Biometrika
+  97~(2), 295--304.
+
+\bibitem[{Zhu et~al.(2011)Zhu, Li, Li, and Zhu}]{zhu2011model}
+Zhu, L.-P., Li, L., Li, R., Zhu, L.-X., 2011. Model-free feature screening for
+  ultrahigh-dimensional data. Journal of the American Statistical Association
+  106~(496).
+
+\bibitem[{Zhu et~al.(2010{\natexlab{b}})Zhu, Yu, and Zhu}]{zhu2010sparse}
+Zhu, L.-P., Yu, Z., Zhu, L.-X., 2010{\natexlab{b}}. A sparse
+  eigen-decomposition estimation in semiparametric regression. Computational
+  Statistics \& Data Analysis 54~(4), 976--986.
+
+\bibitem[{Zhu and Zhu(2007)}]{zhu2007kernel}
+Zhu, L.-P., Zhu, L.-X., 2007. On kernel method for sliced average variance
+  estimation. Journal of Multivariate Analysis 98~(5), 970--991.
+
+\bibitem[{Zhu and Zhu(2009{\natexlab{a}})}]{zhu2009dimension}
+Zhu, L.-P., Zhu, L.-X., 2009{\natexlab{a}}. Dimension reduction for conditional
+  variance in regressions. Statistica Sinica 19~(2), 869.
+
+\bibitem[{Zhu and Zhu(2009{\natexlab{b}})}]{zhu2009distribution}
+Zhu, L.-P., Zhu, L.-X., 2009{\natexlab{b}}. On distribution-weighted partial
+  least squares with diverging number of highly correlated predictors. Journal
+  of the Royal Statistical Society: Series B (Statistical Methodology) 71~(2),
+  525--548.
+
+\bibitem[{Zhu et~al.(2010{\natexlab{c}})Zhu, Zhu, and Feng}]{zhu2010dimension}
+Zhu, L.-P., Zhu, L.-X., Feng, Z.-H., 2010{\natexlab{c}}. Dimension reduction in
+  regressions through cumulative slicing estimation. Journal of the American
+  Statistical Association 105~(492), 1455--1466.
+
+\bibitem[{Zhu et~al.(1996)Zhu, Fang, et~al.}]{zhu1996asymptotics}
+Zhu, L.-X., Fang, K.-T., et~al., 1996. Asymptotics for kernel estimate of
+  sliced inverse regression. The Annals of Statistics 24~(3), 1053--1068.
+
+\bibitem[{Zhu et~al.(2007)Zhu, Ohtaki, and Li}]{zhu2007hybrid}
+Zhu, L.-X., Ohtaki, M., Li, Y., 2007. On hybrid methods of inverse
+  regression-based algorithms. Computational statistics \& data analysis
+  51~(5), 2621--2635.
+
+\bibitem[{Zhu and Zeng(2006)}]{zhu2006fourier}
+Zhu, Y., Zeng, P., 2006. Fourier methods for estimating the central subspace
+  and the central mean subspace in regression. Journal of the American
+  Statistical Association 101~(476), 1638--1651.
+
+\end{thebibliography}

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Dissertation.aux
+The style file: elsarticle-harv.bst
+Database file #1: dissertation.bib
+Repeated entry---line 684 of file dissertation.bib
+ : @article{ratmann2013statistical
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 912 of file dissertation.bib
+ : @article{zhu2010dimension
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1129 of file dissertation.bib
+ : @article{zhu2010dimension
+ :                          ,
+I'm skipping whatever remains of this entry
+Database file #2: partialPostBib.bib
+Repeated entry---line 8 of file partialPostBib.bib
+ : @article{picchini2014inference
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 187 of file partialPostBib.bib
+ : @article{li1992principal
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 232 of file partialPostBib.bib
+ : @article{cook2002dimension
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 252 of file partialPostBib.bib
+ : @article{li2005contour
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 381 of file partialPostBib.bib
+ : @article{blum2013comparative
+ :                             ,
+I'm skipping whatever remains of this entry
+Database file #3: asymExpBib.bib
+Repeated entry---line 30 of file asymExpBib.bib
+ : @article{johnson1970asymptotic
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 155 of file asymExpBib.bib
+ : @article{ghosh2011moment
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "cornuet2008inferring"
+Warning--I didn't find a database entry for "clarke2010reference"
+Warning--I didn't find a database entry for "godambe1960optimum"
+Warning--I didn't find a database entry for "ghosal1999asymptotic"
+Warning--I didn't find a database entry for "ghosal2000asymptotic"
+(There were 10 error messages)
