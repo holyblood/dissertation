@@ -1,0 +1,599 @@
+\chapter{Proof for Higher-Order Properties of Bayesian Empirical Likelihood:
+Multivariate Case}
+
+In the appendix, we give the detail proof of the theorem %
+\begin{comment}
+asymptotic expansion theorem 
+\end{comment}
+. 
+
+
+\section{differentiability with respect to $\theta$. }
+
+In this section, we prove the fact that the empirical likelihood is
+a smooth function of the mean parameter $\theta$. Thus we can take
+arbitrary order of derivative with respect to $\theta$. We begin
+the proof by the fact that the Lagrange multipliers are smooth functions
+of $\theta$. 
+\begin{lem}
+\label{lem:mul-el-smooth-lagrange-multp}Under the assumption \enuref{multv-diff-full-rank},
+$\nu\left(\theta\right)\in C^{\infty}\left(H_{n}\right)$ with probability
+1 in $P_{X}^{n}$. \end{lem}
+\begin{proof}
+$\nu\left(\theta\right)$ is a implicit function defined by \eqref{lambda-eq}
+. Let 
+\begin{eqnarray*}
+G_{1}\left(\nu,\theta\right) & = & \sum_{i=1}^{n}\frac{X_{i}-\theta}{1+\nu^{T}\left(X_{i}-\theta\right)},
+\end{eqnarray*}
+By implicit function theorem, we only need to show that $\det\left(\frac{\partial G_{1}}{\partial\nu}\right)\neq0$.
+For any $1\le j,l\le p$, 
+\[
+\frac{\partial G_{1j}}{\partial\nu_{l}}=\frac{\partial}{\partial\nu_{l}}\sum_{i=1}^{n}\frac{X_{ij}-\theta_{j}}{1+\sum_{k=1}^{p}\nu_{k}\left(X_{ik}-\theta_{k}\right)}=-\sum_{i=1}^{n}\frac{X_{ij}-\theta_{j}}{1+\nu^{T}\left(X_{i}-\theta\right)}\frac{X_{il}-\theta_{l}}{1+\nu^{T}\left(X_{i}-\theta\right)}.
+\]
+Let 
+\[
+\Delta=\left(\frac{X_{ij}-\theta_{j}}{1+\nu^{T}\left(X_{i}-\theta\right)}\right)_{n\times p}.
+\]
+Then $\frac{\partial G_{1}}{\partial\nu}=\Delta^{T}\Delta$. If we
+want $\det\left(\frac{\partial G_{1}}{\partial\nu}\right)\neq0$ ,
+we need $\Delta$ has a full column rank. Suppose $\mathrm{rank}\left(\Delta\right)<p$,
+then there is a vector $\alpha\neq0$, such that $\Delta\alpha=0$,
+that is 
+\begin{eqnarray*}
+\sum_{j=1}^{p}\frac{X_{ij}-\theta_{j}}{1+\nu^{T}\left(X_{i}-\theta\right)}\alpha_{j} & = & 0,\\
+\frac{1}{1+\nu^{T}\left(X_{i}-\theta\right)}\sum_{j=1}^{p}\left(\alpha_{j}X_{ij}-\alpha_{j}\theta_{j}\right) & = & 0.
+\end{eqnarray*}
+Note that $\hat{w}_{i}=\frac{1}{n\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]}>0$,
+so we have 
+\[
+\sum_{j=1}^{p}\alpha_{j}X_{ij}=\sum_{j=1}^{p}\alpha_{j}\theta_{j}.
+\]
+For any $1\le i\neq l\le p$, 
+\[
+\sum_{j=1}^{p}\alpha_{j}X_{ij}=\sum_{j=1}^{p}\alpha_{j}\theta_{j}=\sum_{j=1}^{p}\alpha_{j}X_{lj},
+\]
+that is 
+\begin{eqnarray*}
+\sum_{j=1}^{p}\left(X_{ij}-X_{lj}\right)\alpha_{j} & = & 0,\\
+Z\alpha & = & 0.
+\end{eqnarray*}
+Contradictory with the assumption \enuref{multv-diff-full-rank}.
+Hence, we have $\det\left(\frac{\partial G_{1}}{\partial\nu}\right)\neq0$,
+and therefore, by implicit function theorem, $\nu$ is differentiable
+with respect to $\theta$. Now we prove the existence of higher order
+derivatives by induction. For $k=1$, take the derivative with respect
+to $\theta_{l}$ at the both sides of \eqref{lambda-eq}, 
+\[
+\sum_{i=1}^{n}\sum_{s=1}^{p}\frac{\partial\nu_{s}}{\partial\theta_{l}}\frac{X_{is}-\theta_{s}}{1+\nu^{T}\left(X_{i}-\theta\right)}\frac{X_{ij}-\theta_{j}}{1+\nu^{T}\left(X_{i}-\theta\right)}=-\delta_{jl}\sum_{i=1}^{n}\frac{1}{1+\nu^{T}\left(X_{i}-\theta\right)}+\nu_{l}\sum_{i=1}^{n}\frac{X_{ij}-\theta_{j}}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{2}},
+\]
+where $\delta_{jl}$ is Kronecker's delta, or in matrix form 
+\[
+\left(\Delta^{T}\Delta\right)\frac{\partial\nu}{\partial\theta}=-nI_{p}+n\Delta^{T}W\nu,
+\]
+where $W$ is the vector of weights $\hat{w}_{i}\left(\theta\right)$.
+Hence 
+\[
+\frac{\partial\nu}{\partial\theta}=-n\left(\Delta^{T}\Delta\right)^{-1}+n\left(\Delta^{T}\Delta\right)^{-1}\Delta^{T}W\nu^{T}.
+\]
+We know both $\Delta$, $W$ and $\nu$ are differentiable with respect
+to $\theta$. Suppose $k\le K$, we have 
+\[
+\nabla^{k}\nu=f_{k}\left(\nu\left(\theta\right)\right),
+\]
+where $f_{k}\in C^{\infty}$ are a bunch of smooth functions of $\nu$,
+then for $k=K+1$, 
+\[
+\nabla^{K+1}\nu=\nabla\left(\nabla^{K}\nu\right).
+\]
+We know that $\nu$ is differentiable, and $f_{K}$ are smooth functions,
+so the gradient above is well defined, and 
+\[
+\nabla^{K+1}\nu=\nabla f_{K}\left(\nu\right)\nabla\nu,
+\]
+are also smooth functions. By mathematical induction, we have $\nu\in C^{\infty}\left(H_{n}\right)$. 
+\end{proof}
+The smoothness of Lagrange multipliers leads to the smoothness of
+empirical likelihood weights, and thus logarithm of empirical likelihood.
+These results justify the Taylor expansion of logarithm of empirical
+likelihood around the sample mean. 
+
+
+\section{the behavior of the logarithm of empirical likelihood and higher
+order derivatives around sample mean}
+
+We expand the posterior around the sample mean which is indeed the
+maximum of log empirical likelihood. 
+\begin{lem}
+\label{lem:mean-max-el}$\overline{X}$ maximizes the log empirical
+likelihood $\hat{l}\left(\theta\right)$, and $\nabla\hat{l}\left(\overline{X}\right)=0$. \end{lem}
+\begin{proof}
+By the inequality of arithmetic mean and geometric mean, we have 
+\begin{equation}
+\hat{l}\left(\theta\right)=\frac{1}{n}\sum_{i=1}^{n}\log\hat{w}_{i}\left(\theta\right)=\log\left(\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\right)^{\frac{1}{n}}\le\log\frac{\sum_{i=1}^{n}\hat{w}_{i}\left(\theta\right)}{n}=\log\frac{1}{n},\label{eq:bound-log-el}
+\end{equation}
+where the equality holds if and only if all the $\hat{w}_{i}\left(\theta\right)$
+are equal, i.e. , $\hat{w}_{i}\left(\theta\right)=n^{-1}.$ So $\theta=\sum_{i=1}^{n}\hat{w}_{i}\left(\theta\right)X_{i}=\sum_{i=1}^{n}n^{-1}X_{i}=\overline{X}$.
+So $\hat{w}_{i}\left(\overline{X}\right)=n^{-1}$ and $\nu\left(\overline{X}\right)=0$.
+By \lemref{mul-el-smooth-lagrange-multp}, $\hat{l}\left(\theta\right)$
+is a smooth function of $\theta$, so at the maximal $\overline{X}$,
+$\nabla\hat{l}\left(\theta\right)=0$. 
+\end{proof}
+Next, we prove that the higher order derivatives of log empirical
+likelihood evaluated at $\overline{X}$ are solely smooth functions
+of the sample central moments. Then the remainder of Taylor expansion
+can be bounded by the power of $n^{-1}$. 
+\begin{lem}
+\label{lem:control-higher-order-derivative-l}For any $k=2,3,\ldots$
+, 
+\[
+\nabla^{k}\hat{l}\left(\theta\right)=f_{k}\left(\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{1}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{1},1}}},\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{1}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{1},2}}},\ldots,\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{m}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{m},q}}},\nu\right),
+\]
+where $f_{k}$ are rational function and the denominator are only
+the power of $\Delta^{T}\Delta$, $1\le l_{i}\le k$, and $l_{i}\le t_{l_{i},j}\le C_{k}<\infty$. \end{lem}
+\begin{proof}
+We prove this lemma use mathematical induction. When $u=2$, by \eqref{expression-fisher-inf-mat}
+below, we have 
+\[
+\nabla^{2}\hat{l}\left(\theta\right)=f_{2}\left(\frac{1}{n}\sum_{i=1}^{n}\frac{\left(X_{ij}-\theta_{j}\right)\left(X_{is}-\theta_{s}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{2}},\nu\right).
+\]
+Suppose for $u=k$, we have 
+\[
+\nabla^{k}\hat{l}\left(\theta\right)=f_{k}\left(\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{1}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{1},1}}},\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{1}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{1},2}}},\ldots,\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{m}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{m},q}}},\nu\right).
+\]
+When $u=k+1$, for any $v=1,2,\ldots,p$, 
+\[
+\frac{\partial\nabla^{k}\hat{l}\left(\theta\right)}{\partial\theta_{v}}=\nabla f_{k}\frac{\partial}{\partial\theta_{v}}\left(\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{1}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{1},1}}},\ldots,\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l_{m}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t_{l_{m},q}}},\nu\right).
+\]
+For any $l$ and $t$ , 
+\begin{eqnarray*}
+ &  & \frac{\partial}{\partial\theta_{v}}\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t}}\\
+ & = & \frac{1}{n}\sum_{i=1}^{n}\frac{1}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{2t}}\Bigg\{-\sum_{s=1}^{l}\delta_{j_{s}v}\prod_{r\neq s}\left(X_{ij_{r}}-\theta_{j_{r}}\right)\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t}-\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s}}\right)\\
+ &  & \times t\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t-1}\left[\sum_{h=1}^{p}\frac{\partial\nu_{h}}{\partial\theta_{t}}\left(X_{ih}-\theta_{h}\right)-\nu_{v}\right]\Bigg\}\\
+ & = & -\sum_{s=1}^{l}\delta_{j_{s}v}\left\{ \frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{r\neq s}\left(X_{ij_{r}}-\theta_{j_{r}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t}}\right\} -t\sum_{h=1}^{p}\frac{\partial\nu_{h}}{\partial\theta_{t}}\left\{ \frac{1}{n}\sum_{i=1}^{n}\frac{\left(X_{ih}-\theta_{h}\right)\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t+1}}\right\} \\
+ &  & +t\nu_{v}\left\{ \frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t+1}}\right\} ,
+\end{eqnarray*}
+which is still a smooth function of $\frac{1}{n}\sum_{i=1}^{n}\frac{\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s}}\right)}{\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]^{t}}$,
+and the denominator is only introduced by term $\frac{\partial\nu}{\partial\theta}$,
+which contain only $\Delta^{T}\Delta$. Note that the gradient of
+a rational function $f_{k}$ is still a rational function. Let $C_{k+1}=C_{k}+1$.
+Then the statement holds when $u=k+1$, by mathematical induction,
+it also holds for any $k$. 
+\end{proof}
+By \lemref{control-higher-order-derivative-l}, when evaluated at
+$\theta=\overline{X}$, since $\nu\left(\overline{X}\right)=0$, then
+\[
+\nabla^{k}\hat{l}\left(\overline{X}\right)=f_{k}\left(\frac{1}{n}\sum_{i=1}^{n}\prod_{s=1}^{l_{1}}\left(X_{ij_{s}}-\theta_{j_{s}}\right),\ldots,\frac{1}{n}\sum_{i=1}^{n}\prod_{s=1}^{l_{m}}\left(X_{ij_{s}}-\theta_{j_{s}}\right)\right).
+\]
+\begin{comment}
+cut paste to other place
+\end{comment}
+By assumption \enuref{finite-moment-sample} and SLLN, when $n\rightarrow\infty$,
+\[
+\frac{1}{n}\sum_{i=1}^{n}\prod_{s=1}^{l}\left(X_{ij_{s}}-\overline{X}_{j_{s}}\right)\rightarrow E\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s},0}\right)<\infty,\ascv.
+\]
+\begin{comment}
+not enough for higher order derivative to be finite, need some properties
+for f\_k.
+\end{comment}
+By the smoothness of $f_{k}$ , for any $\varepsilon$, there exist
+a sufficient large $N_{\left(k\right)}$, such that for any $n>N_{\left(k\right)}$,
+\[
+\left|\nabla^{k}\hat{l}\left(\overline{X}\right)-f_{k}\left(E\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s},0}\right)\right)\right|<\varepsilon,\ascv.
+\]
+By smoothness of $\nabla^{k}\hat{l}\left(\theta\right)$, there exist
+a $\delta>0$, such that for any $\left|B\left(\theta-\overline{X}\right)\right|<\delta$,
+\[
+\left|\nabla^{k}\hat{l}\left(\theta\right)-\nabla^{k}\hat{l}\left(\overline{X}\right)\right|<\varepsilon.
+\]
+Hence, 
+\[
+\left|\nabla^{k}\hat{l}\left(\theta\right)-f_{k}\left(E\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s},0}\right)\right)\right|\le\left|\nabla^{k}\hat{l}\left(\overline{X}\right)-f_{k}\left(E\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s},0}\right)\right)\right|+\left|\nabla^{k}\hat{l}\left(\theta\right)-\nabla^{k}\hat{l}\left(\overline{X}\right)\right|<2\varepsilon.
+\]
+Note that $f_{k}$ is a rational function and the denominator contains
+only the power of $\Delta^{T}\Delta$, then there exists a constant
+$M_{\left(k\right)}$, such that $\left|f_{k}\left(E\prod_{s=1}^{l}\left(X_{ij_{s}}-\theta_{j_{s},0}\right)\right)\right|<M_{\left(k\right)}.$
+Therefore, 
+\[
+M_{\left(k\right)}-2\varepsilon<\nabla^{k}\hat{l}\left(\theta\right)<M_{\left(k\right)}+2\varepsilon.
+\]
+Particularly, we can compute $\nabla^{2}\hat{l}\left(\overline{X}\right)=n\left[\sum_{i=1}^{n}\left(X_{i}-\overline{X}\right)^{2}\right]^{-1}$,
+which is a positive definite matrix with probability $1$ in $P_{X}^{n}$
+by assumption \enuref{pd-sample-var} . 
+\begin{lem}
+\label{lem:near-mean-2nd-order-bound}Under the assumption \enuref{pd-sample-var},there
+exists a $\delta_{1}>0$, such that 
+\[
+\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\theta\right)-\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\overline{X}\right)\le-\frac{1}{4}Y^{T}Y,
+\]
+for any $\theta\in\left\{ \left|B\left(\theta-\overline{X}\right)\right|\le\delta_{1}\right\} \cap H_{n}$
+. \end{lem}
+\begin{proof}
+By Taylor expansion, 
+\begin{eqnarray*}
+\frac{1}{n}\left(\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\theta\right)-\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\overline{X}\right)\right) & = & \left(\nabla\hat{l}\left(\overline{X}\right)\right)^{T}\left(\theta-\overline{X}\right)+\frac{1}{2}\left(\theta-\overline{X}\right)^{T}\nabla^{2}\hat{l}\left(\theta^{*}\right)\left(\theta-\overline{X}\right),
+\end{eqnarray*}
+where $\left|\theta^{*}-\overline{X}\right|\le\left|\theta-\overline{X}\right|$.
+By \lemref{mean-max-el}, the first term in above equation is zero.
+By \lemref{control-higher-order-derivative-l}, we know that $\nabla^{2}\hat{l}\left(\theta\right)$
+is a continuous function in $\theta$. There exists a $\delta_{1}$,
+such that for any $\left|B\left(\theta^{*}-\overline{X}\right)\right|\le\left|B\left(\theta-\overline{X}\right)\right|<\delta_{1}$,
+\[
+\left|\left(\theta-\overline{X}\right)^{T}\nabla^{2}\hat{l}\left(\theta^{*}\right)\left(\theta-\overline{X}\right)+\left|B\left(\theta-\overline{X}\right)\right|^{2}\right|<\frac{1}{2}\left|B\left(\theta-\overline{X}\right)\right|^{2},
+\]
+hence $\left(\theta-\overline{X}\right)^{T}\nabla^{2}\hat{l}\left(\theta^{*}\right)\left(\theta-\overline{X}\right)<-2^{-1}\left|B\left(\theta-\overline{X}\right)\right|^{2}$.
+Therefore, 
+\[
+\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\theta\right)-\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\overline{X}\right)<\frac{1}{2}\times\frac{1}{2}\left|\sqrt{n}B\left(\theta-\overline{X}\right)\right|^{2}=\frac{1}{4}Y^{T}Y.
+\]
+
+\end{proof}
+
+\section{bell shape of the logarithm of empirical likelihood}
+
+If we want the expansion of posterior is uniform on the parameter
+space, we do not only need the Taylor expansion around the sample
+mean, but also require controlling the value of posterior in the region
+far from sample mean. This can be achieved by showing empirical likelihood
+have ``bell'' shape around the sample mean. 
+\begin{lem}
+\label{lem:second-order-der-neg-def}Under the assumption \enuref{multv-diff-full-rank}
+and \enuref{finite-moment-sample}, $\frac{\partial^{2}\hat{l}\left(\theta\right)}{\partial\theta\partial\theta^{T}}$
+is negative definite almost surely in $P_{X}^{n}$. \end{lem}
+\begin{proof}
+For any $j=1,2,\ldots,p$, take the first derivative of logarithm
+of empirical likelihood,
+\begin{eqnarray*}
+\frac{\partial\hat{l}_{n}\left(\theta\right)}{\partial\theta_{j}} & = & \frac{1}{n}\frac{\partial}{\partial\theta_{j}}\sum_{i=1}^{n}\left[-\ln\left(1+\sum_{k=1}^{p}\nu_{k}\left(\theta\right)\left(X_{ik}-\theta_{k}\right)\right)\right]\\
+ & = & \sum_{i=1}^{n}\sum_{k=1}^{p}\frac{\partial\nu_{k}}{\partial\theta_{j}}\frac{X_{ik}-\theta_{k}}{n\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]}+\sum_{i=1}^{n}\frac{1}{n\left[1+\nu^{T}\left(X_{i}-\theta\right)\right]}\nu_{j}=\nu_{j}.
+\end{eqnarray*}
+Then the Hessian of logarithm of empirical likelihood is 
+\[
+\frac{\partial^{2}\hat{l}\left(\theta\right)}{\partial\theta^{T}\partial\theta}=\frac{\partial\nu}{\partial\theta}=-n\left(\Delta^{T}\Delta\right)^{-1}+n\left(\Delta^{T}\Delta\right)^{-1}\Delta^{T}W\nu^{T}.
+\]
+Note that 
+\[
+\Delta\nu=\left(\frac{\nu^{T}\left(X_{i}-\theta\right)}{1+\nu^{T}\left(X_{i}-\theta\right)}\right)_{i=1}^{n}=\left(1-\frac{1}{1+\lambda^{T}\left(X_{i}-\theta\right)}\right)_{i=1}^{n}=1_{n\times1}-nW,
+\]
+where $1_{n\times1}$ is a column vector with all entries are equal
+to 1, so 
+\[
+W=\frac{1}{n}\left(1_{n\times1}-\Delta\nu\right).
+\]
+ Replace $W$ in Hessian, 
+\begin{eqnarray*}
+\frac{\partial^{2}\hat{l}\left(\theta\right)}{\partial\theta^{T}\partial\theta} & = & n\left[-\left(\Delta^{T}\Delta\right)^{-1}+\left(\Delta^{T}\Delta\right)^{-1}\Delta^{T}\frac{1}{n}\left(1_{n\times1}-\Delta\nu\right)\nu^{T}\right]\\
+ & = & -n\left(\Delta^{T}\Delta\right)^{-1}+\left(\Delta^{T}\Delta\right)^{-1}\left(\Delta^{T}1_{n\times1}\right)-\left(\Delta^{T}\Delta\right)^{-1}\Delta^{T}\Delta\nu\nu^{T}.
+\end{eqnarray*}
+Also note that 
+\[
+\Delta^{T}1_{n\times1}=\left(\sum_{i=1}^{n}\frac{X_{ij}-\theta_{j}}{1+\nu^{T}\left(X_{i}-\theta\right)}\right)_{j=1}^{n}=0.
+\]
+Therefore,
+\begin{equation}
+\frac{\partial^{2}\hat{l}\left(\theta\right)}{\partial\theta^{T}\partial\theta}=-n\left(\Delta^{T}\Delta\right)^{-1}-\nu\nu^{T},\label{eq:expression-fisher-inf-mat}
+\end{equation}
+is obviously negative definite since in proof of \lemref{mul-el-smooth-lagrange-multp},
+we know that $\Delta$ has a full column rank. Particularly when $\theta=\overline{X}$,
+$\frac{\partial^{2}\hat{l}\left(\overline{X}\right)}{\partial\theta^{T}\partial\theta}=-\left[\frac{1}{n}\sum_{i=1}^{n}\left(X_{i}-\overline{X}\right)^{2}\right]^{-1}$. 
+\end{proof}
+Now we can control the tail part by the following lemma.
+\begin{lem}
+\label{lem:exponential-decay-tail}Under the assumption \enuref{multv-diff-full-rank},
+for any $\delta>0$, there exists an $\varepsilon>0$, $N_{2}$, and
+$D_{1}\subset\mathbb{R}^{p}$, $P_{X}^{n}\left(D_{1}\right)=1$, such
+that 
+\[
+\hat{l}\left(\theta\right)-\hat{l}\left(\overline{X}\right)\le-\varepsilon,\ascv,
+\]
+for any $\left|B\left(\theta-\overline{X}\right)\right|\ge\delta$
+and $\theta\in H_{n}$. \end{lem}
+\begin{proof}
+In the proof of \lemref{second-order-der-neg-def}, we know that $\nu\left(\overline{X}\right)=0$,
+thus $\hat{l}\left(\overline{X}\right)=-\log n$ and score function
+$\hat{l}'\left(\overline{X}\right)=\nu\left(\overline{X}\right)=0$.
+By strictly convexity of log empirical likelihood from \lemref{second-order-der-neg-def},
+we know that $\overline{X}$ is the unique maximal. Therefore, for
+any $\theta\neq\overline{X}$, $\hat{l}\left(\theta\right)<\hat{l}\left(\overline{X}\right)$.
+Note that the set 
+\[
+\left\{ \theta|\left|B\left(\theta-\overline{X}\right)\right|\ge\delta\right\} \cap H_{n}
+\]
+is a compact set, and $\hat{l}\left(\theta\right)$ is a continuous
+function, then there exists a $\theta^{*}\in\left\{ \theta|\left|B\left(\theta-\overline{X}\right)\right|\ge\delta\right\} \cap H_{n}$
+, such that for any $\theta\in\left\{ \theta|\left|B\left(\theta-\overline{X}\right)\right|\ge\delta\right\} \cap H_{n}$,
+\[
+\hat{l}\left(\theta\right)\le\hat{l}\left(\theta^{*}\right).
+\]
+Therefore, $\hat{l}\left(\theta\right)\le\hat{l}\left(\theta^{*}\right)<\hat{l}\left(\overline{X}\right)$,
+\[
+\hat{l}\left(\theta\right)-\hat{l}\left(\overline{X}\right)\le\hat{l}\left(\theta^{*}\right)-\hat{l}\left(\overline{X}\right)<0.
+\]
+Let $\varepsilon=\frac{1}{2}\left(\hat{l}\left(\overline{X}\right)-\hat{l}\left(\theta^{*}\right)\right)$,
+then we have 
+\[
+\hat{l}\left(\theta\right)-\hat{l}\left(\overline{X}\right)\le\hat{l}\left(\theta^{*}\right)-\hat{l}\left(\overline{X}\right)<\varepsilon.
+\]
+
+\end{proof}
+
+\section{expansion near the sample mean}
+
+After we control the tail of the posterior, the remaining work are
+solely based on smoothness of the log empirical likelihood and prior.
+Particularly the form of expansion polynomials are determined by the
+product of Taylor expansion of empirical likelihood and prior at sample
+mean. 
+\begin{lem}
+\label{lem:central-expansion-llik}%
+\begin{comment}
+need condition
+\end{comment}
+There exist a $\delta_{2}$, a constant $M_{1}$ and $N_{1}$, such
+that 
+\[
+\left|\int_{\left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\diff n^{-\frac{1}{2}}Y\right|\le M_{1}n^{-\frac{1}{2}\left(K+3\right)},\:\ascv.
+\]
+\end{lem}
+\begin{proof}
+First, we can choose $\delta_{2}$ small enough so that $\left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \subset H_{n}$.
+\begin{eqnarray*}
+ &  & \int_{\left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\diff n^{-\frac{1}{2}}Y\\
+ & = & \int_{\left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} }\exp\left(\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\theta\right)-\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\overline{X}\right)\right)\\
+ &  & \left[\exp\left(\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)-\sum_{i=1}^{n}\left(\ln\hat{w}_{i}\left(\theta\right)-\ln\hat{w}_{i}\left(\overline{X}\right)\right)\right)-1\right]\diff n^{-\frac{1}{2}}Y.
+\end{eqnarray*}
+By \lemref{near-mean-2nd-order-bound}, and Taylor expansion, the
+above equation can be bounded by 
+\begin{eqnarray*}
+ &  & \int_{\left\{ \left|B\left(\theta-\overline{X}\right)\right|\le\delta_{2}\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)\left|\exp\left(-\frac{n^{-\frac{K+2}{2}}}{\left(K+4\right)!}\left[\left(\theta-\overline{X}\right)\nabla\right]^{K+4}\hat{l}\left(\theta^{*}\right)\right)-1\right|\diff n^{-\frac{1}{2}}Y\\
+ & = & n^{-\frac{1}{2}}\int_{\left\{ \sqrt{Y^{T}Y}\le\delta_{2}\sqrt{n}\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)\left|\exp\left(-\frac{n^{-\frac{K+2}{2}}}{\left(K+4\right)!}\left(Y^{T}B^{-T}\nabla\right)^{K+4}\hat{l}\left(\theta^{*}\right)\right)-1\right|\diff Y.
+\end{eqnarray*}
+By \lemref{control-higher-order-derivative-l}, we know that $\nabla^{K+4}\hat{l}\left(\theta^{*}\right)$
+are bounded by some constants. Note that for any $Y$, and any vector
+$a$, there exists a constant $C_{1}$, such that 
+\begin{equation}
+\left(Y^{T}a\right)^{2}\le C_{1}\left(Y^{T}Y\right),\label{eq:average-inequality}
+\end{equation}
+so we can bounded the above equation by 
+\[
+n^{-\frac{1}{2}}\int_{\left\{ \sqrt{Y^{T}Y}\le\delta_{2}\sqrt{n}\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)\left(\exp\left(-n^{-\frac{K+2}{2}}C_{3}\left(Y^{T}Y\right)^{\frac{K+4}{2}}\right)-1\right)\diff Y,
+\]
+where $C_{3}=C_{1}^{\frac{K+4}{2}}$. Denote the above integrand to
+be $F\left(Y,\sqrt{n}\right)$. We can the inequality in this lemma
+if we can prove the following 
+\begin{equation}
+\lim_{n\rightarrow\infty}\frac{n^{-\frac{1}{2}}\int_{\left\{ \sqrt{Y^{T}Y}\le\delta_{2}\sqrt{n}\right\} }F\left(Y,\sqrt{n}\right)\diff Y}{n^{-\frac{1}{2}\left(K+3\right)}}=C_{2},\label{eq:lim-rhs-vs-lfs-inequality}
+\end{equation}
+for some constant $C_{2}<\infty$. Let $t=\sqrt{n}$, and relax $t\in\mathbb{R}^{+}$.
+The the above formula can be written as 
+\[
+\frac{\int_{\left\{ \sqrt{Y^{T}Y}\le\delta_{2}t\right\} }F\left(Y,t\right)\diff Y}{t^{-K-2}}.
+\]
+Take the derivatives of both numerator and denominator with respect
+to $t$. For the denominator $\left(t^{-K-2}\right)'=-\left(K+2\right)t^{-K-3}.$
+For the numerator, we change to $n$ dimensional spherical coordinate
+system, 
+\begin{eqnarray*}
+Y_{1} & = & r\cos\left(\varphi_{1}\right),\\
+Y_{2} & = & r\sin\left(\varphi_{1}\right)\cos\left(\varphi_{2}\right),\\
+ & \vdots\\
+Y_{p} & = & r\sin\left(\varphi_{1}\right)\sin\left(\varphi_{2}\right)\cdots\sin\left(\varphi_{p-1}\right).
+\end{eqnarray*}
+So the numerator can be written as 
+\begin{eqnarray*}
+ &  & \int_{\left\{ r\le\delta_{2}t\right\} }\exp\left(-\frac{r^{2}}{4}\right)\left(\exp\left(-C_{3}t^{-K-2}r^{K+4}\right)-1\right)\\
+ &  & \times r^{p-1}\sin^{p-2}\left(\varphi_{1}\right)\sin^{p-3}\left(\varphi_{2}\right)\cdots\sin\left(\varphi_{p-2}\right)\diff r\diff\varphi_{1}\cdots\diff\varphi_{p-1}\\
+ & = & \int_{0}^{2\pi}\diff\varphi_{p-1}\int_{0}^{\pi}\sin^{p-2}\left(\varphi_{1}\right)\diff\varphi_{1}\cdots\int_{0}^{\pi}\sin\left(\varphi_{p-2}\right)\diff\varphi_{p-2}\\
+ &  & \times\int_{0}^{\delta_{2}t}\exp\left(-\frac{r^{2}}{4}\right)\left(\exp\left(-C_{3}t^{-K-4}r^{K+4}\right)-1\right)r^{p-1}\diff r\\
+ & \le & 2\pi\left(\pi\right)^{p-2}\int_{0}^{\delta_{2}t}\exp\left(-\frac{r^{2}}{4}\right)\left(\exp\left(-C_{3}t^{-K-2}r^{K+4}\right)-1\right)r^{p-1}\diff r\\
+ & = & 2\pi^{p-1}\int_{0}^{\delta_{2}t}\exp\left(-\frac{r^{2}}{4}\right)\left(\exp\left(-C_{3}t^{-K-2}r^{K+4}\right)-1\right)r^{p-1}\diff r.
+\end{eqnarray*}
+ 
+\begin{eqnarray*}
+ &  & \frac{\diff}{\diff t}\int_{0}^{\delta_{2}t}\exp\left(-\frac{r^{2}}{4}\right)\left(\exp\left(-C_{3}t^{-K-2}r^{K+4}\right)-1\right)r^{p-1}\diff r\\
+ & = & \int_{0}^{\delta_{2}t}-\left(K+2\right)t^{-K-3}\left(-C_{3}r^{K+4}\right)\exp\left(-\frac{r^{2}}{4}\right)\exp\left(-C_{3}t^{-K-2}r^{K+4}\right)r^{p-1}\diff r\\
+ &  & +\exp\left(-\frac{\delta_{2}^{2}t^{2}}{4}\right)\left(\exp\left(-C_{3}t^{-K-2}\left(\delta_{2}t\right)^{K+4}\right)-1\right)\\
+ & \le & C_{3}\left(K+2\right)t^{-K-3}\int_{0}^{\delta_{2}t}r^{K+p+3}\exp\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{4}\right)\left|\alpha_{h}\left(Y,n\right)\right|\diff Y\\
+ &  & \left(-\left(\frac{1}{4}-C_{3}t^{-K-2}r^{K+2}\right)r^{2}\right)\diff r+\exp\left(-\left(\frac{1}{4}-C_{3}\delta_{2}^{K+2}\right)\delta_{2}^{2}t^{2}\right)-\exp\left(-\frac{\delta_{2}^{2}t^{2}}{4}\right).
+\end{eqnarray*}
+If 
+\[
+\delta_{2}<\sqrt[K+2]{\frac{1}{4C_{3}}},
+\]
+then 
+\[
+\frac{1}{4}-C_{3}\delta_{2}^{K+2}>0,
+\]
+hence 
+\[
+\lim_{t\rightarrow+\infty}\frac{\exp\left(-\left(\frac{1}{4}-C_{3}\delta_{2}^{K+2}\right)\delta_{2}^{2}t^{2}\right)-\exp\left(-\frac{\delta_{2}^{2}t^{2}}{4}\right)}{-\left(K+2\right)t^{-K-3}}=0.
+\]
+For the first term in derivative of numerator, we have for any $t>0$.
+\begin{eqnarray*}
+ &  & \int_{0}^{\delta_{2}t}r^{K+p+3}\exp\left(-\left(\frac{1}{4}-C_{3}t^{-K-2}r^{K+2}\right)r^{2}\right)\diff r\\
+ & \le & \int_{0}^{\delta_{2}t}r^{K+p+3}\exp\left(-\left(\frac{1}{4}-C_{3}\delta_{2}^{K+2}\right)r^{2}\right)\diff r\\
+ & \le & \int_{\mathbb{R}}\left|r\right|^{K+p+3}\exp\left(-\left(-\frac{1}{4}-C_{3}\delta_{2}^{K+2}\right)r^{2}\right)\diff r<+\infty.
+\end{eqnarray*}
+Therefore, there exists a constant $C_{2}$, such that 
+\begin{eqnarray*}
+ &  & \lim_{t\rightarrow+\infty}\frac{C_{3}\left(K+2\right)t^{-K-3}\int_{0}^{\delta_{2}t}r^{K+p+3}\exp\left(-\left(\frac{1}{4}-C_{3}t^{-K-2}r^{K+2}\right)r^{2}\right)\diff r}{-\left(K+2\right)t^{-K-3}}\\
+ & = & -C_{3}\lim_{t\rightarrow+\infty}\int_{0}^{\delta_{2}t}r^{K+p+3}\exp\left(-\left(\frac{1}{4}-C_{3}t^{-K-2}r^{K+2}\right)r^{2}\right)\diff r=C_{2}.
+\end{eqnarray*}
+By L'Hostiple's rule, we have \eqref{lim-rhs-vs-lfs-inequality} holds,
+and therefore, the lemma holds.\end{proof}
+\begin{lem}
+\label{lem:central-expansion-post-prod}%
+\begin{comment}
+need change the subscript of N, M, C
+\end{comment}
+Under the assumption \enuref{multv-diff-full-rank}, \enuref{finite-moment-sample}
+and \enuref{smooth-piror}, there exist a $\delta_{2}>0$, a constant
+$M_{2}$ and $N_{2}$, such that 
+\begin{equation}
+\left|\int_{\left\{ \left|B\left(\theta-\overline{X}\right)\right|\le\delta\right\} \cap H_{n}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)\diff n^{-\frac{1}{2}}Y\right|\le M_{2}n^{-\frac{1}{2}\left(K+2\right)},\:\ascv.\label{eq:central-exp-post}
+\end{equation}
+\end{lem}
+\begin{proof}
+Apply Taylor expansion to $\hat{l}\left(\theta\right)$ around $\overline{X}$,
+for any $\theta\in H_{n}$, there exists a $\theta^{*}$satisfies
+$\left|B\left(\theta^{*}-\overline{X}\right)\right|\le\left|B\left(\theta-\overline{X}\right)\right|$,
+such that, 
+\begin{eqnarray*}
+\hat{l}\left(\theta\right) & = & \hat{l}\left(\overline{X}\right)+\nabla\hat{l}\left(\overline{X}\right)\left(\theta-\overline{X}\right)+\frac{1}{2}\left(\theta-\overline{X}\right)^{T}\frac{\partial^{2}\hat{l}\left(\overline{X}\right)}{\partial\theta^{T}\partial\theta}\left(\theta-\overline{X}\right)+\sum_{k=3}^{K+3}\frac{1}{k!}\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{k}\hat{l}\left(\overline{X}\right)\\
+ &  & +\frac{1}{\left(K+4\right)!}\left[\left(\theta-\overline{X}\right)\nabla\right]^{K+4}\hat{l}\left(\theta^{*}\right)\\
+ & = & \hat{l}\left(\overline{X}\right)-\frac{1}{2}Y^{T}Yn^{-1}+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k}{2}}++\frac{1}{\left(K+4\right)!}\left[\left(\theta-\overline{X}\right)\nabla\right]^{K+4}\hat{l}\left(\theta^{*}\right).
+\end{eqnarray*}
+Now we have 
+\begin{eqnarray*}
+ &  & \left|\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)\right|\\
+ &  & \le\left|\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho_{K}\left(\theta\right)\right|\\
+ &  & +\left|\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho_{K}\left(\theta\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)\right|\\
+ &  & \le\left|\rho_{K}\left(\theta\right)\right|\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\overline{X}\right)\right)\right)\left|\exp\left(n\left(\hat{l}\left(\overline{X}\right)-\frac{1}{2}Y^{T}Yn^{-1}+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}-\hat{l}\left(\theta\right)\right)\right)-1\right|\\
+ &  & +\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\overline{X}\right)\right)\right)\left|\rho_{K}\left(\theta\right)-\rho\left(\theta\right)\right|.
+\end{eqnarray*}
+For the first part of the above formula, by \lemref{central-expansion-llik},
+we have it to be bounded by 
+\[
+\max_{\theta\in\left\{ \left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}\right\} }\rho_{K}\left(\theta\right)M_{1}n^{-\frac{1}{2}\left(K+3\right)}.
+\]
+For the second part, by \lemref{near-mean-2nd-order-bound}, Taylor
+expansion in $\rho\left(\theta\right)$, and \eqref{average-inequality},
+we have the upper bound to be 
+\begin{eqnarray*}
+ &  & \int_{\left\{ Y^{T}Y\le\delta_{2}^{2}n\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)\frac{n^{-\frac{K+1}{2}}}{\left(K+1\right)!}\left(Y^{T}B^{-T}\nabla\right)^{K+1}\rho\left(\theta^{*}\right)\diff n^{-\frac{1}{2}}Y\\
+ & \le & \frac{1}{\left(K+1\right)!}\max_{\theta\in\left\{ \left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}\right\} }\left|\nabla^{K+1}\rho\left(\theta^{*}\right)\right|\int_{\left\{ Y^{T}Y\le\delta_{2}^{2}n\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)C_{1}^{\frac{K+1}{2}}\left(Y^{T}Y\right)^{\frac{K+1}{2}}\diff Yn^{-\frac{K+2}{2}}\\
+ & \le & \frac{C_{1}^{\frac{K+1}{2}}}{\left(K+1\right)!}\max_{\theta\in\left\{ \left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}\right\} }\left|\nabla^{K+1}\rho\left(\theta\right)\right|\int_{\mathbb{R}^{p}}\exp\left(-\frac{Y^{T}Y}{4}\right)\left(Y^{T}Y\right)^{\frac{K+1}{2}}\diff Yn^{-\frac{K+2}{2}}\\
+ & = & \frac{C_{1}^{\frac{K+1}{2}}}{\left(K+1\right)!}\max_{\theta\in\left\{ \left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}\right\} }\left|\nabla^{K+1}\rho\left(\theta\right)\right|2\pi^{p-1}\int_{0}^{\infty}\exp\left(-\frac{r^{2}}{4}\right)r^{K+1}r^{p-1}\diff rn^{-\frac{K+2}{2}}\\
+ & = & \left[\frac{2\pi^{p-1}C_{1}^{\frac{K+1}{2}}}{\left(K+1\right)!}\max_{\theta\in\left\{ B\left(\theta-\overline{X}\right)\le\delta_{2}\right\} \cap H_{n}}\left|\nabla^{K+1}\rho\left(\theta\right)\right|\int_{0}^{\infty}r^{p+K}\exp\left(-\frac{r^{2}}{4}\right)\diff r\right]n^{-\frac{K+2}{2}}
+\end{eqnarray*}
+Since $p\ge1$, we have \eqref{central-exp-post} holds.
+\end{proof}
+
+\section{proof of the main theorem}
+
+We first intuitively derive %
+\begin{comment}
+add expansion polynomial
+\end{comment}
+. First, we expand 
+\begin{eqnarray*}
+ &  & \exp\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\\
+ & = & \sum_{i=0}^{K+1}\frac{1}{i!}\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)^{i}\\
+ & = & 1+\sum_{i=1}^{K+1}\frac{1}{i!}\sum_{\sum_{u=3}^{K+3}m_{u,i}=i}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}n^{-\frac{1}{2}\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)}.
+\end{eqnarray*}
+Then we product the above expansion by $\rho_{K}$, 
+\begin{eqnarray*}
+ &  & \exp\left(\sum_{k=3}^{K+3}\frac{1}{k!}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)\\
+ & = & \left[1+\sum_{i=1}^{K+1}\frac{1}{i!}\sum_{\sum_{u=3}^{K+3}m_{u,i}=i}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}n^{-\frac{1}{2}\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)}\right]\\
+ &  & \left(\rho\left(\overline{X}\right)+\sum_{j=1}^{K}\delta_{j}\rho n^{-\frac{j}{2}}\right)\\
+ & = & \rho\left(\overline{X}\right)+\sum_{j=1}^{K}\delta_{j}\rho n^{-\frac{j}{2}}+\rho\left(\overline{X}\right)\sum_{i=1}^{K+1}\frac{1}{i!}\\
+ &  & \sum_{\sum_{u=3}^{K+3}m_{u,i}=i}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}n^{-\frac{1}{2}\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)}\\
+ &  & +\left[\sum_{i=1}^{K+1}\frac{1}{i!}\sum_{\sum_{u=3}^{K+3}m_{u,i}=i}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}n^{-\frac{1}{2}\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)}\right]\sum_{j=1}^{K}\delta_{j}\rho n^{-\frac{j}{2}}.
+\end{eqnarray*}
+For the third term in above equation, we change the summation index.
+Let $\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)=h$. Note that for any
+$\sum_{u=3}^{K+3}m_{u,i}=i$, $i\le h\le i\left(K+1\right)$, $h/\left(K+1\right)\le i\le h$.
+Thus the third term summation can be rearranged as 
+\[
+\sum_{h=1}^{\left(K+1\right)^{2}}\left[\rho\left(\overline{X}\right)\sum_{\frac{h}{K+1}\le i\le h}\frac{1}{i!}\sum_{I_{i,h}}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}\right]n^{-\frac{h}{2}}.
+\]
+Similarly for the fourth term, let $\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)+j=h$,
+then the summation can be rearranged as 
+\[
+\sum_{h=2}^{\left(K+1\right)^{2}+K}\left[\sum_{j=1}^{h-1}\delta_{j}\rho\sum_{\frac{h-j}{K+1}\le i\le h-j}\frac{1}{i!}\sum_{I_{i,h-j}}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}\right]n^{-\frac{h}{2}}.
+\]
+We collect the same order term of $n$, and denote the summation of
+all the terms with order higher than $K$ to be $R_{K}\left(Y\right)$,
+then we get the product as 
+\begin{eqnarray*}
+ &  & \rho\left(\overline{X}\right)+\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)n^{-\frac{1}{2}}\\
+ &  & +\sum_{h=2}^{K}\left[\delta_{h}\rho+\sum_{j=0}^{h-1}\delta_{j}\rho\sum_{\frac{h-j}{K+1}\le i\le h-j}\frac{1}{i!}\sum_{I_{i,h-j}}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}\right]n^{-\frac{h}{2}}+R_{K}\left(Y\right).
+\end{eqnarray*}
+ Integral over any Borel set $A\cap H_{n}$, we can get the polynomial
+$P_{K}\left(A,n\right)$. Now we can prove the main theorem %
+\begin{comment}
+add ref to main theorem
+\end{comment}
+. 
+\begin{proof}
+Let $A_{1}=\left\{ \left|Y\right|_{2}\ge\delta_{2}\sqrt{n}\right\} $
+and $A_{2}=\left\{ \left|Y\right|_{2}<\delta_{2}\sqrt{n}\right\} $.
+Then 
+\begin{eqnarray*}
+ &  & \left|\int_{A\cap H_{n}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)\diff n^{-\frac{1}{2}}Y-P_{K}\left(A,n\right)\right|\\
+ & = & \left|\int_{A\cap H_{n}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \left|\int_{A\cap H_{n}\cap A_{1}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ &  & +\left|\int_{A\cap H_{n}\cap A_{2}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|.
+\end{eqnarray*}
+
+
+For the first term%
+\begin{comment}
+change the first second term ref into ref eq
+\end{comment}
+, by \lemref{exponential-decay-tail}, we have
+\begin{eqnarray*}
+ &  & \left|\int_{A\cap H_{n}\cap A_{1}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \int_{A\cap H_{n}\cap A_{1}}\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\overline{X}\right)\right)\right)\rho\left(\theta\right)\diff n^{-\frac{1}{2}}Y\\
+ &  & +\left|\int_{A\cap H_{n}\cap A_{1}}\exp\left(-\frac{Y^{T}Y}{4}-\frac{Y^{T}Y}{4}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \exp\left(-n\varepsilon\right)\int_{A\cap H_{n}\cap A_{1}}\rho\left(\theta\right)\diff B\left(\theta-\overline{X}\right)\\
+ &  & +\exp\left(-\frac{\delta_{2}^{2}n}{4}\right)\left|\int_{A\cap H_{n}\cap A_{1}}\exp\left(-\frac{Y^{T}Y}{4}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \exp\left(-n\varepsilon\right)\int_{\mathbb{R}}\rho\left(\theta\right)\diff B\left(\theta-\overline{X}\right)+\exp\left(-n\frac{\delta_{2}^{2}}{4}\right)\sum_{h=0}^{K}\left(\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{4}\right)\left|\alpha_{h}\left(Y,n\right)\right|\diff Y\right)n^{-\frac{h+1}{2}}.
+\end{eqnarray*}
+Note that the above terms are exponentially decreasing with respect
+to $n$, so there exists an $N_{3}$, and $M_{3}$, such that for
+any $n\ge N_{3}$, 
+\[
+\left|\int_{A\cap H_{n}\cap A_{1}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\le M_{3}n^{-\frac{K+2}{2}}.
+\]
+
+
+For the second term, by \lemref{central-expansion-post-prod}, we
+have 
+\begin{eqnarray*}
+ &  & \left|\int_{A\cap H_{n}\cap A_{2}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \left|\int_{A\cap H_{n}\cap A_{2}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\overline{X}\right)}\rho\left(\theta\right)-\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)\diff n^{-\frac{1}{2}}Y\right|\\
+ &  & +\left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & M_{2}n^{-\frac{K+2}{2}}\\
+ &  & +\left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|.
+\end{eqnarray*}
+For the second term of above, we add and subtract $R_{K}\left(Y\right)$
+in integrand, and by Taylor expansion, 
+\begin{eqnarray*}
+ &  & \left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)\rho_{K}\left(\theta\right)\left[\exp\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)-\sum_{i=0}^{K+1}\frac{1}{i!}\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)^{i}\right]\diff n^{-\frac{1}{2}}Y\right|\\
+ &  & +\left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)R_{K}\left(Y\right)\diff n^{-\frac{1}{2}}Y\right|\\
+ & = & \left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)\rho_{K}\left(\theta\right)\frac{1}{\left(K+2\right)!}\exp\left(L\right)\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)^{K+2}\diff n^{-\frac{1}{2}}Y\right|\\
+ &  & +\left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)R_{K}\left(Y\right)\diff n^{-\frac{1}{2}}Y\right|,
+\end{eqnarray*}
+where $\left|L\right|\le\left|\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right|$.
+We know that $R_{K}\left(Y\right)$ is a polynomial with order $n^{-\frac{1}{2}\left(K+1\right)}$,
+so there exists an $M_{3}$, such that 
+\[
+\left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)R_{K}\left(Y\right)\diff n^{-\frac{1}{2}}Y\right|\le M_{3}n^{-\frac{1}{2}\left(K+2\right)}.
+\]
+For the first term, 
+
+\begin{eqnarray}
+ &  & \left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)\rho_{K}\left(\theta\right)\frac{1}{\left(K+2\right)!}\exp\left(L\right)\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)^{K+2}\diff n^{-\frac{1}{2}}Y\right|\label{eq:1}\\
+ & \le & \frac{1}{\left(K+2\right)!}\left|\int_{A\cap H_{n}\cap A_{2}}\exp\left(-\frac{Y^{T}Y}{2}\right)\rho_{K}\left(\theta\right)\exp\left(\left|\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right|\right)\left(\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)^{K+2}\diff n^{-\frac{1}{2}}Y\right|\nonumber \\
+ & = & \frac{1}{\left(K+2\right)!}\Bigg|\int_{A\cap H_{n}\cap A_{2}}\rho_{K}\left(\theta\right)\exp\left(-n\left\{ \frac{\left(\theta-\overline{X}\right)^{T}B^{2}\left(\theta-\overline{X}\right)}{2}-\left|\sum_{k=3}^{K+3}\frac{\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{k}\hat{l}}{k!}\right|\right\} \right)\nonumber \\
+ &  & \left\{ n\sum_{k=3}^{K+3}\frac{\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{k}\hat{l}}{k!}\right\} ^{K+2}\diff B\left(\theta-\overline{X}\right)\Bigg|.\nonumber 
+\end{eqnarray}
+We need $\delta_{2}$sufficiently small, so that there exist an $C_{4}$
+and $C_{5}$, such that 
+\begin{eqnarray*}
+\frac{\left(\theta-\overline{X}\right)^{T}B^{2}\left(\theta-\overline{X}\right)}{2}-\left|\sum_{k=3}^{K+3}\frac{\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{k}\hat{l}}{k!}\right| & \ge & C_{4}\left(\theta-\overline{X}\right)^{T}B^{2}\left(\theta-\overline{X}\right),\\
+\sum_{k=3}^{K+3}\frac{\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{k}\hat{l}}{k!} & \le & C_{5}\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{3}\hat{l}.
+\end{eqnarray*}
+Hence, \eqref{1} can be bounded by 
+\begin{eqnarray*}
+ &  & \frac{n^{K+2}}{\left(K+2\right)!}\left|\int_{A\cap H_{n}\cap A_{n}}\exp\left(-nC_{4}\left(\theta-\overline{X}\right)^{T}B^{2}\left(\theta-\overline{X}\right)\right)\left\{ C_{5}\left[\left(\theta-\overline{X}\right)^{T}\nabla\right]^{3}\hat{l}\right\} ^{K+2}\diff B\left(\theta-\overline{X}\right)\right|\\
+ & \le & \frac{C_{5}^{K+2}n^{K+2}}{\left(K+2\right)!}\left|\int_{A\cap H_{n}}\exp\left(-C_{4}Y^{T}Y\right)\left(\delta_{3}\hat{l}\right)^{K+2}n^{-\frac{3\left(K+2\right)}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
+ & \le & \frac{C_{5}^{K+2}}{\left(K+2\right)!}\left|\int_{A\cap H_{n}}\exp\left(-C_{4}Y^{T}Y\right)\left(\delta_{3}\hat{l}\right)^{K+2}\diff Y\right|n^{-\frac{K+3}{2}}.
+\end{eqnarray*}
+Add all the parts together, we get the inequality in %
+\begin{comment}
+add ref to main theorem
+\end{comment}
+.
+\end{proof}

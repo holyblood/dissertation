@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.13)  27 OCT 2015 22:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.13)  3 NOV 2015 03:48
 entering extended mode
 **D:/学习/数学/论文/博士/ABC/dissertation/Dissertation.tex
 (D:/学习/数学/论文/博士/ABC/dissertation/Dissertation.tex
@@ -498,30 +498,30 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 \@float@every@algorithm=\toks32
 \c@algorithm=\count103
-Package refstyle Info: New reference template \newref{sub} on input line 33.
-Package refstyle Info: \subkey created on input line 33.
-Package refstyle Info: \sublabel created on input line 33.
-Package refstyle Info: \subref created on input line 33.
-Package refstyle Info: \Subref created on input line 33.
-Package refstyle Info: \subrangeref created on input line 33.
-Package refstyle Info: \Subrangeref created on input line 33.
-Package refstyle Info: \subpageref created on input line 33.
-Package refstyle Info: New reference template \newref{thm} on input line 36.
-Package refstyle Info: \thmkey created on input line 36.
-Package refstyle Info: \thmlabel created on input line 36.
-Package refstyle Info: \thmref created on input line 36.
-Package refstyle Info: \Thmref created on input line 36.
-Package refstyle Info: \thmrangeref created on input line 36.
-Package refstyle Info: \Thmrangeref created on input line 36.
-Package refstyle Info: \thmpageref created on input line 36.
-Package refstyle Info: New reference template \newref{lem} on input line 39.
-Package refstyle Info: \lemkey created on input line 39.
-Package refstyle Info: \lemlabel created on input line 39.
-Package refstyle Info: \lemref created on input line 39.
-Package refstyle Info: \Lemref created on input line 39.
-Package refstyle Info: \lemrangeref created on input line 39.
-Package refstyle Info: \Lemrangeref created on input line 39.
-Package refstyle Info: \lempageref created on input line 39.
+Package refstyle Info: New reference template \newref{sub} on input line 30.
+Package refstyle Info: \subkey created on input line 30.
+Package refstyle Info: \sublabel created on input line 30.
+Package refstyle Info: \subref created on input line 30.
+Package refstyle Info: \Subref created on input line 30.
+Package refstyle Info: \subrangeref created on input line 30.
+Package refstyle Info: \Subrangeref created on input line 30.
+Package refstyle Info: \subpageref created on input line 30.
+Package refstyle Info: New reference template \newref{thm} on input line 33.
+Package refstyle Info: \thmkey created on input line 33.
+Package refstyle Info: \thmlabel created on input line 33.
+Package refstyle Info: \thmref created on input line 33.
+Package refstyle Info: \Thmref created on input line 33.
+Package refstyle Info: \thmrangeref created on input line 33.
+Package refstyle Info: \Thmrangeref created on input line 33.
+Package refstyle Info: \thmpageref created on input line 33.
+Package refstyle Info: New reference template \newref{lem} on input line 36.
+Package refstyle Info: \lemkey created on input line 36.
+Package refstyle Info: \lemlabel created on input line 36.
+Package refstyle Info: \lemref created on input line 36.
+Package refstyle Info: \Lemref created on input line 36.
+Package refstyle Info: \lemrangeref created on input line 36.
+Package refstyle Info: \Lemrangeref created on input line 36.
+Package refstyle Info: \lempageref created on input line 36.
 \c@lem=\count104
 \c@assumption=\count105
 \c@defn=\count106
@@ -558,6 +558,9 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 ))
 (D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.aux
+(D:\学习\数学\论文\博士\ABC\dissertation\litRev.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\belUni.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\belMul.aux
 
 LaTeX Warning: Label `eq:constraint-el' multiply defined.
 
@@ -609,6 +612,10 @@ LaTeX Warning: Label `eq:two-quotient-close' multiply defined.
 
 LaTeX Warning: Label `eq:quotient-serier-approx' multiply defined.
 
+) (D:\学习\数学\论文\博士\ABC\dissertation\elOptPrice.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\abcsdr.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\proofBelUni.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\proofBelMul.aux
 
 LaTeX Warning: Label `lem:control-higher-order-derivative-l' multiply defined.
 
@@ -621,42 +628,42 @@ LaTeX Warning: Label `eq:central-exp-post' multiply defined.
 
 LaTeX Warning: Label `eq:1' multiply defined.
 
-)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 113.
- ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
+) (D:\学习\数学\论文\博士\ABC\dissertation\proofABCSDR.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 96.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 96.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Try loading font information for U+msa on input line 96.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 113.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 96.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+esint on input line 113.
-
+LaTeX Font Info:    Try loading font information for U+esint on input line 96.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\esint\uesint.fd"
 File: uesint.fd 
@@ -674,24 +681,25 @@ File: uesint.fd
 \MPnumerator=\count122
 \makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks34
-)
+) (D:\学习\数学\论文\博士\ABC\dissertation\litRev.tex
 Chapter 1
 
-Overfull \hbox (23.54156pt too wide) detected at line 147
+Overfull \hbox (23.54156pt too wide) detected at line 32
 \OML/cmm/m/it/10 R [] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 ;
  []
 
 [1
 
 
+
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
-Overfull \hbox (2.72276pt too wide) in paragraph at lines 465--479
+Overfull \hbox (2.72276pt too wide) in paragraph at lines 350--364
  \T1/cmr/bx/n/10 1.3.1.Different Sam-pling Schemes.[] \T1/cmr/m/n/10 In prac-ti
 ce, if one uses non-informative
  []
 
 [6]
-Overfull \hbox (1.70453pt too wide) in paragraph at lines 549--562
+Overfull \hbox (1.70453pt too wide) in paragraph at lines 434--447
 \T1/cmr/m/n/10 i-bra-tion on $\OML/cmm/m/it/10 "$ \T1/cmr/m/n/10 is equiv-a-len
 t to cal-i-bra-tion of $\OML/cmm/m/it/10 k$\T1/cmr/m/n/10 . Their re-sults fa-v
 or $\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N[]$\T1/cmr/m/n/10 ,
@@ -700,35 +708,35 @@ or $\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N[]$\T1/cmr/m/n/10 ,
 
 [7]
 
-LaTeX Warning: Command \: invalid in math mode on input line 624.
+LaTeX Warning: Command \: invalid in math mode on input line 509.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 624.
+LaTeX Warning: Command \: invalid in math mode on input line 509.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 624.
+LaTeX Warning: Command \: invalid in math mode on input line 509.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 624.
+LaTeX Warning: Command \: invalid in math mode on input line 509.
 
 [8]
 
-LaTeX Warning: Command \! invalid in math mode on input line 682.
+LaTeX Warning: Command \! invalid in math mode on input line 567.
 
 
-LaTeX Warning: Command \! invalid in math mode on input line 682.
+LaTeX Warning: Command \! invalid in math mode on input line 567.
 
 
-Overfull \hbox (6.53981pt too wide) detected at line 683
+Overfull \hbox (6.53981pt too wide) detected at line 568
 [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10  [][]  \OT1/cmr/m/n/10 + \OML/cmm/m/it
 /10 E[] [][] :
  []
 
-[9] [10] [11]
+[9] [10]) [11] (D:\学习\数学\论文\博士\ABC\dissertation\belUni.tex
 Chapter 2
 
 Package natbib Warning: Citation `cornuet2008inferring' on page 12 undefined on
- input line 861.
+ input line 52.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -736,138 +744,140 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [12
 
 
+
+
 ]
 
 Package natbib Warning: Citation `clarke2010reference' on page 13 undefined on 
-input line 872.
+input line 63.
 
 
 Package natbib Warning: Citation `godambe1960optimum' on page 13 undefined on i
-nput line 872.
+nput line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 886.
+LaTeX Warning: Command \: invalid in math mode on input line 77.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 886.
+LaTeX Warning: Command \: invalid in math mode on input line 77.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 886.
+LaTeX Warning: Command \: invalid in math mode on input line 77.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 886.
+LaTeX Warning: Command \: invalid in math mode on input line 77.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 896.
+LaTeX Warning: Command \: invalid in math mode on input line 87.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 896.
+LaTeX Warning: Command \: invalid in math mode on input line 87.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 905.
+LaTeX Warning: Command \: invalid in math mode on input line 96.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 905.
+LaTeX Warning: Command \: invalid in math mode on input line 96.
 
 [13] [14]
 
-LaTeX Warning: Command \: invalid in math mode on input line 1004.
+LaTeX Warning: Command \: invalid in math mode on input line 195.
 
 
 LaTeX Font Warning: Font shape `T3/cmr/m/it' in size <10> not available
-(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 1004.
+(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 195.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1004.
+LaTeX Warning: Command \: invalid in math mode on input line 195.
 
 [15]
-Overfull \hbox (68.33093pt too wide) in alignment at lines 1070--1073
+Overfull \hbox (68.33093pt too wide) in alignment at lines 261--264
  [][][] []
  []
 
 [16]
-Overfull \hbox (25.12201pt too wide) in paragraph at lines 1140--1142
+Overfull \hbox (25.12201pt too wide) in paragraph at lines 331--333
 []\T1/cmr/m/n/10 We be-gin with $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[] [
 ][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] [] []  $
  []
 
 [17]
-Overfull \hbox (88.90059pt too wide) in paragraph at lines 1154--1156
+Overfull \hbox (88.90059pt too wide) in paragraph at lines 345--347
 []\T1/cmr/m/n/10 Next we con-sider $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[
 ] [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 n[] [][] 
 g [] \OMS/cmsy/m/n/10   [] [][] [] []$\T1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (126.28746pt too wide) in paragraph at lines 1168--1170
+Overfull \hbox (126.28746pt too wide) in paragraph at lines 359--361
 []\T1/cmr/m/n/10 Finally, for the Cressie--Read case, $[] [] \OT1/cmr/m/n/10 = 
 \OML/cmm/m/it/10 n[] [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] []
 [] [] []$\T1/cmr/m/n/10 .
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1187.
+LaTeX Warning: Command \: invalid in math mode on input line 378.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1187.
+LaTeX Warning: Command \: invalid in math mode on input line 378.
 
 [18]
 
-LaTeX Warning: Command \: invalid in math mode on input line 1191.
+LaTeX Warning: Command \: invalid in math mode on input line 382.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1191.
+LaTeX Warning: Command \: invalid in math mode on input line 382.
 
 
-Overfull \hbox (39.46643pt too wide) in alignment at lines 1194--1197
+Overfull \hbox (39.46643pt too wide) in alignment at lines 385--388
  [][][] []
  []
 
 [19]
 
-LaTeX Warning: Command \: invalid in math mode on input line 1248.
+LaTeX Warning: Command \: invalid in math mode on input line 439.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1248.
+LaTeX Warning: Command \: invalid in math mode on input line 439.
 
 
-Overfull \hbox (5.7286pt too wide) in alignment at lines 1258--1264
+Overfull \hbox (5.7286pt too wide) in alignment at lines 449--455
  [][][] []
  []
 
 
-Overfull \hbox (20.99153pt too wide) detected at line 1275
+Overfull \hbox (20.99153pt too wide) detected at line 466
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[];  [] ;
  []
 
 [20]
-Overfull \hbox (12.48123pt too wide) detected at line 1289
+Overfull \hbox (12.48123pt too wide) detected at line 480
 \OT1/cmr/m/n/10  [] = []\OML/cmm/m/it/10 :
  []
 
 
-Overfull \hbox (4.89032pt too wide) in alignment at lines 1297--1306
+Overfull \hbox (4.89032pt too wide) in alignment at lines 488--497
  [][][] []
  []
 
 [21]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 1313.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 504.
 
 
-Overfull \hbox (47.21646pt too wide) detected at line 1351
+Overfull \hbox (47.21646pt too wide) detected at line 542
 \OML/cmm/m/it/10 E [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 n[] \OT1/cmr/m/n/10
  + \OML/cmm/m/it/10 O[] [] :
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1354.
+LaTeX Warning: Command \: invalid in math mode on input line 545.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1355.
+LaTeX Warning: Command \: invalid in math mode on input line 546.
 
 
-Overfull \hbox (27.03453pt too wide) detected at line 1356
+Overfull \hbox (27.03453pt too wide) detected at line 547
 [] [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 y[]' []  \OT1/cmr/m/n/10 d\OML/cm
 m/m/it/10 y \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; [][][] \OT1/cmr/m/n/10 = [][]
  \OML/cmm/m/it/10 y[]' []  \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 
@@ -875,37 +885,37 @@ m/m/it/10 y \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; [][][] \OT1/cmr/m/n/10 = [][]
  []
 
 [22]
-Overfull \hbox (85.71173pt too wide) in alignment at lines 1370--1373
+Overfull \hbox (85.71173pt too wide) in alignment at lines 561--564
  [][][] []
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1398.
+LaTeX Warning: Command \: invalid in math mode on input line 589.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1398.
+LaTeX Warning: Command \: invalid in math mode on input line 589.
 
 [23]
-Overfull \hbox (17.84857pt too wide) in alignment at lines 1411--1415
+Overfull \hbox (17.84857pt too wide) in alignment at lines 602--606
  [][][] []
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1416.
+LaTeX Warning: Command \: invalid in math mode on input line 607.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1416.
+LaTeX Warning: Command \: invalid in math mode on input line 607.
 
 <n10bw.pdf, id=96, 505.89pt x 505.89pt>
 File: n10bw.pdf Graphic file (type pdf)
  <use n10bw.pdf>
-Package pdftex.def Info: n10bw.pdf used on input line 1440.
+Package pdftex.def Info: n10bw.pdf used on input line 631.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
 
 <n80bw.pdf, id=97, 505.89pt x 505.89pt>
 File: n80bw.pdf Graphic file (type pdf)
  <use n80bw.pdf>
-Package pdftex.def Info: n80bw.pdf used on input line 1447.
+Package pdftex.def Info: n80bw.pdf used on input line 638.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -916,13 +926,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [25 <D:/学习/数学/论文/博士/ABC/dissertation/n10bw.pdf>]
 
 Package natbib Warning: Citation `ghosal1999asymptotic' on page 26 undefined on
- input line 1453.
+ input line 644.
 
 
 Package natbib Warning: Citation `ghosal2000asymptotic' on page 26 undefined on
- input line 1453.
+ input line 644.
 
-[26 <D:/学习/数学/论文/博士/ABC/dissertation/n80bw.pdf>]
+) [26 <D:/学习/数学/论文/博士/ABC/dissertation/n80bw.pdf>]
+(D:\学习\数学\论文\博士\ABC\dissertation\belMul.tex
 Chapter 3
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -930,55 +941,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [27
 
 
+
+
 ]
-Overfull \hbox (20.79347pt too wide) in paragraph at lines 1558--1569
+Overfull \hbox (20.79347pt too wide) in paragraph at lines 103--114
 \T1/cmr/m/n/10 sat-is-fy-ing $\OML/cmm/m/it/10 Eg [] \OT1/cmr/m/n/10 = 0$\T1/cm
 r/m/n/10 , where $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R[]$ \T1/
 cmr/m/n/10 and $\OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 2$
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1571.
+LaTeX Warning: Command \: invalid in math mode on input line 116.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1571.
+LaTeX Warning: Command \: invalid in math mode on input line 116.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1571.
+LaTeX Warning: Command \: invalid in math mode on input line 116.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 1571.
+LaTeX Warning: Command \: invalid in math mode on input line 116.
 
 
-LaTeX Warning: Command \; invalid in math mode on input line 1581.
+LaTeX Warning: Command \; invalid in math mode on input line 126.
 
 
-LaTeX Warning: Command \; invalid in math mode on input line 1581.
+LaTeX Warning: Command \; invalid in math mode on input line 126.
 
 [28] [29] [30]
-Overfull \hbox (59.00423pt too wide) in alignment at lines 1770--1774
+Overfull \hbox (59.00423pt too wide) in alignment at lines 315--319
  [][][] []
  []
 
 [31]
-Overfull \hbox (75.66174pt too wide) in alignment at lines 1778--1796
+Overfull \hbox (75.66174pt too wide) in alignment at lines 323--341
  [][][] []
  []
 
 [32]
 
-LaTeX Warning: Command \! invalid in math mode on input line 1848.
+LaTeX Warning: Command \! invalid in math mode on input line 393.
 
 
-LaTeX Warning: Command \! invalid in math mode on input line 1848.
+LaTeX Warning: Command \! invalid in math mode on input line 393.
 
 
-Overfull \hbox (123.89818pt too wide) in alignment at lines 1871--1878
+Overfull \hbox (123.89818pt too wide) in alignment at lines 416--423
  [][][] []
  []
 
 
-Overfull \hbox (119.52753pt too wide) in alignment at lines 1882--1890
+Overfull \hbox (119.52753pt too wide) in alignment at lines 427--435
  [][][] []
  []
 
@@ -986,151 +999,151 @@ Overfull \hbox (119.52753pt too wide) in alignment at lines 1882--1890
 Underfull \vbox (badness 2368) has occurred while \output is active []
 
  [33]
-Overfull \hbox (29.91104pt too wide) in paragraph at lines 1894--1898
+Overfull \hbox (29.91104pt too wide) in paragraph at lines 439--443
 \T1/cmr/m/it/10 tion of $\OML/cmm/m/it/10 n[] [][] \OT1/cmr/m/n/10 	 [] = 0$\T1
 /cmr/m/it/10 . If we de-note the so-lu-tion as $[]$,
  []
 
 [34]
-Overfull \hbox (38.85083pt too wide) in alignment at lines 1951--1954
+Overfull \hbox (38.85083pt too wide) in alignment at lines 496--499
  [][][] []
  []
 
 [35]
 
-LaTeX Warning: Command \: invalid in math mode on input line 2007.
+LaTeX Warning: Command \: invalid in math mode on input line 552.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2007.
+LaTeX Warning: Command \: invalid in math mode on input line 552.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2008.
+LaTeX Warning: Command \: invalid in math mode on input line 553.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2008.
+LaTeX Warning: Command \: invalid in math mode on input line 553.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2014.
+LaTeX Warning: Command \: invalid in math mode on input line 559.
 
 [36]
 
-LaTeX Warning: Reference `tab:mgele-mde' on page 37 undefined on input line 208
-6.
+LaTeX Warning: Reference `tab:mgele-mde' on page 37 undefined on input line 631
+.
 
 
-Overfull \hbox (20.67755pt too wide) in paragraph at lines 2119--2121
+Overfull \hbox (20.67755pt too wide) in paragraph at lines 664--666
 []\T1/cmr/m/n/10 We be-gin with $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[] [
 ][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] [] []  $
  []
 
 
-Overfull \hbox (83.27414pt too wide) detected at line 2123
+Overfull \hbox (83.27414pt too wide) detected at line 668
 [] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10  [] [][] \OMS/cmsy/m/n/10   [] [] [][]
  \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10  [] [] [][]:
  []
 
 [37]
-Overfull \hbox (101.95604pt too wide) in paragraph at lines 2132--2134
+Overfull \hbox (101.95604pt too wide) in paragraph at lines 677--679
 []\T1/cmr/m/n/10 Next we con-sider $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[
 ] [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   []$\T1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (39.77916pt too wide) in paragraph at lines 2146--2148
+Overfull \hbox (39.77916pt too wide) in paragraph at lines 691--693
 []\T1/cmr/m/n/10 Finally, for CR, $[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 n[]
  [][] [] [] [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10   [][] [][] [] []$\T1/cmr/m/n
 /10 .
  []
 
 [38]
-Overfull \hbox (3.69186pt too wide) detected at line 2210
+Overfull \hbox (3.69186pt too wide) detected at line 755
 \OML/cmm/m/it/10 Z \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 :
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2232.
+LaTeX Warning: Command \: invalid in math mode on input line 777.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2232.
+LaTeX Warning: Command \: invalid in math mode on input line 777.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2242.
+LaTeX Warning: Command \: invalid in math mode on input line 787.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2242.
+LaTeX Warning: Command \: invalid in math mode on input line 787.
 
 
-Overfull \hbox (27.30003pt too wide) in paragraph at lines 2242--2243
+Overfull \hbox (27.30003pt too wide) in paragraph at lines 787--788
 []\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 = []$\T1/cmr/m/n/10 
 . 
  []
 
 
-Overfull \hbox (76.98508pt too wide) in alignment at lines 2248--2254
+Overfull \hbox (76.98508pt too wide) in alignment at lines 793--799
  [][][] []
  []
 
 [39]
-Overfull \hbox (22.92293pt too wide) detected at line 2289
+Overfull \hbox (22.92293pt too wide) detected at line 834
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[];  [] :
  []
 
 
-Overfull \hbox (1.6497pt too wide) in alignment at lines 2310--2318
+Overfull \hbox (1.6497pt too wide) in alignment at lines 855--863
  [][][] []
  []
 
 [40]
-Overfull \hbox (11.6164pt too wide) detected at line 2328
+Overfull \hbox (11.6164pt too wide) detected at line 873
 [][] [] [] \OML/cmm/m/it/10 [] []  \OT1/cmr/m/n/10 d\OML/cmm/m/it/10 Y \OT1/cm
 r/m/n/10 = [] [][] [] [] \OML/cmm/m/it/10 [] []  \OT1/cmr/m/n/10 d\OML/cmm/m/i
 t/10 Y[] [] :
  []
 
 
-Overfull \hbox (68.38377pt too wide) in alignment at lines 2331--2336
+Overfull \hbox (68.38377pt too wide) in alignment at lines 876--881
  [][][] []
  []
 
 
-Overfull \hbox (7.8893pt too wide) in paragraph at lines 2362--2365
+Overfull \hbox (7.8893pt too wide) in paragraph at lines 907--910
 $\OT1/cmr/m/n/10 1$\T1/cmr/m/n/10 . In this case the first two terms in equa-ti
 on [] will be $\OT1/cmr/m/n/10 [] []$
  []
 
 
-Overfull \hbox (109.80748pt too wide) in alignment at lines 2365--2369
+Overfull \hbox (109.80748pt too wide) in alignment at lines 910--914
  [][][] []
  []
 
-[41] [42]
+[41]) [42] (D:\学习\数学\论文\博士\ABC\dissertation\elOptPrice.tex
 Chapter 4
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1138,14 +1151,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [43
 
 
+
+
 ]
 [44] [45] [46] [47] [48] <SP500.pdf, id=190, 614.295pt x 794.97pt>
 File: SP500.pdf Graphic file (type pdf)
 
 <use SP500.pdf>
-Package pdftex.def Info: SP500.pdf used on input line 2552.
+Package pdftex.def Info: SP500.pdf used on input line 173.
 (pdftex.def)             Requested size: 288.0011pt x 372.71405pt.
- [49 <D:/学习/数学/论文/博士/ABC/dissertation/SP500.pdf>]
+) [49 <D:/学习/数学/论文/博士/ABC/dissertation/SP500.pdf>] (D:\学习\�
+��学\论文\博士\ABC\dissertation\abcsdr.tex
 Chapter 5
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1153,25 +1169,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [50
 
 
+
+
 ] [51] [52] [53]
 
-LaTeX Warning: Command \: invalid in math mode on input line 2810.
+LaTeX Warning: Command \: invalid in math mode on input line 255.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 2810.
+LaTeX Warning: Command \: invalid in math mode on input line 255.
 
 
-Overfull \hbox (104.46684pt too wide) in alignment at lines 2807--2811
+Overfull \hbox (104.46684pt too wide) in alignment at lines 252--256
  [][][] []
  []
 
 
-Overfull \hbox (24.12546pt too wide) detected at line 2831
+Overfull \hbox (24.12546pt too wide) detected at line 276
 [] \OML/cmm/m/it/10 P [] \OT1/cmr/m/n/10 =  [] \OML/cmm/m/it/10 ;  [] :
  []
 
 [54] [55]
-Overfull \hbox (37.69604pt too wide) in paragraph at lines 2966--2970
+Overfull \hbox (37.69604pt too wide) in paragraph at lines 411--415
 [][]\T1/cmr/m/sc/10 Assumption \T1/cmr/m/n/10 10\T1/cmr/m/sc/10 . []\T1/cmr/m/i
 t/10 There is a neigh-bour-hood $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2 \OML/cmm
 /m/it/10 O []$ \T1/cmr/m/it/10 such that $[][] \OML/cmm/m/it/10 g []  []  \OT1
@@ -1186,19 +1204,19 @@ T DIMENSION REDUCTION []
 
 [58]
 
-LaTeX Warning: Command \: invalid in math mode on input line 3166.
+LaTeX Warning: Command \: invalid in math mode on input line 611.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3166.
+LaTeX Warning: Command \: invalid in math mode on input line 611.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3191--3193
+Underfull \hbox (badness 10000) in paragraph at lines 636--638
 []\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 K [] \OT1/cmr/m/n/10 = []$ \T1/cmr/m/n/1
 0 be a $\OML/cmm/m/it/10 n$ \T1/cmr/m/n/10 di-
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 3191--3193
+Underfull \hbox (badness 4429) in paragraph at lines 636--638
 \T1/cmr/m/n/10 men-sional vec-tor. Then the es-ti-mated trans-for-ma-tion $[] [
 ] \OT1/cmr/m/n/10 =$
  []
@@ -1216,14 +1234,14 @@ T DIMENSION REDUCTION []
 File: ABCvsFull_100_1000_4.pdf Graphic file (type pdf)
 
 <use ABCvsFull_100_1000_4.pdf>
-Package pdftex.def Info: ABCvsFull_100_1000_4.pdf used on input line 3262.
+Package pdftex.def Info: ABCvsFull_100_1000_4.pdf used on input line 707.
 (pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
 
 <ESSvsMLE_100_1000_4.pdf, id=230, 505.89pt x 505.89pt>
 File: ESSvsMLE_100_1000_4.pdf Graphic file (type pdf)
 
 <use ESSvsMLE_100_1000_4.pdf>
-Package pdftex.def Info: ESSvsMLE_100_1000_4.pdf used on input line 3268.
+Package pdftex.def Info: ESSvsMLE_100_1000_4.pdf used on input line 713.
 (pdftex.def)             Requested size: 354.12057pt x 354.12057pt.
 
 Overfull \hbox (62.45009pt too wide) has occurred while \output is active
@@ -1231,196 +1249,195 @@ Overfull \hbox (62.45009pt too wide) has occurred while \output is active
 T DIMENSION REDUCTION []
  []
 
-[60] [61 <D:/学习/数学/论文/博士/ABC/dissertation/ABCvsFull_100_1000_4.
-pdf>] [62 <D:/学习/数学/论文/博士/ABC/dissertation/ESSvsMLE_100_1000_4.
-pdf>]
+[60]) [61 <D:/学习/数学/论文/博士/ABC/dissertation/ABCvsFull_100_1000_4
+.pdf>] [62 <D:/学习/数学/论文/博士/ABC/dissertation/ESSvsMLE_100_1000_4
+.pdf>] (D:\学习\数学\论文\博士\ABC\dissertation\proofBelUni.tex
 Appendix A
 
-Overfull \hbox (111.91054pt too wide) in paragraph at lines 3325--3327
+Overfull \hbox (111.91054pt too wide) in paragraph at lines 18--20
 \T1/cmr/m/n/10 for any $[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 []$ \T1/cmr/m/n
 /10 and $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 H[]$\T1/cmr/m/n
 /10 , where $\OML/cmm/m/it/10 b \OT1/cmr/m/n/10 = [][]$ 
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3369.
+LaTeX Warning: Command \: invalid in math mode on input line 62.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3369.
+LaTeX Warning: Command \: invalid in math mode on input line 62.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3369.
+LaTeX Warning: Command \: invalid in math mode on input line 62.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3369.
+LaTeX Warning: Command \: invalid in math mode on input line 62.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3370.
+LaTeX Warning: Command \: invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3371.
+LaTeX Warning: Command \: invalid in math mode on input line 64.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3371.
+LaTeX Warning: Command \: invalid in math mode on input line 64.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3371.
+LaTeX Warning: Command \: invalid in math mode on input line 64.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3371.
+LaTeX Warning: Command \: invalid in math mode on input line 64.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3371.
+LaTeX Warning: Command \: invalid in math mode on input line 64.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3371.
+LaTeX Warning: Command \: invalid in math mode on input line 64.
 
 
-Overfull \hbox (16.38075pt too wide) detected at line 3373
+Overfull \hbox (16.38075pt too wide) detected at line 66
 \OML/cmm/m/it/10 ![] [] \OT1/cmr/m/n/10 = []
  []
 
 [63
 
-
 ]
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3377.
+LaTeX Warning: Command \: invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3378.
+LaTeX Warning: Command \: invalid in math mode on input line 71.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3378.
+LaTeX Warning: Command \: invalid in math mode on input line 71.
 
 
-Overfull \hbox (79.79195pt too wide) detected at line 3380
+Overfull \hbox (79.79195pt too wide) detected at line 73
 \OML/cmm/m/it/10 D \OT1/cmr/m/n/10 = []
  []
 
 
-Overfull \hbox (48.55737pt too wide) in alignment at lines 3406--3409
+Overfull \hbox (48.55737pt too wide) in alignment at lines 99--102
  [][][] []
  []
 
 
-Overfull \hbox (17.67038pt too wide) in alignment at lines 3412--3414
+Overfull \hbox (17.67038pt too wide) in alignment at lines 105--107
  [][][] []
  []
 
 
-Overfull \hbox (18.46056pt too wide) in alignment at lines 3418--3421
+Overfull \hbox (18.46056pt too wide) in alignment at lines 111--114
  [][][] []
  []
 
 [64] [65]
 
-LaTeX Warning: Command \: invalid in math mode on input line 3512.
+LaTeX Warning: Command \: invalid in math mode on input line 205.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3512.
+LaTeX Warning: Command \: invalid in math mode on input line 205.
 
 
-Overfull \hbox (21.44032pt too wide) detected at line 3513
+Overfull \hbox (21.44032pt too wide) detected at line 206
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
  []
 
 
-Overfull \hbox (27.36049pt too wide) in alignment at lines 3518--3522
+Overfull \hbox (27.36049pt too wide) in alignment at lines 211--215
  [][][] []
  []
 
 [66]
-Overfull \hbox (1.76666pt too wide) in paragraph at lines 3530--3547
+Overfull \hbox (1.76666pt too wide) in paragraph at lines 223--240
 $[]$\T1/cmr/m/n/10 . So with-out loss of gen-er-al-ity, we as-sume $[] [] \OMS/
 cmsy/m/n/10  $
  []
 
 
-Overfull \hbox (19.50812pt too wide) in alignment at lines 3557--3565
+Overfull \hbox (19.50812pt too wide) in alignment at lines 250--258
  [][][] []
  []
 
 [67]
-Overfull \hbox (5.7524pt too wide) in alignment at lines 3580--3583
+Overfull \hbox (5.7524pt too wide) in alignment at lines 273--276
  [][][] []
  []
 
 
-Overfull \hbox (5.86842pt too wide) in alignment at lines 3592--3595
+Overfull \hbox (5.86842pt too wide) in alignment at lines 285--288
  [][][] []
  []
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3602.
+LaTeX Warning: Command \: invalid in math mode on input line 295.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 3602.
+LaTeX Warning: Command \: invalid in math mode on input line 295.
 
 
-Overfull \hbox (82.7098pt too wide) detected at line 3603
+Overfull \hbox (82.7098pt too wide) detected at line 296
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
  []
 
 
-Overfull \hbox (12.05215pt too wide) in alignment at lines 3611--3615
+Overfull \hbox (12.05215pt too wide) in alignment at lines 304--308
  [][][] []
  []
 
 [68]
-Overfull \hbox (75.73335pt too wide) in alignment at lines 3617--3623
+Overfull \hbox (75.73335pt too wide) in alignment at lines 310--316
  [][][] []
  []
 
 
-Overfull \hbox (35.95189pt too wide) in alignment at lines 3631--3635
+Overfull \hbox (35.95189pt too wide) in alignment at lines 324--328
  [][][] []
  []
 
 
-Overfull \hbox (81.23773pt too wide) in alignment at lines 3650--3654
+Overfull \hbox (81.23773pt too wide) in alignment at lines 343--347
  [][][] []
  []
 
@@ -1428,17 +1445,17 @@ Overfull \hbox (81.23773pt too wide) in alignment at lines 3650--3654
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
  [69]
-Overfull \hbox (93.45995pt too wide) in alignment at lines 3656--3664
+Overfull \hbox (93.45995pt too wide) in alignment at lines 349--357
  [][][] []
  []
 
 
-Overfull \hbox (35.60191pt too wide) detected at line 3672
+Overfull \hbox (35.60191pt too wide) detected at line 365
 [] [] \OML/cmm/m/it/10 n[]:
  []
 
 
-Overfull \hbox (116.33305pt too wide) detected at line 3677
+Overfull \hbox (116.33305pt too wide) detected at line 370
 [] [] \OML/cmm/m/it/10 n[]:
  []
 
@@ -1446,17 +1463,17 @@ Overfull \hbox (116.33305pt too wide) detected at line 3677
 Underfull \vbox (badness 3158) has occurred while \output is active []
 
  [70]
-Overfull \hbox (68.21034pt too wide) in alignment at lines 3681--3685
+Overfull \hbox (68.21034pt too wide) in alignment at lines 374--378
  [][][] []
  []
 
 
-Overfull \hbox (30.75517pt too wide) in alignment at lines 3700--3705
+Overfull \hbox (30.75517pt too wide) in alignment at lines 393--398
  [][][] []
  []
 
 
-Overfull \hbox (69.79457pt too wide) in alignment at lines 3710--3717
+Overfull \hbox (69.79457pt too wide) in alignment at lines 403--410
  [][][] []
  []
 
@@ -1464,32 +1481,33 @@ Overfull \hbox (69.79457pt too wide) in alignment at lines 3710--3717
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [71]
-Overfull \hbox (44.3632pt too wide) detected at line 3722
+Overfull \hbox (44.3632pt too wide) detected at line 415
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]:
  []
 
 
-Overfull \hbox (91.39896pt too wide) in alignment at lines 3727--3735
+Overfull \hbox (91.39896pt too wide) in alignment at lines 420--428
  [][][] []
  []
 
 
-Overfull \hbox (147.7156pt too wide) in alignment at lines 3738--3744
+Overfull \hbox (147.7156pt too wide) in alignment at lines 431--437
  [][][] []
  []
 
 [72]
-Overfull \hbox (156.76062pt too wide) in alignment at lines 3753--3758
+Overfull \hbox (156.76062pt too wide) in alignment at lines 446--451
  [][][] []
  []
 
-[73] [74]
+[73]) [74] (D:\学习\数学\论文\博士\ABC\dissertation\proofBelMul.tex
 Appendix B
 [75
 
 
+
 ]
-Overfull \hbox (65.20538pt too wide) detected at line 3846
+Overfull \hbox (65.20538pt too wide) detected at line 68
 [] [] [][][] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 [] [] [] \OT
 1/cmr/m/n/10 + \OML/cmm/m/it/10 [] [] [];
  []
@@ -1501,22 +1519,22 @@ IGHER ORDER DERIVATIVES AROUND SAMPLE MEAN []
  []
 
 [76]
-Overfull \hbox (107.95953pt too wide) detected at line 3908
+Overfull \hbox (107.95953pt too wide) detected at line 130
 \OMS/cmsy/m/n/10 r[][] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[] [] ;
  []
 
 
-Overfull \hbox (107.95953pt too wide) detected at line 3920
+Overfull \hbox (107.95953pt too wide) detected at line 142
 \OMS/cmsy/m/n/10 r[][] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[] [] :
  []
 
 
-Overfull \hbox (20.31679pt too wide) detected at line 3924
+Overfull \hbox (20.31679pt too wide) detected at line 146
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 f[][] [] :
  []
 
 
-Overfull \hbox (59.63177pt too wide) in alignment at lines 3926--3932
+Overfull \hbox (59.63177pt too wide) in alignment at lines 148--154
  [][][] []
  []
 
@@ -1527,13 +1545,13 @@ IGHER ORDER DERIVATIVES AROUND SAMPLE MEAN []
  []
 
 [77]
-Overfull \hbox (97.91898pt too wide) detected at line 3969
+Overfull \hbox (97.91898pt too wide) detected at line 191
 [] \OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 < \OT1/cmr/m/n/1
 0 2\OML/cmm/m/it/10 ":
  []
 
 
-Overfull \hbox (41.41978pt too wide) in alignment at lines 3990--3992
+Overfull \hbox (41.41978pt too wide) in alignment at lines 212--214
  [][][] []
  []
 
@@ -1545,65 +1563,65 @@ IGHER ORDER DERIVATIVES AROUND SAMPLE MEAN []
 
 [78] [79]
 
-LaTeX Warning: Command \: invalid in math mode on input line 4112.
+LaTeX Warning: Command \: invalid in math mode on input line 334.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 4112.
+LaTeX Warning: Command \: invalid in math mode on input line 334.
 
 
-Overfull \hbox (56.63475pt too wide) detected at line 4113
+Overfull \hbox (56.63475pt too wide) detected at line 335
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
  []
 
 
-Overfull \hbox (16.02444pt too wide) in alignment at lines 4117--4121
+Overfull \hbox (16.02444pt too wide) in alignment at lines 339--343
  [][][] []
  []
 
 [80]
-Overfull \hbox (39.51831pt too wide) in alignment at lines 4124--4127
+Overfull \hbox (39.51831pt too wide) in alignment at lines 346--349
  [][][] []
  []
 
 [81]
-Overfull \hbox (29.93289pt too wide) in alignment at lines 4169--4175
+Overfull \hbox (29.93289pt too wide) in alignment at lines 391--397
  [][][] []
  []
 
 [82]
 
-LaTeX Warning: Command \: invalid in math mode on input line 4210.
+LaTeX Warning: Command \: invalid in math mode on input line 432.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 4210.
+LaTeX Warning: Command \: invalid in math mode on input line 432.
 
 
-Overfull \hbox (108.75793pt too wide) detected at line 4211
+Overfull \hbox (108.75793pt too wide) detected at line 433
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]; []:
  []
 
 
-Overfull \hbox (62.91129pt too wide) in alignment at lines 4218--4222
+Overfull \hbox (62.91129pt too wide) in alignment at lines 440--444
  [][][] []
  []
 
 
-Overfull \hbox (73.21237pt too wide) in alignment at lines 4224--4230
+Overfull \hbox (73.21237pt too wide) in alignment at lines 446--452
  [][][] []
  []
 
 
-Overfull \hbox (104.36151pt too wide) in alignment at lines 4239--4245
+Overfull \hbox (104.36151pt too wide) in alignment at lines 461--467
  [][][] []
  []
 
 [83]
-Overfull \hbox (26.66841pt too wide) in alignment at lines 4256--4260
+Overfull \hbox (26.66841pt too wide) in alignment at lines 478--482
  [][][] []
  []
 
 
-Overfull \hbox (82.38513pt too wide) in alignment at lines 4262--4269
+Overfull \hbox (82.38513pt too wide) in alignment at lines 484--491
  [][][] []
  []
 
@@ -1611,33 +1629,33 @@ Overfull \hbox (82.38513pt too wide) in alignment at lines 4262--4269
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [84]
-Overfull \hbox (51.85109pt too wide) in paragraph at lines 4269--4274
+Overfull \hbox (51.85109pt too wide) in paragraph at lines 491--496
 \T1/cmr/m/n/10 For the third term in above equa-tion, we change the sum-ma-tion
  in-dex. Let $[][] \OML/cmm/m/it/10 m[] [] \OT1/cmr/m/n/10 =$
  []
 
 
-Overfull \hbox (6.91898pt too wide) detected at line 4281
+Overfull \hbox (6.91898pt too wide) detected at line 503
 [] [] \OML/cmm/m/it/10 n[]:
  []
 
 
-Overfull \hbox (84.01596pt too wide) in alignment at lines 4285--4288
+Overfull \hbox (84.01596pt too wide) in alignment at lines 507--510
  [][][] []
  []
 
 [85]
-Overfull \hbox (90.31201pt too wide) in alignment at lines 4312--4319
+Overfull \hbox (90.31201pt too wide) in alignment at lines 534--541
  [][][] []
  []
 
 
-Overfull \hbox (6.73209pt too wide) detected at line 4325
+Overfull \hbox (6.73209pt too wide) detected at line 547
 [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 M[]n[]:
  []
 
 
-Overfull \hbox (92.25854pt too wide) in alignment at lines 4330--4336
+Overfull \hbox (92.25854pt too wide) in alignment at lines 552--558
  [][][] []
  []
 
@@ -1645,12 +1663,12 @@ Overfull \hbox (92.25854pt too wide) in alignment at lines 4330--4336
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [86]
-Overfull \hbox (80.03633pt too wide) in alignment at lines 4339--4345
+Overfull \hbox (80.03633pt too wide) in alignment at lines 561--567
  [][][] []
  []
 
 
-Overfull \hbox (86.90865pt too wide) in alignment at lines 4354--4359
+Overfull \hbox (86.90865pt too wide) in alignment at lines 576--581
  [][][] []
  []
 
@@ -1658,137 +1676,141 @@ Overfull \hbox (86.90865pt too wide) in alignment at lines 4354--4359
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [87]
-Overfull \hbox (85.46696pt too wide) in alignment at lines 4367--4371
+Overfull \hbox (85.46696pt too wide) in alignment at lines 589--593
  [][][] []
  []
 
-[88]
+) [88] (D:\学习\数学\论文\博士\ABC\dissertation\proofABCSDR.tex
 Appendix C
 
-Overfull \hbox (18.37521pt too wide) in alignment at lines 4393--4396
+Overfull \hbox (18.37521pt too wide) in alignment at lines 15--18
  [][][] []
  []
 
 
-Overfull \hbox (30.53447pt too wide) in alignment at lines 4403--4407
+Overfull \hbox (30.53447pt too wide) in alignment at lines 25--29
  [][][] []
  []
 
 [89
 
 
+
+
 ]
 
-LaTeX Warning: Command \: invalid in math mode on input line 4432.
+LaTeX Warning: Command \: invalid in math mode on input line 54.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 4432.
+LaTeX Warning: Command \: invalid in math mode on input line 54.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 4432.
+LaTeX Warning: Command \: invalid in math mode on input line 54.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 4432.
+LaTeX Warning: Command \: invalid in math mode on input line 54.
 
 
-Overfull \hbox (40.59155pt too wide) in alignment at lines 4428--4433
+Overfull \hbox (40.59155pt too wide) in alignment at lines 50--55
  [][][] []
  []
 
 [90] [91] [92]
-Overfull \hbox (43.98763pt too wide) in alignment at lines 4616--4619
+Overfull \hbox (43.98763pt too wide) in alignment at lines 238--241
  [][][] []
  []
 
 
 LaTeX Warning: Reference `THM:PARTIAL-POST-M-EST' on page 93 undefined on input
- line 4631.
+ line 253.
 
 [93]
-Overfull \hbox (119.0938pt too wide) detected at line 4665
+Overfull \hbox (119.0938pt too wide) detected at line 287
 [] [] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;  [] ;
  []
 
 
-Overfull \hbox (263.25342pt too wide) in paragraph at lines 4680--4685
+Overfull \hbox (263.25342pt too wide) in paragraph at lines 302--307
 \T1/cmr/m/n/10 Let $\OT1/cmr/m/n/10 
 [] = []$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 C[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/
 10 E[]E[]I[] [] []$\T1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (86.165pt too wide) in alignment at lines 4685--4690
+Overfull \hbox (86.165pt too wide) in alignment at lines 307--312
  [][][] []
  []
 
 
 LaTeX Warning: Reference `THM:PARTIAL-POST-M-EST' on page 94 undefined on input
- line 4690.
+ line 312.
 
 [94]
-Overfull \hbox (73.68962pt too wide) in paragraph at lines 4693--4697
+Overfull \hbox (73.68962pt too wide) in paragraph at lines 315--319
 []\T1/cmr/m/n/10 First con-sid-er-ing the sam-ples within $\OT1/cmr/m/n/10 
 []$\T1/cmr/m/n/10 , by (C.3.4[]), $[] []$
  []
 
 
-Overfull \hbox (36.64899pt too wide) detected at line 4699
+Overfull \hbox (36.64899pt too wide) detected at line 321
 [] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] [];
  []
 
 
-Overfull \hbox (95.90544pt too wide) detected at line 4715
+Overfull \hbox (95.90544pt too wide) detected at line 337
 [] [] \OT1/cmr/m/n/10 = [] [] + [] [] \OML/cmm/m/it/10 ;
  []
 
 
-Overfull \hbox (92.33162pt too wide) in alignment at lines 4722--4725
+Overfull \hbox (92.33162pt too wide) in alignment at lines 344--347
  [][][] []
  []
 
 
 LaTeX Warning: Reference `THM:PARTIAL-POST-M-EST' on page 95 undefined on input
- line 4725.
+ line 347.
 
 [95]
-Overfull \hbox (57.43182pt too wide) detected at line 4737
+Overfull \hbox (57.43182pt too wide) detected at line 359
 [] \OML/cmm/m/it/10 f [] =f [] \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10  \OT1/
 cmr/m/n/10 1\OML/cmm/m/it/10 : []  []
  []
 
 
-Overfull \hbox (95.1094pt too wide) in alignment at lines 4739--4742
+Overfull \hbox (95.1094pt too wide) in alignment at lines 361--364
  [][][] []
  []
 
 
-Overfull \hbox (144.2686pt too wide) detected at line 4757
+Overfull \hbox (144.2686pt too wide) detected at line 379
 [] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] :
  []
 
 
-Overfull \hbox (1.21504pt too wide) in paragraph at lines 4757--4767
+Overfull \hbox (1.21504pt too wide) in paragraph at lines 379--389
 \T1/cmr/m/n/10 has an as-ymp-totic nor-mal dis-tri-bu-tion with vari-ance ma-tr
 ix as $[][] []$. Hence,
  []
 
 
-Overfull \hbox (121.84201pt too wide) detected at line 4769
+Overfull \hbox (121.84201pt too wide) detected at line 391
 [] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] :
  []
 
 
-Overfull \hbox (66.73611pt too wide) detected at line 4775
+Overfull \hbox (66.73611pt too wide) detected at line 397
 [] [] [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 ;  [] :
  []
 
+)
 
 LaTeX Warning: Reference `THM:BERNSTEN-VON-MISE-INCONSIST-MULTV' on page 96 und
-efined on input line 4780.
+efined on input line 118.
 
 [96]
 Reference
 (D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.bbl [97
+
 
 
 ]
@@ -1842,7 +1864,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package natbib Warning: There were undefined citations.
 
-[108] (D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.aux)
+[108] (D:\学习\数学\论文\博士\ABC\dissertation\Dissertation.aux
+(D:\学习\数学\论文\博士\ABC\dissertation\litRev.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\belUni.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\belMul.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\elOptPrice.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\abcsdr.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\proofBelUni.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\proofBelMul.aux)
+(D:\学习\数学\论文\博士\ABC\dissertation\proofABCSDR.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1851,13 +1881,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6104 strings out of 493921
- 84135 string characters out of 3144869
- 149229 words of memory out of 3000000
- 9132 multiletter control sequences out of 15000+200000
+ 6168 strings out of 493921
+ 87191 string characters out of 3144869
+ 153158 words of memory out of 3000000
+ 9140 multiletter control sequences out of 15000+200000
  19207 words of font info for 58 fonts, out of 3000000 for 9000
  1002 hyphenation exceptions out of 8191
- 35i,14n,32p,1368b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,14n,33p,1389b,720s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ectt1000.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ecbx0700.pk> <C:\Users\Lucifer\AppData\Local\MiKTeX\2.9\fonts\pk\
