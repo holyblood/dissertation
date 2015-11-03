@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.13)  3 NOV 2015 03:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.13)  4 NOV 2015 04:49
 entering extended mode
 **D:/学习/数学/论文/博士/ABC/dissertation/Dissertation.tex
 (D:/学习/数学/论文/博士/ABC/dissertation/Dissertation.tex
@@ -684,7 +684,7 @@ File: uesint.fd
 ) (D:\学习\数学\论文\博士\ABC\dissertation\litRev.tex
 Chapter 1
 
-Overfull \hbox (23.54156pt too wide) detected at line 32
+Overfull \hbox (23.54156pt too wide) detected at line 33
 \OML/cmm/m/it/10 R [] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 ;
  []
 
@@ -693,41 +693,33 @@ Overfull \hbox (23.54156pt too wide) detected at line 32
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4] [5]
-Overfull \hbox (2.72276pt too wide) in paragraph at lines 350--364
+Overfull \hbox (2.72276pt too wide) in paragraph at lines 351--365
  \T1/cmr/bx/n/10 1.3.1.Different Sam-pling Schemes.[] \T1/cmr/m/n/10 In prac-ti
 ce, if one uses non-informative
  []
 
-[6]
-Overfull \hbox (1.70453pt too wide) in paragraph at lines 434--447
-\T1/cmr/m/n/10 i-bra-tion on $\OML/cmm/m/it/10 "$ \T1/cmr/m/n/10 is equiv-a-len
-t to cal-i-bra-tion of $\OML/cmm/m/it/10 k$\T1/cmr/m/n/10 . Their re-sults fa-v
-or $\OML/cmm/m/it/10 k \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N[]$\T1/cmr/m/n/10 ,
+[6] [7]
 
- []
-
-[7]
-
-LaTeX Warning: Command \: invalid in math mode on input line 509.
+LaTeX Warning: Command \: invalid in math mode on input line 510.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 509.
+LaTeX Warning: Command \: invalid in math mode on input line 510.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 509.
+LaTeX Warning: Command \: invalid in math mode on input line 510.
 
 
-LaTeX Warning: Command \: invalid in math mode on input line 509.
+LaTeX Warning: Command \: invalid in math mode on input line 510.
 
 [8]
 
-LaTeX Warning: Command \! invalid in math mode on input line 567.
+LaTeX Warning: Command \! invalid in math mode on input line 568.
 
 
-LaTeX Warning: Command \! invalid in math mode on input line 567.
+LaTeX Warning: Command \! invalid in math mode on input line 568.
 
 
-Overfull \hbox (6.53981pt too wide) detected at line 568
+Overfull \hbox (6.53981pt too wide) detected at line 569
 [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10  [][]  \OT1/cmr/m/n/10 + \OML/cmm/m/it
 /10 E[] [][] :
  []
@@ -1915,9 +1907,9 @@ pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb><D:
 fb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7
 .pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/hoekwater/rsfs/rsfs10.pfb><
 D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tipa/tipa10.pfb>
-Output written on Dissertation.pdf (108 pages, 772688 bytes).
+Output written on Dissertation.pdf (108 pages, 771787 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
+ 860 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
