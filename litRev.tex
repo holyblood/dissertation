@@ -241,52 +241,47 @@ more papers in abc folder, pro and con of el
 
 \section{Option Pricing}
 
-Since the seminal works by Black and Scholes (1973) and Merton (1973),
+Since the seminal works by \citet{black1973pricing} and \citet{merton1973intertemporal},
 option valuation methodologies have been extensively developed. The
 Black-Scholes model has become one of the most well-known discoveries
 in finance literature, which relates the cross-sectional properties
 of option prices with the underlying asset return distribution.
-However, Rubinstein (1985), Melino and Turnbull (1990) pointed out
+However, \citet{rubinstein1985nonparametric} and \citet{melino1990pricing} pointed out
 several limitations in the Black-Scholes model due to the strong assumptions,
 such as non-normality of the returns, stochastic volatility (implied
 volatility smile), jumps and others. Both parametric and nonparametric
 approaches have been proposed to deal with these issues. 
 
-Scott (1987), Hull and White (1987) and Wiggins (1987) extended the
+\citet{scott1987option,hull1987pricing} and \citet{wiggins1987option} extended the
 Black and Scholes model and allowed the volatility to be stochastic.
-Heston (1993) developed a closed-form solution for option pricing
-with the underlying assets volatility being stochastic. Duan (1995)
+\citet{heston1993closed} developed a closed-form solution for option pricing
+with the underlying assets volatility being stochastic. \citet{duan1995garch}
 proposed a GARCH option pricing model in an attempt to explain some
-systematic biases associated with the Black-Scholes model. Later Heston
-and Nandi (2000) provided a closed-form solution for option pricing
-with the underlying assets volatility following GARCH(p,q) process.
-Bates (1996), Bakshi, Cao and Chen (1997) derived an option pricing
-model with stochastic volatility and jumps. Kou (2002) provided a
+systematic biases associated with the Black-Scholes model. Later \citet{heston2000closed} provided a closed-form solution for option pricing
+with the underlying assets volatility following GARCH$(p,q)$ process.
+\citet{bates1996jumps} and  \citet{bakshi1997empirical} derived an option pricing
+model with stochastic volatility and jumps. \citet{kou2002jump} provided a
 solution to pricing the option with the double exponential jumps diffusion
-process. Carr and Madan (1999) introduced the fast Fourier transform
+process. \citet{carr1999option} introduced the fast Fourier transform
 approach to option pricing given a specified characteristic function
 of the return, which provides an efficient computational algorithm
-to calculate the option prices. For further reference, see Duffie
-et al. (2000), Bakshi and Madan (2000) and Carr and Madan (2009) among
+to calculate the option prices. For further reference, see \citet{duffie2000transform,bakshi2000spanning},  and \citet{carr2009saddlepoint} among
 others. All these methods are parametric based, which assume a parametric
 form of either the distribution of the underlying assets returns or
 the characteristic function of the underlying assets returns. 
 
 Nonparametric approaches have also been proposed to capture the underlying
 asset and option price data to reconstruct the structure of the diffusion
-process. For example, Hutchinson, Lo and Poggio (1994) applied the
-neural network techniques to price the derivatives. Ait-Sahalia and
-Lo (1998) used the kernel regression to fit the state-price density
-implicitly in option pricing. Ait-Sahalia (1996) proposed a nonparametric
+process. For example, \citet{hutchinson1994nonparametric} applied the
+neural network techniques to price the derivatives. \citet{ait1998nonparametric} used the kernel regression to fit the state-price density
+implicitly in option pricing. \citet{ait1996nonparametric} proposed a nonparametric
 pricing estimation procedure for interest rate derivative securities
 under the assumption that the unknown volatility is independent of
-time. Stutzer (1996) adopted the canonical valuation method, which
+time. \citet{stutzer1996simple} adopted the canonical valuation method, which
 incorporats the no-arbitrary principle embodied in the formula for
 calculating the expectation of the discounted value of assets under
 the risk-neutral probability distribution. %
-\begin{comment}
-add to bibiograph
-\end{comment}
+
 
 
 
