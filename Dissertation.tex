@@ -93,8 +93,12 @@
 \providecommand{\corollaryname}{Corollary}
 \providecommand{\theoremname}{Theorem}
 
+\pagestyle{plain} 
+% stop running title because in ABC Appendix, the running title has an error ref to theorem
+
 \begin{document}
 
+\tableofcontents
 
 
 \include{litRev}
@@ -117,7 +121,7 @@
 \include{proofBelMul}
 \include{proofABCSDR}
 
-\chapter*{Reference}
+
 
 \bibliographystyle{elsarticle-harv}
 \bibliography{dissertation,partialPostBib,asymExpBib,elopt}

@@ -300,8 +300,8 @@ we have the result from Lemma \ref{lem:taylor-expansion-in-dist},
 \begin{equation}
 P_{\theta_{0}}^{\infty}\left(\omega:P_{\omega}^{n}\left(\sqrt{n}\left|G\left(\theta,\tilde{\theta}\right)-G_{1}\left(\hat{\theta},\tilde{\theta}\right)\left(\theta-\tilde{\theta}\right)\right|\le2\varepsilon\right)\ge1-\delta_{1}\right)\ge1-\delta_{2}.\label{eq:conv-in-dist-reminder}
 \end{equation}
-Let $\Omega_{1}=\left\{ \omega:P_{\omega}^{n}\left(\sqrt{n}\left|G\left(\theta,\tilde{\theta}\right)-G_{1}\left(\hat{\theta},\tilde{\theta}\right)\left(\theta-\tilde{\theta}\right)\right|\le2\varepsilon\right)\ge1-\delta_{1}\right\} $,
-$C_{n}=E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\left[\tilde{\theta}\in O\left(\theta_{0},\varepsilon\right)\right]}\exp\left(\sum_{i=1}^{n}\log f\left(X_{i}\mid\theta\right)-\log f\left(X_{i}\mid\theta_{0}\right)\right)$.
+Let \[\Omega_{1}=\left\{ \omega:P_{\omega}^{n}\left(\sqrt{n}\left|G\left(\theta,\tilde{\theta}\right)-G_{1}\left(\hat{\theta},\tilde{\theta}\right)\left(\theta-\tilde{\theta}\right)\right|\le2\varepsilon\right)\ge1-\delta_{1}\right\}, \] and 
+\[C_{n}=E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\left[\tilde{\theta}\in O\left(\theta_{0},\varepsilon\right)\right]}\exp\left(\sum_{i=1}^{n}\log f\left(X_{i}\mid\theta\right)-\log f\left(X_{i}\mid\theta_{0}\right)\right)\].
 Now by the same technique used in the proof of Theorem \ref{thm:bernstein-von-mises-mle},
 we have for sufficiently large $N$, 
 \begin{eqnarray*}
@@ -342,7 +342,8 @@ distribution. Hence for large $N$,
 \]
 and 
 \begin{eqnarray}
- &  & C_{n}^{-1}E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\Omega_{1}}\sup_{t\in\mathbb{R}}\left|P\left(\sqrt{n\tilde{V}^{-1}}\left(\theta-\tilde{\theta}\right)\le t\mid X_{1},\ldots,X_{n}\right)-\Phi\left(t\right)\right|\prod_{i=1}^{n}f\left(X_{i}\mid\theta\right)/f\left(X_{i}\mid\theta_{0}\right)\nonumber \\
+ &  & C_{n}^{-1}E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\Omega_{1}}\sup_{t\in\mathbb{R}}\left|P\left(\sqrt{n\tilde{V}^{-1}}\left(\theta-\tilde{\theta}\right)\le t\mid X_{1},\ldots,X_{n}\right)-\Phi\left(t\right)\right| \\
+ &  & \times \prod_{i=1}^{n}f\left(X_{i}\mid\theta\right)/f\left(X_{i}\mid\theta_{0}\right)\nonumber \\
  & \le & \varepsilon C_{n}^{-1}E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\Omega_{1}}\prod_{i=1}^{n}f\left(X_{i}\mid\theta\right)/f\left(X_{i}\mid\theta_{0}\right)=\varepsilon.\label{eq:conv-with-omega1}
 \end{eqnarray}
 
@@ -359,7 +360,8 @@ and the property of the Kullback-Leibler information number
 \]
 Hence
 \begin{eqnarray}
- &  & C_{n}^{-1}E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\Omega_{1}^{c}}\sup_{t\in\mathbb{R}}\left|P\left(\sqrt{n\tilde{V}^{-1}}\left(\theta-\tilde{\theta}\right)\le t\mid X_{1},\ldots,X_{n}\right)-\Phi\left(t\right)\right|\prod_{i=1}^{n}f\left(X_{i}\mid\theta\right)/f\left(X_{i}\mid\theta_{0}\right).\nonumber \\
+ &  & C_{n}^{-1}E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\Omega_{1}^{c}}\sup_{t\in\mathbb{R}}\left|P\left(\sqrt{n\tilde{V}^{-1}}\left(\theta-\tilde{\theta}\right)\le t\mid X_{1},\ldots,X_{n}\right)-\Phi\left(t\right)\right| \\
+ &  & \times \prod_{i=1}^{n}f\left(X_{i}\mid\theta\right)/f\left(X_{i}\mid\theta_{0}\right).\nonumber \\
  & \le & 2C_{n}^{-1}E_{\pi\left(\theta\right)}E_{P^{\infty}\left(\theta_{0}\right)}I_{\Omega_{1}^{c}}=2P^{\infty}\left(\Omega_{1}^{c}\mid\theta_{0}\right)=2\delta_{2}.\label{eq:conv-outside-omega1}
 \end{eqnarray}
 
