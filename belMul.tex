@@ -3,87 +3,25 @@ Case}
 
 
 \section{Introduction}
+This chapter considers higher order asymptotic expansion Bayesian empirical likelihood in the multivariate case.
 
-Empirical likelihood, over the years, has become a very popular topic
-of statistical research. The name was coined by Owen in his classic
-1986 paper, although similar ideas are found even earlier in the works
-of \citet{hartley1968new}, \citet{thomas1975confidence}, \citet{rubin1981bayesian}
-and others. The main advantage of empirical likelihood is that is
-involves fewer assumptions that a regular likelihood, and yet shares
-the same asymptotic properties of the latter. 
-
-Research in this area has primarily been frequentist with a long list
-of important theoretical developments accompanied by a large number
-of applications. To our knowledge, the first Bayesian work in this
-general area appeared in the article of \citet{lazar2003bayesian}
-followed by some related work in \citet{schennach2005bayesian,schennach2007point}
-, the latter introducing the concept of ``exponentially tilted empirical
-likelihood''. \citet{lazar2003bayesian} suggested using empirical
-likelihood as a substitute for the usual likelihood and carry out
-Bayesian analysis in the usual way. 
-
-\citet{baggerly1998empirical} viewed empirical likelihood as a method
-of assigning probabilities to a $n$-cell contingency table in order
-to minimize a goodness-of-fit criterion. He selected Cressie-Read
-power divergence statistics as one such criterion for construction
-of confidence regions in a number of situations and pointed out also
-how the usual empirical likelihood, exponentially tilted empirical
-likelihood and others can be viewed as special cases of the Cressie-Read
-criterion by appropriate choice of the the power parameter. This was
-also discussed in \citet{owen2010empirical} who pointed our that
-all members of the Cressie-Read family lead to ``empirical divergence
-analogues of the empirical likelihood in which asymptotic $\chi^{2}$
-calibration holds for the mean''.
-
-The objective of this article is to provide an asymptotic expansion
-of the posterior distribution based on empirical likelihood and its
-variations under certain regularity conditions and a mean constraint.
-The work is inspired by the work of \citet{fang2006empirical} who
-provided a somewhat different expansion subject to a mean constraint.
-Unlike \citet{fang2005expected,fang2006empirical}, our result is
-based on the derivatives of the pseudo likelihood with respect to
-the parameters of interest evaluated at the maximum EL estimator,
-and a rigorous expansion is provided with particular attention in
-handling the remainder terms. Moreover, we consider a general estimating
-equation which includes the mean example of \citet{fang2006empirical}
-as a special case. The need for different pseudo-likelihoods for statistical
-inference is felt all the more in these days, especially for the analysis
-of high-dimensional data, where the usual likelihood based analysis
-is hard to perform, These alternative likelihoods are equally valuable
-for approximate Bayesian computations (ABC), a topic which has only
-recently surfaced in the statistics literature (see e.g. Comuet et
-al. , 2008)%
-\begin{comment}
-paper not found or cornuet 2008
-\end{comment}
-.
-
-Asymptotic expansion of the posterior based on a regular likelihood
-was given earlier in \citet{johnson1970asymptotic}, and later in
-\citet{ghosh1982expansions}. We follow their approach with many necessary
-modifications in view of the fact that any meaningful prior needs
-to have support in the nondecreasing compact set $H$. As a special
-case of our result, we get the celebrated Bernstein von-Mises Theorem.
-The latter was mentioned in \citet{lazar2003bayesian} for the special
-case of empirical likelihood, but here we provide a rigorous  derivation
-with the needed regularity conditions. 
-
-Unlike in univariate case, where the posterior is centered at M-estimator,
-which guarantees the consistency under mild regular conditions, in
-multivariate case, the posterior is centralized at maximum generalized
-empirical likelihood estimator. This concept is generalized from empirical
-likelihood case which is fully explored in \citet{qin1994empirical}
-to exponentially tilted empirical likelihood and even Cressie-Read
+In the univariate case, the posterior is centered at an M-estimator,
+which guarantees the consistency under mild regularity conditions. In constrast,
+in the
+multivariate case, the posterior is centered at the maximum generalized
+empirical likelihood estimator. This concept is generalized from 
+the work of \citet{qin1994empirical}
+to exponentially tilted empirical likelihood and even the Cressie-Read
 case. A similar concept has been developed in \citet{newey2004higher}
-under the similar name. There is slight different between their definition
-and ours in both intuition and mathematical definition, however, numerical
-study shows the performance of these two are quite similar. Furthermore,
+. There is slight difference between their definition
+and ours. However, numerical
+study shows that the performance of these two are quite similar. Furthermore,
 in order for the empirical likelihood sample moments to be finite,
 we need more restrictive conditions to guarantee not only the consistency
-of generalized empirical likelihood estimator, but also its law of
-iterative logarithm. 
+of generalized empirical likelihood estimator, but also law of
+the siterative logarithm. 
 
-The organization of the remaining sections of this paper is as follows.
+The organization of the remaining sections in this chapter is as follows.
 In Section 2 of this paper, we consider the basic settings of the
 empirical likelihood, exponentially tilted empirical likelihood, and
 finally the more general Cressie-Read divergence criterion. Section
@@ -103,10 +41,10 @@ remarks.
 Suppose $X_{1},\ldots,X_{n}$ are independent and identically distributed
 random vectors satisfying $Eg\left(X_{1},\theta\right)=0$, where
 $\theta\in\mathbb{R}^{p}$ and $g\left(x,\theta\right)=\left(g_{1}\left(x,\theta\right),g_{2}\left(x,\theta\right),\ldots,g_{r}\left(x,\theta\right)\right)\in\mathbb{R}^{r}$.
-Like in \citet{qin1994empirical}, we focus on the situation $r>p$.
+Following \citet{qin1994empirical}, we focus on the situation $r>p$.
 When $r\le p$, the posterior will still asymptotically center around
-M-estimator, and all the arguments are the same as univariate case.
-However, when $r>p$ , M-estimator may not even exist, we need further
+the M-estimator, and all the arguments are the same as the univariate case.
+However, when $r>p$ , M-estimators may not even exist, and we need further
 generalization. In this context, \citet{owen1988empirical}, formulated
 empirical likelihood as a nonparametric likelihood of the form $\prod_{i=1}^{n}w_{i}\left(\theta\right)$,
 where $w_{i}$ is the probability mass assigned to $X_{i}\left(i=1,\ldots,n\right)$
@@ -163,7 +101,7 @@ correspond to the usual empirical likelihood and the exponentially
 tilted empirical likelihood as defined earlier. 
 
 For convex $\mathrm{CR}\left(\lambda\right)$, its minimum will be
-attained in the compact set $H_{n}$ determined by data. The Lagrange
+attained in the compact set $H_{n}$ determined by the data. The Lagrange
 multiplication method now gives the weights 
 \begin{equation}
 \hat{w}_{i}^{\mathrm{CR}}\left(\theta\right)=\frac{1}{n}\left(\mu+\nu^{T}g\left(X_{i},\theta\right)\right)^{-\frac{1}{\lambda+1}},\, i=1,2,\ldots,n,\label{eq:weight-cr-el}
@@ -183,11 +121,11 @@ basic ideal was first introduced by \citet{lazar2003bayesian} with
 bunch of numerical examples. The intuition relies on close relationship
 between empirical likelihood and empirical distribution. \citet{owen2010empirical}
 formulated 105 4 the two concepts under the same optimization framework,
-that is, they shared the same objective function, but the former one
+that is, they shared the same objective function, but the former 
 was solved under parametric constraints, while the latter was not.
 Considering this similarity, we can use the empirical likelihood as
 a valid distribution parametrized by inferential target. To concrete
-this intuition in Bayesian philosophy, writing $\hat{w}_{i}\left(\theta\right)$
+this intuition in a Bayesian framework, writing $\hat{w}_{i}\left(\theta\right)$
 as generic notation for either $\hat{w}_{i}^{\mathrm{EL}}$, $\hat{w}_{i}^{\mathrm{ET}}$
 or $\hat{w}_{i}^{\mathrm{CR}}$, $\pi$ with a prior probability density
 function $\rho\left(\theta\right)$, with support in $H_{n}$, the
@@ -207,7 +145,7 @@ end, we develop a few necessary lemmas in the next section.
 
 We first give an explanation of natural domain of $\theta$, under
 empirical likelihood settings. In practice, some values of $\theta$
-will result in an empty feasible set in constraints (\ref{eq:constraint-el}).
+will result in an empty feasible set under constraints (\ref{eq:constraint-el}).
 The which guarantees an non-empty feasible set, and thus a solution
 of the optimization problem constitutes 120 natural domain of empirical
 likelihood. One may questions whether the size of the natural domain
@@ -378,8 +316,8 @@ and Lemma 1. A similar proof works for $\mu\left(\theta\right)$.
 
 One important justification of maximum likelihood estimator is the
 good performance substantiated by large sample theory, such as consistency
-and asymptotic normality. It can be shown the above theoretical results
-can be seamlessly transplanted onto the estimator resulted from maximum
+and asymptotic normality. It can be shown that the above theoretical results
+can be seamlessly transferred onto estimators resulting from maximum
 empirical weights. \citet{qin1994empirical} already pointed out the
 validity to use empirical likelihood to define maximum empirical likelihood
 estimator. We extend the same idea into more general Cressie-Read
@@ -412,7 +350,7 @@ likelihood case, let
 \Psi_{2}\left(x\mid\theta,\nu\right) & = & \frac{1}{1+\nu^{T}g\left(x,\theta\right)}\nu^{T}\frac{\partial g\left(x,\theta\right)}{\partial\theta}.
 \end{eqnarray*}
 Let $\Psi^{\mathrm{EL}}\left(x\mid\theta,\nu\right)=\left(\Psi_{1},\Psi_{2}\right)^{T}$.
-In exponentially tilted empirical likelihood, let 
+For exponentially tilted empirical likelihood, let 
 \begin{eqnarray*}
 \Psi_{1}\left(x\mid\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right) & = & \nu^{T}\frac{\partial g\left(x,\theta\right)}{\partial\theta}-\lambda_{1}\exp\left(-\mu-\nu^{T}g\left(x,\theta\right)\right)\nu^{T}\frac{\partial g\left(x,\theta\right)}{\partial\theta}\\
  &  & -\exp\left(-\mu-\nu^{T}g\left(x,\theta\right)\right)\nu^{T}\frac{\partial g\left(x,\theta\right)}{\partial\theta}\lambda_{2}^{T}g\left(x,\theta\right)+\exp\left(-\mu-\nu^{T}g\left(x,\theta\right)\right)\lambda_{2}^{T}\frac{\partial g\left(x,\theta\right)}{\partial\theta},\\
@@ -421,9 +359,9 @@ In exponentially tilted empirical likelihood, let
 \Psi_{4}\left(x\mid\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right) & = & \exp\left(-\mu-\nu^{T}g\left(x,\theta\right)\right)-\frac{e}{n},\\
 \Psi_{4}\left(x\mid\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right) & = & \exp\left(-\mu-\nu^{T}g\left(x,\theta\right)\right)g\left(x,\theta\right),
 \end{eqnarray*}
-where $\lambda_{1}$ and $\lambda_{2}$ are new Lagrange multipliers
-which we will define in later lemma. Let $\Psi^{\mathrm{ET}}\left(x\mid\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right)=\left(\Psi_{1},\ldots,\Psi_{5}\right)^{T}.$
-In Cressie-Read case, let 
+where $\lambda_{1}$ and $\lambda_{2}$ are the new Lagrange multipliers
+which we will define later. Let $\Psi^{\mathrm{ET}}\left(x\mid\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right)=\left(\Psi_{1},\ldots,\Psi_{5}\right)^{T}.$
+In the Cressie-Read case, let 
 \begin{eqnarray*}
 \Psi_{1}\left(x\mid\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right) & = & \frac{1}{\lambda+1}\Bigg[\frac{\nu^{T}\partial g\left(x,\theta\right)/\partial\theta}{\mu+\nu^{T}g\left(x,\theta\right)}-\lambda_{1}\frac{\nu^{T}\partial g\left(x,\theta\right)/\partial\theta}{\left(\mu+\nu^{T}g\left(x,\theta\right)\right)^{1+1/\left(\lambda+1\right)}}\\
  &  & -\frac{\left(\nu^{T}\partial g\left(x,\theta\right)/\partial\theta\right)\left(\lambda_{2}^{T}g\left(x,\theta\right)\right)}{\left(\mu+\nu^{T}g\left(x,\theta\right)\right)^{1+1/\left(\lambda+1\right)}}+\frac{\lambda_{2}^{T}\partial g\left(x,\theta\right)/\partial\theta}{\left(\mu+\nu^{T}g\left(x,\theta\right)\right)^{1+1/\left(\lambda+1\right)}}\Bigg],\\
@@ -442,17 +380,17 @@ If we denote the solution as $\left(\theta^{*},\nu^{*},\mu^{*},\lambda_{1}^{*},\
 then $\tilde{\theta}=\theta^{*}$, $\nu\left(\tilde{\theta}\right)=\nu^{*}$
 and $\mu\left(\tilde{\theta}\right)=\mu^{*}$.\end{lem}
 \begin{proof}
-For explicit, we state the proof separately under the three kinds
+We provide the proofs separately for the three kinds
 of empirical likelihoods. 
 
-First in empirical likelihood. The relationship between $\theta$
+First for empirical likelihood, the relationship between $\theta$
 and $\nu$ are restricted by equation constraint (\ref{eq:lambda-eq}).
 By the Definition \ref{def:gmele}, the maximum generalized empirical
 likelihood estimator can also be the solution of 
 \[
 \max_{\theta,\nu}l\left(\theta\right)=-\frac{1}{n}\sum_{i=1}^{n}\log\left(1+\nu^{T}g\left(X_{i},\theta\right)\right),
 \]
-subject to, 
+subject to
 \[
 \sum_{i=1}^{n}\frac{g\left(X_{i},\theta\right)}{1+\nu^{T}g\left(X_{i},\theta\right)}=0.
 \]
@@ -465,9 +403,9 @@ constraint (\ref{eq:lambda-eq}). Moreover,
 \[
 \frac{\partial l\left(\theta\right)}{\partial\theta}=\frac{1}{n}\sum_{i=1}^{n}\Psi_{2}\left(X_{i}\mid\theta,\nu\right).
 \]
-So the equation system $n^{-1}\sum_{i=1}^{n}\Psi\left(X_{i}\mid\theta,\nu\right)=0$
-is the first order necessary condition of the optimization problem,
-hence the lemma holds in empirical likelihood case.
+So the system of equations $n^{-1}\sum_{i=1}^{n}\Psi\left(X_{i}\mid\theta,\nu\right)=0$
+is a necessary condition of the optimization problem.
+Hence the lemma holds for the empirical likelihood case.
 
 Next, we consider exponentially tilted empirical likelihood. Reviewing
 the Lagrange method to get the empirical weights (\ref{eq:sol-weight-etel}),
@@ -490,7 +428,7 @@ subject to
 \sum_{i=1}^{n}\exp\left(-1-\mu-\nu^{T}g\left(X_{i},\theta\right)\right) & = & 1,\\
 \sum_{i=1}^{n}\exp\left(-1-\mu-\nu^{T}g\left(X_{i},\theta\right)\right)g\left(X_{i},\theta\right) & = & 0.
 \end{eqnarray*}
-Unlike in empirical likelihood case, here we do not have any shortcut.
+Unlike the empirical likelihood case, here we do not have any shortcut.
 The Lagrange multiplier method is the only choice. The Lagrangian
 can be written as 
 \begin{eqnarray*}
@@ -505,13 +443,13 @@ The Cressie-Read case can follow exactly the same procedure in exponentially
 tilted empirical likelihood case.
 \end{proof}
 This lemma offer a better numerical scheme to get the maximum generalized
-empirical likelihood estimator than the original definition. In original
-definition, for each iteration of $\theta$, one need to solve nonlinear
-equations to get Lagrange multiplier $\nu$, which will introduce
+empirical likelihood estimator than using the original definition. In the original
+definition, for each iteration of $\theta$, one needs to solve nonlinear
+equations to get Lagrange multipliers $\nu$, which will introduce
 another iteration. By using the first order condition as in this lemma,
 we can use usual nonlinear equation solver to get the result in a
-single layer iteration. The benefit of Lemma \ref{lem:extend-m-estimator}
-also enlighten a quick solution on asymptotic properties of maximum
+single layer iteration.  Lemma \ref{lem:extend-m-estimator}
+also provides a quick solution on asymptotic properties of maximum
 generalized empirical likelihood estimator. Indeed, it is trivial
 to see, 
 \begin{eqnarray*}
@@ -521,10 +459,10 @@ E\Psi^{\mathrm{CR}}\left(X\mid\theta_{0},0,1,0,1\right) & = & 0.
 \end{eqnarray*}
 Hence, maximum generalized empirical likelihood estimator can also
 be interpreted as an ordinary M-estimator defined by $\Psi$ function.
-The consistency and asymptotic normality can be easily extracted from
-ordinary M-estimator theory. However, in order to expand the posterior
+The consistency and asymptotic normality can  easily be extracted from
+the ordinary M-estimator theory. However, in order to expand the posterior
 around maximum generalized empirical likelihood estimator, we need
-a slight stronger asymptotic property called law of iterative logarithm.
+a slight stronger asymptotic property called the law of the iterative logarithm.
 Particularly, the consistency requires the following condition.
 \begin{assumption}
 \label{assu:consistency-m-est}%
@@ -543,7 +481,7 @@ Let $\eta_{n}$ satisfy
 \[
 \frac{1}{\sqrt{n\log\log n}}\sum_{i=1}^{n}\Psi\left(X_{i}\mid\eta_{n}\right)\rightarrow0,\ascv.
 \]
- The following conditions guarantee law of iterative logarithm.\end{assumption}
+ The following conditions guarantee law of the iterative logarithm.\end{assumption}
 \begin{enumerate}
 \item For each fixed $\eta\in H$, $\Psi\left(x\mid\eta\right)$ is square
 integrable in $\eta$ and separable in sense of Doob: there is zero
@@ -571,8 +509,8 @@ infinity.
 \end{enumerate}
 Actually, the second condition is merely requiring we have a theoretical
 target, and the fourth condition is automatically satisfied if we
-have consistency. Immediately by the theorem in \citet{he1995law},
-we get the law of iterative logarithm for both maximum generalized
+have consistency. By the theorem in \citet{he1995law},
+we get the law of the iterative logarithm for both maximum generalized
 empirical likelihood estimator and the Lagrange multipliers. Now we
 are ready to state another lemma to tie the empirical likelihood weights
 and likelihood together with following condition on the unknown distribution.
@@ -582,7 +520,7 @@ and $\sum_{i=1}^{p}k_{ji}=k_{j}\le K+4$, $j=1,\ldots,l$, then
 \[
 E\left(\prod_{j=1}^{l}\frac{\partial^{k_{l}}g\left(X,\theta_{0}\right)}{\partial\theta_{1}^{k_{l1}}\partial\theta_{2}^{k_{l2}}\cdots\partial\theta_{p}^{k_{lp}}}\right),
 \]
-exists and finite.\end{assumption}
+exists and is finite.\end{assumption}
 \begin{lem}
 \label{lem:finite-empirical weight moment}Let $\omega_{i}\left(\theta\right)$
 be the unnormalized empirical weights from empirical likelihood, that
@@ -597,7 +535,7 @@ then for any $k\le K+4$, any number $s\in\mathbb{R}$,
 \]
 \end{lem}
 \begin{proof}
-By the similar proof in %
+Similar to%
 \begin{comment}
 add detail lemma number
 \end{comment}
@@ -605,8 +543,8 @@ add detail lemma number
 \[
 \lim_{n\rightarrow\infty}\max_{1\le i\le n}n^{-1/3}g\left(X_{i},\theta_{0}\right)=0\ascv.
 \]
-By law of iterative logarithm on Lagrange multiplier $\nu$, there
-exists some constant $C_{1}$ 
+By law of the iterative logarithm on Lagrange multiplier $\nu$, there
+exists some constant $C_{1}$ such that 
 \[
 \varlimsup_{n\rightarrow\infty}\frac{\sqrt{n}\nu\left(\tilde{\theta}\right)}{\sqrt{2\log\log n}}=C_{1}\ascv.
 \]
@@ -618,16 +556,16 @@ So $\nu^{T}\left(\tilde{\theta}\right)g\left(X_{i},\tilde{\theta}\right)$
 are uniformly going to zero. Hence $\omega_{i}\left(\tilde{\theta}\right)$
 are uniformly going to 1 and the lemma holds.
 \end{proof}
-This lemma supports consistency of empirical sample moment to true
+This lemma supports consistency of empirical sample moment to the true
 moment and further justifies the intuition to use empirical likelihood
 as a valid likelihood. 
 
-\citet{newey2004higher} proposes a similar estimator replacing the
+\citet{newey2004higher} proposed a similar estimator replacing the
 objective function in Definition \ref{def:gmele} with divergence
 measure when one calculates empirical weights. Their definition coincides
 with us when the divergence measure is empirical likelihood. Although,
 their starting point is generalized method of moment estimator and
-the intuition is slight different from us, the simulation hardly differs
+the intuition is slight different from ours, the simulation hardly differs
 the performance. In Table \ref{tab:mgele-mde}, we present the simulation
 result. 
 \begin{table}
@@ -724,7 +662,7 @@ more specified
 need a uniform bounded
 \end{comment}
 
-\item \label{enu:smooth-piror}The support of prior contains $H_{n}$, and
+\item \label{enu:smooth-piror}The support of the prior contains $H_{n}$, and
 $\rho\left(\theta\right)\in C^{K}$. 
 \item \label{enu:pd-sample-var}With probability 1 in $P_{X}^{n}$, $n^{-1}\sum_{i=1}^{n}\left(X_{i}-\overline{X}\right)^{2}$
 is a positive definite matrix. 
@@ -798,12 +736,13 @@ Let $P_{K}\left(A,n\right)$ be the expansion polynomial
  & = & \int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y,
 \end{eqnarray*}
 where $\alpha_{h}\left(Y,n\right)$ are corresponding coefficients
-before each order of $n$. %
+before each order of $n$. % 
+The main theorem of this section is as follows.
 \begin{comment}
 add normal case and multivariate case
 \end{comment}
 
-\begin{thm}[main theorem]
+\begin{thm}
 \label{thm:main-theorem}Under the assumptions \enuref{finite-moment-sample},
 \enuref{multv-diff-full-rank}, \enuref{pd-sample-var} and \enuref{smooth-piror},
 there exist a positive constant $M_{1}$ and a large integer $N_{1}$,
@@ -849,9 +788,9 @@ By definition
 \begin{comment}
 add more detail in bounded. bounded above and below.
 \end{comment}
-We know that all terms in \eqref{main-theorem-result-A} and \eqref{main-theorem-result-Hn},
+We know that all the terms in \ref{main-theorem-result-A} and \ref{main-theorem-result-Hn},
 are almost surely bounded by some constant $C_{1}$ for all $n>N_{1}$,
-then there exists a constant 
+then there exists a constant $C_2$ such that
 \begin{eqnarray}
  &  & \left|\Pi\left(B\left(\theta-\overline{X}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)-\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}\right|\nonumber \\
  & \le & \left|\frac{\int_{A\cap H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}{\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}-\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}\right|\nonumber \\
@@ -864,42 +803,42 @@ then there exists a constant
 Now we find the quotient series of $P_{K}\left(A,n\right)/P_{K}\left(H_{n},n\right)$.
 Let 
 \[
-\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}=\sum_{i=0}^{\infty}\gamma_{i}\left(A,n\right)n^{-\frac{i}{2}},
+\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}=\sum_{i=0}^{\infty}\gamma_{i}\left(A,n\right)n^{-\frac{i}{2}}.
 \]
-then by the product rule of series we have the coefficients $\gamma_{i}\left(A,n\right)$
+Then by the product rule of series, the coefficients $\gamma_{i}\left(A,n\right)$
 are determined by 
 \[
 \int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\alpha_{h}\left(Y,n\right)\diff Y=\sum_{j=0}^{h}\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\alpha_{j}\left(Y,n\right)\diff Y\gamma_{h-j}\left(A,n\right).
 \]
-Through simple calculation, we can find first two items of $\gamma_{i}\left(A,n\right)$
-is 
+Through simple calculation, we find first two items of $\gamma_{i}\left(A,n\right)$
+as
 \begin{eqnarray*}
 \gamma_{0}\left(A,n\right) & = & \frac{\rho\left(\overline{X}\right)\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}{\rho\left(\overline{X}\right)\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}=\frac{\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}=\Phi_{p}\left(A|H_{n}\right),\\
 \gamma_{1}\left(A,n\right) & = & \frac{\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\diff Y}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}\\
  &  & -\frac{-\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\diff Y\Phi_{p}\left(A|H_{n}\right)}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}\\
  & = & \frac{\int_{A\cap H_{n}}\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\varphi_{p}\left(Y\right)\diff Y}{\Phi_{p}\left(H_{n}\right)}-\frac{\int_{H_{n}}\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\varphi_{p}\left(Y\right)\diff Y}{\Phi_{p}\left(H_{n}\right)}\Phi_{p}\left(A|H_{n}\right),
 \end{eqnarray*}
-where $\varphi_{p}$ is the density of dimension $p$ standard normal
+where $\varphi_{p}$ is the density of  $p$-dimensional standard normal
 distribution, $\Phi_{p}$ is the probability or conditional probability
 of dimension $p$ standard normal distribution. By the discussion
-following \lemref{control-higher-order-derivative-l}, we know that
+following Lemma \ref{control-higher-order-derivative-l}, we know that
 all $\gamma_{i}$ are almost surely uniformly bounded for all large
 $n$. Then there exists a constant $M_{2}$, such that 
 \begin{equation}
 \left|\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}-\Phi_{p}\left(A|H_{n}\right)-\sum_{i=1}^{K}\gamma_{i}\left(A,n\right)n^{-\frac{i}{2}}\right|\le M_{2}n^{-\frac{K+1}{2}}.\label{eq:quotient-serier-approx}
 \end{equation}
-Combine \eqref{two-quotient-close} and \eqref{quotient-serier-approx},
-we get \eqref{asym-exp-poster-prob}.
+We combine \ref{two-quotient-close} and \ref{quotient-serier-approx}
+to get \eqref{asym-exp-poster-prob}.
 \end{proof}
 \end{thm}
-We will show detail proof of the this theorem in appendix. The proof
-are similar to \citet{johnson1970asymptotic}, with some modification
-to apply to empirical likelihood framework. 
+We provide detailed proof of the this theorem in the appendix. The proof
+is similar to \citet{johnson1970asymptotic}, with some modification
+needed in the empirical likelihood framework. 
 \begin{cor}[Asymptotic normality ]
 
 \end{cor}
 
-\section{application\label{sec:application}}
+\section{Application\label{sec:application}}
 
 
 \subsection{Simulation study}
