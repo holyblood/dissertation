@@ -5,7 +5,7 @@ Case}
 \section{Introduction}
 This chapter considers higher order asymptotic expansion Bayesian empirical likelihood in the multivariate case.
 
-In the univariate case, the posterior is centered at an M-estimator,
+In the univariate case, the posterior is centered at an $M$-estimator,
 which guarantees the consistency under mild regularity conditions. In constrast,
 in the
 multivariate case, the posterior is centered at the maximum generalized
@@ -43,8 +43,8 @@ random vectors satisfying $Eg\left(X_{1},\theta\right)=0$, where
 $\theta\in\mathbb{R}^{p}$ and $g\left(x,\theta\right)=\left(g_{1}\left(x,\theta\right),g_{2}\left(x,\theta\right),\ldots,g_{r}\left(x,\theta\right)\right)\in\mathbb{R}^{r}$.
 Following \citet{qin1994empirical}, we focus on the situation $r>p$.
 When $r\le p$, the posterior will still asymptotically center around
-the M-estimator, and all the arguments are the same as the univariate case.
-However, when $r>p$ , M-estimators may not even exist, and we need further
+the $M$-estimator, and all the arguments are the same as the univariate case.
+However, when $r>p$ , $M$-estimators may not even exist, and we need further
 generalization. In this context, \citet{owen1988empirical}, formulated
 empirical likelihood as a nonparametric likelihood of the form $\prod_{i=1}^{n}w_{i}\left(\theta\right)$,
 where $w_{i}$ is the probability mass assigned to $X_{i}\left(i=1,\ldots,n\right)$
@@ -336,7 +336,7 @@ Lemma \ref{lem:mul-el-smooth-lagrange-mul-1} establishes the continuity
 of empirical likelihood and Lemma \ref{lem:nondecreasing-compact-natural-domain}
 reveals the compactness of $H$, then these results guarantee the
 existence of $\tilde{\theta}$. So this concept is well-defined. One
-advantage of this estimator over the traditional M-estimator is that
+advantage of this estimator over the traditional $M$-estimator is that
 it can always produce a good quality estimator even when traditional
 one has no solution. Before exploring the asymptotic properties of
 this new estimator, we derive an equivalent formulation of  maximum
@@ -458,40 +458,55 @@ E\Psi^{\mathrm{ET}}\left(X\mid\theta_{0},0,-1,0\right) & = & 0,\\
 E\Psi^{\mathrm{CR}}\left(X\mid\theta_{0},0,1,0,1\right) & = & 0.
 \end{eqnarray*}
 Hence, maximum generalized empirical likelihood estimator can also
-be interpreted as an ordinary M-estimator defined by $\Psi$ function.
+be interpreted as an ordinary $M$-estimator defined by $\Psi$ function.
 The consistency and asymptotic normality can  easily be extracted from
-the ordinary M-estimator theory. However, in order to expand the posterior
+the ordinary $M$-estimator theory. However, in order to expand the posterior
 around maximum generalized empirical likelihood estimator, we need
 a slight stronger asymptotic property called the law of the iterative logarithm.
-Particularly, the consistency requires the following condition.
+Particularly, the consistency requires the following condition from 
+\citet{huber1967behavior}.
 \begin{assumption}
 \label{assu:consistency-m-est}%
-\begin{comment}
-need to be specified
-\end{comment}
-add later consistency
+Let $\eta=\left(\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right)$, $\psi\left(\eta\right)=E\Psi\left(X\mid\eta\right)$
+	\begin{enumerate}
+	\item Let the parameter space $H$ be locally compact with countable base.
+	\item For each fixed $\eta\in H$, $\Psi\left(x\mid\eta\right)$ is square
+	integrable in $\eta$ and separable in sense of Doob: there is zero
+	measure set $N$ and a countable subset of $H'\subset H$, such that
+	for every open set $U\subset H$, and every closed interval $A$,
+	the sets $\left\{ x:\Psi\left(x\mid\eta\right)\in A,\:\forall\eta\in U\right\} $
+	and $\left\{ x:\Psi\left(x\mid\eta\right)\in A,\:\forall\eta\in U\cap H'\right\} $
+	differ by a subset of $N$.
+	\item The function $\Psi$ is a.s. continuous in $\theta$. 
+	\item $\psi$ has unique zero at $\eta=\eta_0$.
+	\item There exists a continuous function which is bounded away from zero, 
+			$b(\eta)>b_0>0$, such that
+			\begin{enumerate}
+				\item $\sup_\eta b^{-1}(\eta)\left|\Psi(x,\eta)\right|$ is 	 
+					integrable,
+				\item $\varliminf_{\eta \rightarrow \infty} b^{-1}(\eta) \left|
+					\psi(\eta)\right| \ge 1$,
+				\item $E\left\{ \varlimsup_{\eta \rightarrow \infty} b^{-1}(\eta)
+						\left|\Psi(\eta)-\psi(\eta)\right|\right\} <1$.
+			\end{enumerate}
+	\end{enumerate}
 \end{assumption}
 The assumptions we need come from \citet{he1995law}. We state them
 as follows.
 \begin{assumption}
-\label{assu:lil-m-est}Let $\eta=\left(\theta,\nu,\mu,\lambda_{1},\lambda_{2}\right)$.
-Let $\psi\left(\eta\right)=E\Psi\left(X\mid\eta\right)$, $u\left(x,\eta,d\right)=\sup_{\left|\tau-\eta\right|\le d}\left|\Psi\left(x\mid\tau\right)-\Psi\left(x\mid\eta\right)\right|$,
+\label{assu:lil-m-est}
+Let $u\left(x,\eta,d\right)=\sup_{\left|\tau-\eta\right|\le d}\left|\Psi\left(x\mid\tau\right)-\Psi\left(x\mid\eta\right)\right|$,
 where $\left|\cdot\right|$ takes sup-norm $\left|\eta\right|=\max_{1\le j\le p}\left|\eta_{j}\right|$.
 Let $\eta_{n}$ satisfy 
 \[
 \frac{1}{\sqrt{n\log\log n}}\sum_{i=1}^{n}\Psi\left(X_{i}\mid\eta_{n}\right)\rightarrow0,\ascv.
 \]
- The following conditions guarantee law of the iterative logarithm.\end{assumption}
+\end{assumption}
+The following conditions guarantee law of the iterative logarithm.
+\begin{assumption}
+\label{assu:lil-m-est-2}
 \begin{enumerate}
-\item For each fixed $\eta\in H$, $\Psi\left(x\mid\eta\right)$ is square
-integrable in $\eta$ and separable in sense of Doob: there is zero
-measure set $N$ and a countable subset of $H'\subset H$, such that
-for every open set $U\subset H$, and every closed interval $A$,
-the sets $\left\{ x:\Psi\left(x\mid\eta\right)\in A,\:\forall\eta\in U\right\} $
-and $\left\{ x:\Psi\left(x\mid\eta\right)\in A,\:\forall\eta\in U\cap H'\right\} $
-differ by a subset of $N$.
 
-\begin{enumerate}
 \item There is a $\eta_{0}\in H$, such that $\psi\left(\eta_{0}\right)=0$,
 and $\psi$ has a non-singular derivative at $\eta_{0}$.
 \item There exist positive numbers $a,\: b,\: c,\: d,\:\alpha,\:\beta$,
@@ -505,8 +520,9 @@ for $\left|\eta-\eta_{0}\right|\le d_{0}$,
 \end{enumerate}
 \item $\left|\eta_{n}-\eta_{0}\right|\le d_{0}$ almost surely as $n$ goes
 infinity.
+
 \end{enumerate}
-\end{enumerate}
+\end{assumption}
 Actually, the second condition is merely requiring we have a theoretical
 target, and the fourth condition is automatically satisfied if we
 have consistency. By the theorem in \citet{he1995law},
@@ -584,6 +600,7 @@ N=20 & 0.1394 & 0.1320 & 0.2130 & 0.1408 \\
     \hline
 \end{tabular}
 %\end{table}\protect\caption{\label{tab:mgele-mde}Compare Performance MGELE and MDE}
+\caption{\label{tab:mgele-mde}Compare Performance MGELE and MDE}
 \end{table}
 
 
@@ -838,24 +855,4 @@ needed in the empirical likelihood framework.
 
 \end{cor}
 
-\section{Application\label{sec:application}}
 
-
-\subsection{Simulation study}
-
-For simplicity, we simulate the situation where $p=1$. In this case
-the first two terms in \eqref{asym-exp-poster-prob} will be $\Phi_{1}\left(\left(-\infty,\xi\right]|\left(X_{\left(1\right)},X_{\left(n\right)}\right)\right)$
-and 
-\begin{eqnarray*}
-\gamma_{1}\left(\left(-\infty,\xi\right],n\right) & = & \frac{\rho'\left(\overline{X}\right)\hat{\sigma}\int_{\left(-\infty,\xi\right]\cap\left(X_{\left(1\right)},X_{\left(n\right)}\right)}y\varphi_{1}\left(y\right)\diff y+\rho\left(\overline{X}\right)\hat{\sigma}^{3}\hat{l}^{\left(3\right)}\left(\overline{X}\right)\int_{\left(-\infty,\xi\right]\cap\left(X_{\left(1\right)},X_{\left(n\right)}\right)}y^{3}\varphi\left(y\right)\diff y}{\Phi\left(\left(X_{\left(1\right)},X_{\left(n\right)}\right)\right)}\\
- &  & -\frac{\rho'\left(\overline{X}\right)\hat{\sigma}\int_{\left(X_{\left(1\right)},X_{\left(n\right)}\right)}y\varphi_{1}\left(y\right)\diff y+\rho\left(\overline{X}\right)\hat{\sigma}^{3}\hat{l}^{\left(3\right)}\left(\overline{X}\right)\int_{\left(X_{\left(1\right)},X_{\left(n\right)}\right)}y^{3}\varphi\left(y\right)\diff y}{\Phi\left(\left(X_{\left(1\right)},X_{\left(n\right)}\right)\right)}\\
- &  & \Phi_{1}\left(\left(-\infty,\xi\right]|\left(X_{\left(1\right)},X_{\left(n\right)}\right)\right),
-\end{eqnarray*}
-where $X_{\left(i\right)}$ are order statistics, and 
-\[
-\hat{l}^{\left(3\right)}=\frac{2n^{2}\sum_{i=1}^{n}\left(X_{i}-\overline{X}\right)^{3}}{\hat{\sigma}^{6}}.
-\]
-
-
-
-\section{discussion\label{sec:discussion}}
