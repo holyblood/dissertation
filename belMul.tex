@@ -605,132 +605,46 @@ N=20 & 0.1394 & 0.1320 & 0.2130 & 0.1408 \\
 \end{table}
 
 
+Before stating the main result, 
+we need to prove that the Hessian matrices of the empirical likelihood, the exponentially tilted empirical likelihood and Cressie-Read empirical likelihood are positive definite.
 
-\section{old stuff have not been modified}
 \begin{lem}
-\label{lem:bell-shape-el} %
-\begin{comment}
-need condition 
-\end{comment}
-$\diff^{2}\tilde{l}\left(\tilde{\theta}\right)/\diff\theta^{2}<0$
+\label{lem:pd-sample-var-2}
+Under  Assumptions \ref{ass:denom-not-zero} and \ref{ass:first-order-smooth-g},
+${\partial^{2}\tilde{l}\left(\tilde{\theta} \right)} / {\partial\theta \partial\theta^T}$ is positive definite,
 where $\tilde{l}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\log\hat{w}_{i}\left(\theta\right)$
 where $\hat{w}_{i}$ is either $\hat{w}_{i}^{\mathrm{EL}}$, $\hat{w}_{i}^{\mathrm{ET}}$
-or $\hat{w}_{i}^{\mathrm{CR}}$ $\left(i=1,2,\ldots,n\right)$.\end{lem}
+or $\hat{w}_{i}^{\mathrm{CR}}$ $\left(i=1,\ldots,n\right)$.
+\end{lem}
+
 \begin{proof}
-We begin with $\tilde{l}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\log\hat{w}_{i}^{\mathrm{EL}}\left(\theta\right)=-\sum_{i=1}^{n}\log\left[1+\nu\left(X_{i}-\theta\right)\right]-\log n$.
-Hence by (\ref{eq:sol-emp-lik}) and (\ref{eq:lambda-eq}), 
-\[
-\frac{\diff\tilde{l}\left(\theta\right)}{\diff\theta}=\frac{1}{n}\nu\sum_{i=1}^{n}\frac{1}{1+\nu g\left(X_{i}\theta\right)}\frac{\diff g\left(X_{i},\theta\right)}{\diff\theta}-\frac{1}{n}\sum_{i=1}^{n}\frac{g\left(X_{i}\theta\right)}{1+\nu g\left(X_{i}\theta\right)}\frac{\diff\nu}{\diff\theta}=\frac{1}{n}\nu\left(\theta\right)\sum_{i=1}^{n}\frac{1}{1+\nu g\left(X_{i}\theta\right)}\frac{\diff g\left(X_{i},\theta\right)}{\diff\theta}.
-\]
-
-
-Thus 
-\[
-\left.\frac{\diff^{2}\tilde{l}\left(\theta\right)}{\diff\theta^{2}}\right|_{\theta=\tilde{\theta}}=-\frac{\left(\sum_{i=1}^{n}\diff g\left(X_{i},\tilde{\theta}\right)/\diff\theta\right)^{2}}{n\sum_{i=1}^{n}g\left(X_{i},\tilde{\theta}\right)^{2}}<0.
-\]
-
-
-Next we consider $\tilde{l}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\log\hat{w}_{i}^{\mathrm{ET}}\left(\theta\right)=-\left(\nu n^{-1}\sum_{i=1}^{n}g\left(X_{i},\theta\right)+\log\sum_{i=1}^{n}\exp\left(-\nu g\left(X_{i},\theta\right)\right)\right)$.
-Then 
-\begin{eqnarray*}
-\frac{\diff\tilde{l}\left(\theta\right)}{\diff\theta} & = & -\frac{\diff\nu}{\diff\theta}\frac{1}{n}\sum_{i=1}^{n}g\left(X_{i},\theta\right)\\
- &  & +\frac{\sum_{i=1}^{n}\exp\left(-\nu g\left(X_{i},\theta\right)\right)\left(\diff\nu/\diff\theta g\left(X_{i},\theta\right)+\nu\diff g\left(X_{i},\theta\right)/\diff\theta\right)}{\sum_{i=1}^{n}\exp\left(-\nu g\left(X_{i},\theta\right)\right)}\\
- & = & -\frac{\diff\nu}{\diff\theta}\frac{1}{n}\sum_{i=1}^{n}g\left(X_{i},\theta\right)+\nu\frac{\sum_{i=1}^{n}\exp\left(-\nu g\left(X_{i},\theta\right)\right)\diff g\left(X_{i},\theta\right)/\diff\theta}{\sum_{i=1}^{n}\exp\left(-\nu g\left(X_{i},\theta\right)\right)}\\
- &  & -\nu n^{-1}\sum_{i=1}^{n}\frac{\diff g\left(X_{i},\theta\right)}{\diff\theta}.
-\end{eqnarray*}
-Thus 
-\[
-\left.\frac{\diff^{2}\tilde{l}\left(\theta\right)}{\diff\theta^{2}}\right|_{\theta=\tilde{\theta}}=-\frac{\diff\nu}{\diff\theta}\frac{1}{n}\sum_{i=1}^{n}\frac{\diff g\left(X_{i},\tilde{\theta}\right)}{\diff\theta}=-\frac{\left(\sum_{i=1}^{n}\diff g\left(X_{i},\tilde{\theta}\right)/\diff\theta\right)^{2}}{n\sum_{i=1}^{n}g\left(X_{i},\tilde{\theta}\right)^{2}}<0.
-\]
-
-
-Finally, for CR, $\tilde{l}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\log\hat{w}_{i}^{\mathrm{CR}}\left(\theta\right)=-\left[n\left(\lambda+1\right)\right]^{-1}\sum_{i=1}^{n}\log\left(\mu+\nu g\left(X_{i},\theta\right)\right)$.
-Then by (\ref{eq:first-der-lag-mul-crel}), 
-\[
-\frac{\diff\tilde{l}\left(\theta\right)}{\diff\theta}=.
-\]
-\begin{comment}
-need to compute the first and second order derivative
-\end{comment}
-Thus 
-\[
-\left.\frac{\diff^{2}\tilde{l}\left(\theta\right)}{\diff\theta^{2}}\right|_{\theta=\overline{X}}=-\frac{\left(\sum_{i=1}^{n}\diff g\left(X_{i},\tilde{\theta}\right)/\diff\theta\right)^{2}}{n\sum_{i=1}^{n}g\left(X_{i},\tilde{\theta}\right)^{2}}.
-\]
-
+	See Appendix B.1 
 \end{proof}
-Let $b=\left[\left(n^{-1}\sum_{i=1}^{n}\diff g\left(X_{i},\tilde{\theta}\right)/\diff\theta\right)^{2}/\left(n^{-1}\sum_{i=1}^{n}g\left(X_{i},\tilde{\theta}\right)^{2}\right)\right]^{-1/2}$.
-Now we prove the main result in the next section.
 
 
-\section{Assumptions}
-\begin{enumerate}
-\item \label{enu:multv-diff-full-rank}In multivariate empirical likelihood
-settings, matrix $Z$ has full column rank with probability 1. %
-\begin{comment}
-brief discussion the stat meaning of assumption
-\end{comment}
 
-\item \label{enu:finite-moment-sample}$E\prod_{s=1}^{K}\left(X_{ij_{s}}-\theta_{j_{s},0}\right),\left(j_{1},j_{2},\ldots,j_{K}\right)\subset\left\{ 1,2,\ldots,K\right\} $,
-where $\theta_{0}$ is the true expectation of $X$, exists and finite.
-\begin{comment}
-need a math induction lemma for finiteness of constant, need to be
-more specified
-\end{comment}
-\begin{comment}
-need a uniform bounded
-\end{comment}
+\section{Main Result\label{sec:main-result}}
 
-\item \label{enu:smooth-piror}The support of the prior contains $H_{n}$, and
-$\rho\left(\theta\right)\in C^{K}$. 
-\item \label{enu:pd-sample-var}With probability 1 in $P_{X}^{n}$, $n^{-1}\sum_{i=1}^{n}\left(X_{i}-\overline{X}\right)^{2}$
-is a positive definite matrix. 
-\end{enumerate}
-
-\section{main result\label{sec:main-result}}
-
-Let $\overline{X}$ be the sample mean. Let $\nu=\nu\left(\theta\right)$
-be Lagrange multiplier obtained from \ref{eq:lambda-eq} which are
-smooth functions of $\theta$ by %
-\begin{comment}
-smooth lemma
-\end{comment}
-{} in appendix. Let $\hat{l}=\hat{l}_{n}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\theta\right)$
-be the logarithm of empirical likelihood. Let $P_{X}^{n}$ be the
-underlying probability measure for sample $X_{1},X_{2},\ldots,X_{n}$. 
-
-For multivariate empirical likelihood, let 
-\[
-Z=\left(\begin{array}{cccccc}
-X_{11}-X_{21} & X_{12}-X_{22} & \cdots & X_{1j}-X_{2j} & \cdots & X_{1p}-X_{2p}\\
-X_{11}-X_{31} & X_{12}-X_{32} & \cdots & X_{1j}-X_{3j} & \cdots & X_{1p}-X_{3p}\\
-\cdots & \cdots & \cdots & \cdots & \cdots & \cdots\\
-X_{i1}-X_{j1} & X_{i2}-X_{l2} & \cdots & X_{ij}-X_{lj} & \cdots & X_{ip}-X_{lp}\\
-\cdots & \cdots & \cdots & \cdots & \cdots & \cdots\\
-X_{p-1,1}-X_{p1} & X_{p-1,2}-X_{p2} & \cdots & X_{p-1,j}-X_{pj} & \cdots & X_{p-1,p}-X_{pp}
-\end{array}\right).
-\]
-
-
-Let $K$ be any positive integer and $K\ge3$. For multivariate case
-in empirical likelihood, let $B$ be the Cholesky decomposition of
+For multivariate case
+in the empirical likelihood, exponentially tilted empirical likelihood and Cressie-Read empirical likelihood, let $B$ be the Cholesky decomposition of
 negative of the Hessian matrix 
 \[
--\left.\frac{\partial^{2}\hat{l}}{\partial\theta^{T}\partial\theta}\right|_{\theta=\overline{X}}=B^{T}B.
+-\left.\frac{\partial^{2}\hat{l}}{\partial\theta^{T}\partial\theta}\right|_{\theta=\tilde{\theta}}=B^{T}B.
 \]
-Let $Y=\sqrt{n}B\left(\theta-\overline{X}\right)$, define differential
+Let $Y=\sqrt{n}B\left(\theta-\tilde{\theta}\right)$, define differential
 operators 
 \[
 \delta_{i}=\frac{1}{i!}\left(Y^{T}B^{-T}\nabla\right)^{i},
 \]
 where $\nabla$ is the gradient operator. 
 
-We expand the prior around the sample mean $\overline{X}$ and have
+We expand the prior around the maximum generalized empirical likelihood estimator $\tilde{\theta}$ and have
 \begin{eqnarray*}
-\rho_{K}\left(\theta\right) & = & \rho\left(\overline{X}\right)+\delta_{1}\rho\left(\overline{X}\right)n^{-\frac{1}{2}}+\delta_{2}\rho\left(\overline{X}\right)n^{-1}+\cdots+\delta_{K}\rho\left(\overline{X}\right)n^{-\frac{K}{2}},
+\rho_{K}\left(\theta\right) & = & \rho\left(\tilde{\theta}\right)+\delta_{1}\rho\left(\tilde{\theta}\right)n^{-\frac{1}{2}}+\delta_{2}\rho\left(\tilde{\theta}\right)n^{-1}+\cdots+\delta_{K}\rho\left(\tilde{\theta}\right)n^{-\frac{K}{2}},
 \end{eqnarray*}
-where $\delta_{i}\rho\left(\overline{X}\right)$ are results from
+where $\delta_{i}\rho\left(\tilde{\theta}\right)$ are results from
 applying the differential operators prior density then evaluating
-at $\overline{X}$. We abbreviate $\delta_{i}\rho\left(\overline{X}\right),\: i=2,3,\ldots K$
+at $\tilde{\theta}$. We abbreviate $\delta_{i}\rho\left(\tilde{\theta}\right),\: i=2,3,\ldots K$
 as $\delta_{i}\rho$.
 
 \begin{comment}
@@ -738,9 +652,8 @@ add multivariate case coefficients
 \end{comment}
 
 
-Let $H_{n}$ be the convex hull of samples. 
 
-Let $I_{i,h}=\left\{ \left(m_{3,i},m_{4,i},\ldots,m_{K+3,i}\right)\in\mathbb{N}^{K}:\sum_{u=3}^{K+3}m_{u,i}=i,\:\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)=h\right\} $.
+Let $I_{i,h}=\left\{ \left(m_{3,i},m_{4,i},\ldots,m_{K+3,i}\right)\in\mathbb{N}^{K}:\sum_{u=3}^{K+3}m_{u,i}=i,\:\sum_{u=3}^{K+3}m_{u,i}\left(u-2\right)=h\right\} $ be index sets.
 
 \begin{comment}
 the formula is wrong, need a new one. 
@@ -748,7 +661,7 @@ the formula is wrong, need a new one.
 Let $P_{K}\left(A,n\right)$ be the expansion polynomial 
 \begin{eqnarray*}
  &  & P_{K}\left(A,n\right)\\
- & = & \left(\rho\left(\overline{X}\right)\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y\right)n^{-\frac{1}{2}}+\left(\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\diff Y\right)n^{-1}\\
+ & = & \left(\rho\left(\tilde{\theta}\right)\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y\right)n^{-\frac{1}{2}}+\left(\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\left(\delta_{1}\rho+\rho\left(\tilde{\theta}\right)\delta_{3}\hat{l}\right)\diff Y\right)n^{-1}\\
  &  & +\sum_{h=2}^{K}\Bigg\{\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\Bigg[\delta_{h}\rho\\
  &  & +\sum_{j=0}^{h-1}\delta_{j}\rho\sum_{\frac{h-j}{K+1}\le i\le h-j}\frac{1}{i!}\sum_{I_{i,h-j}}\binom{i}{m_{3,i},m_{4,i},\ldots,m_{K+3,i}}\prod_{u=3}^{K+3}\left(\delta_{u}\hat{l}\right)^{m_{u,i}}\Bigg]\diff Y\Bigg\} n^{-\frac{h+1}{2}}\\
  & = & \int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y,
@@ -764,7 +677,7 @@ For rigorous expansion, we need the $M$-estimator to be unique.
 \label{assu:uniq-m-est-mult}
 Assume $\tilde{\theta}$ is the unique maximizer in $H$.
 \end{assumption}
-\begin{thm}
+\begin{thm}[Fundamental Theorem for Expansion]
 \label{thm:main-theorem}Under the assumptions \enuref{finite-moment-sample},
 \enuref{multv-diff-full-rank}, \enuref{pd-sample-var} and \enuref{smooth-piror},
 there exist a positive constant $M_{1}$ and a large integer $N_{1}$,
@@ -783,7 +696,7 @@ add main theorem
 \end{comment}
 This theorem can be used to prove many asymptotic results
 \begin{thm}[Asymptotic expansion]
-Under the same assumptions as \thmref{main-theorem}, there exist
+Under the same assumptions as Theorem \thmref{main-theorem}, there exist
 a positive constant $M_{2}$ and a large integer $N_{2}$, such that
 for any Borel set $A\subset\mathbb{R}^{p}$ and any $n>N_{2}$,%
 \begin{comment}
@@ -791,7 +704,7 @@ add subscript to constant
 \end{comment}
 {} 
 \begin{equation}
-\left|\Pi\left(B\left(\theta-\overline{X}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)-\Phi_{p}\left(A|H_{n}\right)-\sum_{i=1}^{K}\gamma_{i}\left(A,n\right)n^{-\frac{i}{2}}\right|\le M_{1}n^{-\frac{K+1}{2}},\ascv.\label{eq:asym-exp-poster-prob}
+\left|\Pi\left(B\left(\theta-\tilde{\theta}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)-\Phi_{p}\left(A|H_{n}\right)-\sum_{i=1}^{K}\gamma_{i}\left(A,n\right)n^{-\frac{i}{2}}\right|\le M_{1}n^{-\frac{K+1}{2}},\ascv.\label{eq:asym-exp-poster-prob}
 \end{equation}
 
 \begin{proof}
@@ -805,7 +718,7 @@ and
 \end{equation}
 By definition 
 \[
-\Pi\left(B\left(\theta-\overline{X}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)=\frac{\int_{A\cap H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}{\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}.
+\Pi\left(B\left(\theta-\tilde{\theta}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)=\frac{\int_{A\cap H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}{\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}.
 \]
 \begin{comment}
 add more detail in bounded. bounded above and below.
@@ -814,7 +727,7 @@ We know that all the terms in \ref{main-theorem-result-A} and \ref{main-theorem-
 are almost surely bounded by some constant $C_{1}$ for all $n>N_{1}$,
 then there exists a constant $C_2$ such that
 \begin{eqnarray}
- &  & \left|\Pi\left(B\left(\theta-\overline{X}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)-\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}\right|\nonumber \\
+ &  & \left|\Pi\left(B\left(\theta-\tilde{\theta}\right)\in A|X_{1},X_{2},\ldots,X_{n}\right)-\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}\right|\nonumber \\
  & \le & \left|\frac{\int_{A\cap H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}{\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}-\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}\right|\nonumber \\
  & = & \Bigg|\frac{\int_{A\cap H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y-P_{K}\left(A,n\right)}{\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y}\nonumber \\
  &  & -\frac{\left(\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y-P_{K}\left(H_{n},n\right)\right)P_{K}\left(A,n\right)}{\int_{H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}YP_{K}\left(H_{n},n\right)}\Bigg|\nonumber \\
@@ -835,10 +748,10 @@ are determined by
 Through simple calculation, we find first two items of $\gamma_{i}\left(A,n\right)$
 as
 \begin{eqnarray*}
-\gamma_{0}\left(A,n\right) & = & \frac{\rho\left(\overline{X}\right)\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}{\rho\left(\overline{X}\right)\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}=\frac{\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}=\Phi_{p}\left(A|H_{n}\right),\\
-\gamma_{1}\left(A,n\right) & = & \frac{\int_{A\cap H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\diff Y}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}\\
- &  & -\frac{-\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\diff Y\Phi_{p}\left(A|H_{n}\right)}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}\\
- & = & \frac{\int_{A\cap H_{n}}\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\varphi_{p}\left(Y\right)\diff Y}{\Phi_{p}\left(H_{n}\right)}-\frac{\int_{H_{n}}\left(\delta_{1}\rho+\rho\left(\overline{X}\right)\delta_{3}\hat{l}\right)\varphi_{p}\left(Y\right)\diff Y}{\Phi_{p}\left(H_{n}\right)}\Phi_{p}\left(A|H_{n}\right),
+\gamma_{0}\left(A,n\right) & = & \frac{\rho\left(\tilde{\theta}\right)\int_{A\cap H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\diff Y}{\rho\left(\right)\int_{H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\diff Y}=\frac{\int_{A\cap H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\diff Y}{\int_{H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\diff Y}=\Phi_{p}\left(A|H_{n}\right),\\
+\gamma_{1}\left(A,n\right) & = & \frac{\int_{A\cap H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\left(\delta_{1}\rho+\rho\left(\tilde{\theta}\right)\delta_{3}\tilde{l}\right)\diff Y}{\int_{H_{n}}\exp\left(-\frac{Y^{T}Y}{2}\right)\diff Y}\\
+ &  & -\frac{-\int_{H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\left(\delta_{1}\rho+\rho\left(\tilde{\theta}\right)\delta_{3}\hat{l}\right)\diff Y\Phi_{p}\left(A|H_{n}\right)}{\int_{H_{n}}\exp\left(-{Y^{T}Y}/{2}\right)\diff Y}\\
+ & = & \frac{\int_{A\cap H_{n}}\left(\delta_{1}\rho+\rho\left(\tilde{\theta}\right)\delta_{3}\hat{l}\right)\varphi_{p}\left(Y\right)\diff Y}{\Phi_{p}\left(H_{n}\right)}-\frac{\int_{H_{n}}\left(\delta_{1}\rho+\rho\left(\tilde{\theta}\right)\delta_{3}\hat{l}\right)\varphi_{p}\left(Y\right)\diff Y}{\Phi_{p}\left(H_{n}\right)}\Phi_{p}\left(A|H_{n}\right),
 \end{eqnarray*}
 where $\varphi_{p}$ is the density of  $p$-dimensional standard normal
 distribution, $\Phi_{p}$ is the probability or conditional probability
@@ -856,8 +769,15 @@ to get \eqref{asym-exp-poster-prob}.
 We provide detailed proof of the this theorem in the appendix. The proof
 is similar to \citet{johnson1970asymptotic}, with some modification
 needed in the empirical likelihood framework. 
-\begin{cor}[Asymptotic normality ]
 
+Let $K=2$. Then we get asymptotic normality of the posterior distribution. 
+\begin{cor}[Asymptotic normality ]
+Use the assumption in Theorem \ref{thm:main-thm} with $K=2$, then
+the posterior distribution converges in distribution to normal distribution
+almost surely, that is 
+\[
+\left.\sqrt{n}B^T\left(\theta-\tilde{\theta}\right)\right|X_{1},\ldots,X_{n}\rightarrow N(0,I),\ascv,
+\]
 \end{cor}
 
 
