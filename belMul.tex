@@ -1,6 +1,7 @@
 \chapter{Higher-Order Properties of Bayesian Empirical Likelihood: Multivariate
 Case}
 
+\setcounter{assumption}{0}
 
 \section{Introduction}
 This chapter considers higher order asymptotic expansion Bayesian empirical likelihood in the multivariate case.
@@ -758,7 +759,11 @@ The main theorem of this section is as follows.
 \begin{comment}
 add normal case and multivariate case
 \end{comment}
-
+For rigorous expansion, we need the $M$-estimator to be unique.
+\begin{assumption}
+\label{assu:uniq-m-est-mult}
+Assume $\tilde{\theta}$ is the unique maximizer in $H$.
+\end{assumption}
 \begin{thm}
 \label{thm:main-theorem}Under the assumptions \enuref{finite-moment-sample},
 \enuref{multv-diff-full-rank}, \enuref{pd-sample-var} and \enuref{smooth-piror},
