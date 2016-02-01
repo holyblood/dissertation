@@ -12,22 +12,19 @@ First, we prove the lemma for the empirical likelihood.
 \begin{eqnarray*}
 \frac{\partial^{2}\hat{l}}{\partial\theta_{j}\partial\theta_{k}} & = & -\frac{\partial\nu^{T}}{\partial\theta_{j}}\sum_{i=1}^{n}\frac{{\partial g\left(X_{i},\theta\right)} / {\partial\theta_{k}}}{n\left(1+\nu^{T}g\left(X_{i},\theta\right)\right)}\\
  &  & -\nu^{T}\frac{1}{n}\sum_{i=1}^{n}-\frac{{\partial^{2}g\left(X_{i},\theta\right)} / {\partial\theta_{j}\partial\theta_{k}}\left(1+\nu^{T}g\left(X_{i},\theta\right)\right) }{\left(1+\nu^{T}g\left(X_{i},\theta\right)\right)^{2}}\\
- & & -\nu^T \frac{1}{n}\sum_{i=1}^{n} \frac{{\partial g\left(X_{i},\theta\right)} / {\partial\theta_{k}}\left({\partial\nu^{T}} / {\partial\theta_{k}}g\left(X_{i},\theta\right)+\nu^{T}{\partial g\left(X_{i},\theta\right)} / {\partial\theta_{k}}\right)}{\left(1+\nu^{T}g\left(X_{i},\theta\right)\right)^{2}}
+ & & +\nu^T \frac{1}{n}\sum_{i=1}^{n} \frac{{\partial g\left(X_{i},\theta\right)} / {\partial\theta_{k}}\left({\partial\nu^{T}} / {\partial\theta_{j}}g\left(X_{i},\theta\right)+\nu^{T}{\partial g\left(X_{i},\theta\right)} / {\partial\theta_{j}}\right)}{\left(1+\nu^{T}g\left(X_{i},\theta\right)\right)^{2}}.
 \end{eqnarray*}
-Evaluated at $\tilde{\theta}$, note that $\nu\left(\tilde{\theta}\right)=0$.
-\[
-\frac{\partial^{2}\hat{l}\left(\tilde{\theta}\right)}{\partial\theta_{j}\partial\theta_{k}}=-\frac{\partial\nu^{T}}{\partial\theta_{j}}\frac{1}{n}\sum_{i=1}^{n}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta_{k}}.
-\]
-Let $g_{i}=\left(g_{j}\left(X_{i},\theta\right)\right)$, $\nabla g_{i}=\left({\partial g_{j}\left(X_{i},\theta\right)} / {\partial\theta_{k}}\right)$.
-\[
-\left.\frac{\partial\nu}{\partial\theta}\right|_{\theta=\tilde{\theta}}=\left.\left(\sum_{i=1}^{n}g_{i}g_{i}^{T}\right)^{-1}\left(\sum_{i=1}^{n}\nabla g_{i}\right)\right|_{\theta=\tilde{\theta}}.
-\]
-\[
-\frac{\partial^{2}\hat{l}\left(\tilde{\theta}\right)}{\partial\theta^{T}\partial\theta}=-\frac{1}{n}\left.\left(\sum_{i=1}^{n}\nabla g_{i}\right)^{T}\left(\sum_{i=1}^{n}g_{i}g_{i}^{T}\right)^{-1}\left(\sum_{i=1}^{n}\nabla g_{i}\right)\right|_{\theta=\tilde{\theta}}.
-\]
-By theory of $M$-estimator, this is the negative of robust estimator
-of variance, thus is negative definite. 
 
+Let $g_{i}=\left(g_{j}\left(X_{i},\theta\right)\right)$, $\nabla g_{i}=\left({\partial g_{j}\left(X_{i},\theta\right)} / {\partial\theta_{k}}\right)$. By (\ref{eq:decreasing-theta-to-nu-2}), 
+
+\begin{eqnarray*}
+\frac{\partial\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}}&=&-\frac{1}{n}\left\{ \sum_{i=1}^{n}\omega_{i}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}-\nu^{T}\sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} ^{T}\left\{ \sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)g^{T}\left(X_{i},\tilde{\theta}\right)\right\} \\&&\left\{ \sum_{i=1}^{n}\omega_{i}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}-\nu^{T}\sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} -\frac{\nu^{T}}{n}\sum_{i=1}^{n}\omega_{i}\frac{\partial^{2}g\left(X_{i},\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}}\\&&+\frac{1}{n}\sum_{i=1}^{n}\omega_{i}^{2}\left\{ \nu^{T}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} \left\{ \nu^{T}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} ^{T}.
+\end{eqnarray*}
+By a similar argument as Lemma \ref{lem:finite-empirical-weight-moment}, we find 
+\[
+   \lim_{n\rightarrow\infty} \frac{\partial\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}} = -\left\{E\nabla g (X,\theta_0) \right\}^T \left[E\left\{g (X,\theta_0)g^T (X,\theta_0)\right\}\right]^{-1} \left\{E\nabla g (X,\theta_0)\right\},
+\]
+and the limit is Godambe information matrix, which is positive definite. Hence, there exists an $N$, such that for sufficient large $n\ge N$, ${\partial\tilde{l}\left(\tilde{\theta}\right)} / {\partial\theta\partial\theta^{T}}$ is positive definite.
 
 	Next, we prove the lemma for the exponentially tilted empirical likelihood.
 	\begin{eqnarray*}
@@ -37,11 +34,9 @@ of variance, thus is negative definite.
 	&=&	-\frac{\partial\nu^{T}}{\partial\theta}\sum_{i=1}^{n}g\left(X_{i},\theta\right)-\nu^{T}\sum_{i=1}^{n}\frac{\partial g\left(X_{i},\theta\right)}{\partial\theta}+n\sum_{j=1}^{n}\hat{w}_{i}\left(\theta\right)\left\{ \frac{\partial\nu^{T}}{\partial\theta}g\left(X_{j},\theta\right)+\nu^{T}\frac{\partial g\left(X_{j},\theta\right)}{\partial\theta}\right\}\\ 
 	&=&	-\frac{\partial\nu^{T}}{\partial\theta}\sum_{i=1}^{n}g\left(X_{i},\theta\right)-\nu^{T}\sum_{i=1}^{n}\frac{\partial g\left(X_{i},\theta\right)}{\partial\theta}+n\nu^{T}\sum_{j=1}^{n}\hat{w}_{i}\left(\theta\right)\frac{\partial g\left(X_{j},\theta\right)}{\partial\theta}
 	\end{eqnarray*}
-	When we calculate the second order derivative, 
-	we can exclude the terms which will be zero after plugging in $\tilde{\theta}$, 
-	and by the fact $\nu(\tilde{\theta})=0$, we have also,
+	Using the similar argument as the empirical likelihood case, we have also,
 	\[
-\frac{\partial^{2}\hat{l}\left(\tilde{\theta}\right)}{\partial\theta^{T}\partial\theta}=-\frac{1}{n}\left.\left(\sum_{i=1}^{n}\nabla g_{i}\right)^{T}\left(\sum_{i=1}^{n}g_{i}g_{i}^{T}\right)^{-1}\left(\sum_{i=1}^{n}\nabla g_{i}\right)\right|_{\theta=\tilde{\theta}}.
+\lim_{n\rightarrow\infty} \frac{\partial\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}} = -\left\{E\nabla g (X,\theta_0) \right\}^T \left[E\left\{g (X,\theta_0)g^T (X,\theta_0)\right\}\right]^{-1} \left\{E\nabla g (X,\theta_0)\right\},.
 \]
 	By the similar calculation, we can find that the Hessian matrix of the Cressie-Read empirical likelihood is positive definite too.
 	
