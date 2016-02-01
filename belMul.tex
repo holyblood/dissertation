@@ -539,13 +539,13 @@ E\left(\prod_{j=1}^{l}\frac{\partial^{k_{l}}g\left(X,\theta_{0}\right)}{\partial
 \]
 exists and is finite.\end{assumption}
 \begin{lem}
-\label{lem:finite-empirical weight moment}Let $\omega_{i}\left(\theta\right)$
+\label{lem:finite-empirical-weight-moment}Let $\omega_{i}\left(\theta\right)$
 be the unnormalized empirical weights from empirical likelihood, that
 is $\omega_{i}\left(\theta\right)=n\hat{w}_{i}\left(\theta\right)$
 in empirical likelihood or Cressie-Read case, and $\omega_{i}\left(\theta\right)=\exp\left(-\nu\left(\theta\right)g\left(X_{i},\theta\right)\right)$
 in exponentially tilted empirical likelihood. Use the same notation
 in Assumption \ref{assu:high-derive-cond}. Under the Assumption \ref{assu:high-derive-cond},
-\ref{assu:consistency-m-est}, \ref{assu:lil-m-est} and \ref{assu:finite-theoretic-moment},
+\ref{assu:consistency-m-est}, \ref{assu:lil-m-est}, \ref{assu:lil-m-est-2} and \ref{assu:finite-theoretic-moment},
 then for any $k\le K+4$, any number $s\in\mathbb{R}$, 
 \[
 \lim_{n\rightarrow\infty}\frac{1}{n}\sum_{i=1}^{n}\omega_{i}\left(\tilde{\theta}\right)^{s}\prod_{j=1}^{l}\frac{\partial^{k_{l}}g\left(X,\theta_{0}\right)}{\partial\theta_{1}^{k_{l1}}\partial\theta_{2}^{k_{l2}}\cdots\partial\theta_{p}^{k_{lp}}}=E\left(\prod_{j=1}^{l}\frac{\partial^{k_{l}}g\left(X,\theta_{0}\right)}{\partial\theta_{1}^{k_{l1}}\partial\theta_{2}^{k_{l2}}\cdots\partial\theta_{p}^{k_{lp}}}\right)\ascv.
@@ -610,8 +610,10 @@ we need to prove that the Hessian matrices of the empirical likelihood, the expo
 
 \begin{lem}
 \label{lem:pd-sample-var-2}
-Under  Assumptions \ref{ass:denom-not-zero} and \ref{ass:first-order-smooth-g},
-${\partial^{2}\tilde{l}\left(\tilde{\theta} \right)} / {\partial\theta \partial\theta^T}$ is positive definite,
+Under  Assumptions \ref{ass:denom-not-zero} and \ref{ass:first-order-smooth-g}, 
+there exists an $N$, 
+such that for any $n\ge N$,
+${\partial^{2}\tilde{l}_n\left(\tilde{\theta} \right)} / {\partial\theta \partial\theta^T}$ is positive definite,
 where $\tilde{l}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\log\hat{w}_{i}\left(\theta\right)$
 where $\hat{w}_{i}$ is either $\hat{w}_{i}^{\mathrm{EL}}$, $\hat{w}_{i}^{\mathrm{ET}}$
 or $\hat{w}_{i}^{\mathrm{CR}}$ $\left(i=1,\ldots,n\right)$.
@@ -678,8 +680,8 @@ For rigorous expansion, we need the $M$-estimator to be unique.
 Assume $\tilde{\theta}$ is the unique maximizer in $H$.
 \end{assumption}
 \begin{thm}[Fundamental Theorem for Expansion]
-\label{thm:main-theorem}Under the assumptions \enuref{finite-moment-sample},
-\enuref{multv-diff-full-rank}, \enuref{pd-sample-var} and \enuref{smooth-piror},
+\label{thm:main-theorem-2}Under the Assumptions \ref{assu:consistency-m-est}, \ref{assu:lil-m-est}, \ref{assu:lil-m-est-2},  
+\ref{assu:finite-theoretic-moment} and \ref{assu:uniq-m-est-mult},
 there exist a positive constant $M_{1}$ and a large integer $N_{1}$,
 such that for any Borel set $A\subset\mathbb{R}^{p}$, and any $n>N_{1}$%
 \begin{comment}
@@ -708,7 +710,7 @@ add subscript to constant
 \end{equation}
 
 \begin{proof}
-By \thmref{main-theorem}, we have 
+By Theorem \ref{main-theorem}, we have 
 \begin{equation}
 \left|\int_{A\cap H_{n}}\prod_{i=1}^{n}\hat{w}_{i}\left(\theta\right)\pi\left(\theta\right)\diff n^{-\frac{1}{2}}Y-P_{K}\left(A,n\right)\right|\le M_{1}n^{-\frac{K+2}{2}},\label{eq:main-theorem-result-A}
 \end{equation}
@@ -723,7 +725,7 @@ By definition
 \begin{comment}
 add more detail in bounded. bounded above and below.
 \end{comment}
-We know that all the terms in \ref{main-theorem-result-A} and \ref{main-theorem-result-Hn},
+We know that all the terms in (\ref{eq:main-theorem-result-A}) and (\ref{eq:main-theorem-result-Hn}),
 are almost surely bounded by some constant $C_{1}$ for all $n>N_{1}$,
 then there exists a constant $C_2$ such that
 \begin{eqnarray}
@@ -756,13 +758,13 @@ as
 where $\varphi_{p}$ is the density of  $p$-dimensional standard normal
 distribution, $\Phi_{p}$ is the probability or conditional probability
 of dimension $p$ standard normal distribution. By the discussion
-following Lemma \ref{control-higher-order-derivative-l}, we know that
+following Lemma \ref{lem:finite-empirical-weight-moment}, we know that
 all $\gamma_{i}$ are almost surely uniformly bounded for all large
 $n$. Then there exists a constant $M_{2}$, such that 
 \begin{equation}
 \left|\frac{P_{K}\left(A,n\right)}{P_{K}\left(H_{n},n\right)}-\Phi_{p}\left(A|H_{n}\right)-\sum_{i=1}^{K}\gamma_{i}\left(A,n\right)n^{-\frac{i}{2}}\right|\le M_{2}n^{-\frac{K+1}{2}}.\label{eq:quotient-serier-approx}
 \end{equation}
-We combine \ref{two-quotient-close} and \ref{quotient-serier-approx}
+We combine (\ref{eq:two-quotient-close}) and (\ref{eq:quotient-serier-approx})
 to get \eqref{asym-exp-poster-prob}.
 \end{proof}
 \end{thm}
@@ -771,7 +773,7 @@ is similar to \citet{johnson1970asymptotic}, with some modification
 needed in the empirical likelihood framework. 
 
 Let $K=2$. Then we get asymptotic normality of the posterior distribution. 
-\begin{cor}[Asymptotic normality ]
+\begin{cor}[Asymptotic normality]
 Use the assumption in Theorem \ref{thm:main-thm} with $K=2$, then
 the posterior distribution converges in distribution to normal distribution
 almost surely, that is 

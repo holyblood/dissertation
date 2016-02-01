@@ -1,5 +1,5 @@
 \chapter{Proof for Higher-Order Properties of Bayesian Empirical Likelihood:
-Univariate Case}
+Multivariate Case}
 \section{Proof of the Lemma 6}
 \begin{proof}
 First, we prove the lemma for the empirical likelihood.
@@ -158,14 +158,15 @@ are the polynomial of terms like $M_{i}$, so for $k=n+1$, the higher
 order derivative of empirical log likelihood has the similar form.
 Hence, by mathematical induction, the lemma holds for all $n$. 
 \end{proof}
-By Lemma \ref{lem:control-higher-order-derivative-l}, the higher-order derivatives of log empirical likelihood are rational functions of the sample moments of higher-order derivatives of  $g$. We can anticipate
+By Lemma \ref{lem:control-higher-order-derivative-2}, the higher-order derivatives of log empirical likelihood are rational functions of the sample moments of higher-order derivatives of  $g$. We can anticipate
 that higher order derivatives of log empirical likelihood can be bounded
 in a small neighborhood of the true parameter when sample size is
 large , provided the population moments of higher-order derivatives of function $g$ are finite. This we prove in the following lemma .
 
 
 \begin{lemma}
-\label{lem:bounded-high-order-der-2} Under Assumptions 3 , 4 and 5 ,
+\label{lem:bounded-high-order-der-2} Under Assumptions \ref{assu:consistency-m-est}, \ref{assu:lil-m-est}, \ref{assu:lil-m-est-2} and 
+\ref{assu:finite-theoretic-moment},
 there exist constants $\delta_{2}$, $C_{3}$ and $N_{4}$ such that
 for any $\left|B^T\left(\theta-\tilde{\theta}\right)\right|\le\delta_{2}$
 and $n>N_{4}$, any $j=1,\ldots,k$,%
@@ -178,12 +179,9 @@ need add consistency conditions for M-Estimator
 \end{equation}
 \end{lemma}
 \begin{proof}
-All $\omega_{i}$ in Lemma \ref{lem:control-higher-order-derivative-l}
-are equal to $1$ when evaluated at $\tilde{\theta}$. Under the assumption
-of finite moments, by strong law of large numbers, and strong consistency
-of the $M$-estimator $\tilde{\theta}$, we have 
+By Lemma \ref{lem:finite-empirical-weight-moment}, we have 
 \[
-M_{j}=\frac{1}{n}\sum_{i=1}^{n}\omega_{i}^{r}\prod_{j=1}^{p}\prod_{l_{j}}\frac{\partial^{l_{j}}g_{j}\left(X_{i},\theta\right)}{\partial\theta_{1}^{s_{j_{1}}}\partial\theta_{2}^{s_{j_{2}}}\cdots\partial\theta_{p}^{s_{j_{p}}}}
+M_{j}=\frac{1}{n}\sum_{i=1}^{n}\omega_{i}^{r}\prod_{j=1}^{p}\prod_{l_{j}}\frac{\partial^{l_{j}}g_{j}\left(X_{i},\tilde{\theta}\right)}{\partial\theta_{1}^{s_{j_{1}}}\partial\theta_{2}^{s_{j_{2}}}\cdots\partial\theta_{p}^{s_{j_{p}}}}
 \rightarrow E\left(\prod_{j=1}^{l}\frac{\partial^{k_{l}}g\left(X,\theta_{0}\right)}{\partial\theta_{1}^{k_{l1}}\partial\theta_{2}^{k_{l2}}\cdots\partial\theta_{p}^{k_{lp}}}\right)\ascv.
 \]
  By Lemma 3, the higher order
@@ -192,7 +190,7 @@ there exists a constant $\delta_{2}$ such that whenever $\left|B^T\left(\theta-\
 \[
 \left|\frac{\partial^{k}\tilde{l}\left(\theta\right)}{\partial\theta_{u_{1}}\partial\theta_{u_{2}}\cdots\partial\theta_{u_{k}}}-\frac{\partial^{k}\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta_{u_{1}}\partial\theta_{u_{2}}\cdots\partial\theta_{u_{k}}}\right|<\varepsilon_{2}.
 \]
-By Lemma \ref{lem:control-higher-order-derivative-l}, there exists
+By Lemma \ref{lem:control-higher-order-derivative-2}, there exists
 a constant $N_{4}$, such that whenever $n>N_{4}$. 
 \[
 \left|\frac{\partial^{k}\tilde{l}\left(\theta\right)}{\partial\theta_{u_{1}}\partial\theta_{u_{2}}\cdots\partial\theta_{u_{k}}}-
@@ -211,7 +209,7 @@ change the length
  which leads to (\ref{eq:bounded-higher-order-derivatives}). 
 \end{proof}
 
-\section{Expansion Near The M-Estimator}
+\section{Expansion Near The $M$-Estimator}
 \begin{lemma}
 \label{lem:near-mean-2nd-order-bound-2}.  Under  Assumptions 1 and 2,there exists a $\delta_{3}>0$,
 such that 
@@ -226,8 +224,8 @@ By Taylor expansion,
 \frac{1}{n}\left\{ \sum_{i=1}^{n}\log\hat{w}_{i}\left(\theta\right)-\sum_{i=1}^{n}\log\hat{w}_{i}\left(\tilde{\theta}\right)\right\}  & = & \frac{\partial\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta^T}\left(\theta-\tilde{\theta}\right)+\frac{1}{2}\left(\theta-\tilde{\theta}\right)^T\frac{\partial^{2}\tilde{l}\left(\theta^{*}\right)}{\partial\theta \partial\theta^T}\left(\theta-\tilde{\theta}\right),
 \end{eqnarray*}
 where $\left|\theta^{*}-\tilde{\theta}\right|\le\left|\theta-\tilde{\theta}\right|$.
-By Lemma 4, the first term in above equation
-is zero. By Lemma \ref{lem:control-higher-order-derivative-l}, we
+By definition of $\tilde{\theta}$, the first term in above equation
+is zero. By Lemma \ref{lem:control-higher-order-derivative-2}, we
 know that ${\partial^{2}\tilde{l}\left(\theta^{*}\right)} / {\partial\theta \partial\theta^T}$
 is a continuous matrix function in $\theta$. Thus there exists a $\delta_{3}$,
 such that for any $\left|B^T \left(\theta^{*}-\tilde{\theta}\right)\right|\le\left|B^T\left(\theta-\tilde{\theta}\right)\right|<\delta_{3}$,
@@ -242,7 +240,8 @@ Hence $\left(\theta-\tilde{\theta}\right)^T{\partial^{2}\tilde{l}\left(\theta^{*
 \end{proof}
 The next lemma plays a key role in expanding the posterior, and can be interpreted as an empirical likelihood version of the Edgeworth expansion. 
 \begin{lemma}
-\label{lem:central-expansion-lik-2} Under  Assumptions 1 , 3 , 4 and 5 , then there exist $\delta_{4}$, $M_{3}$
+\label{lem:central-expansion-lik-2} Under  Assumptions \ref{assu:consistency-m-est}, \ref{assu:lil-m-est}, \ref{assu:lil-m-est-2} and 
+\ref{assu:finite-theoretic-moment}, then there exist $\delta_{4}$, $M_{3}$
 and $N_{5}$, 
 and $ A_4=\left\{ \theta:\left|B^T\left(\theta-\tilde{\theta}\right)\right|<\delta_{4}\right\} \cap H $,
  such that 
@@ -257,13 +256,13 @@ First, we can choose $\delta_{2}$ small enough so that $\left\{ B\left(\theta-\t
  & = & \int_{\left\{ B\left(\theta-\tilde{\theta}\right)\le\delta_{2}\right\} }\exp\left(\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\theta\right)-\sum_{i=1}^{n}\ln\hat{w}_{i}\left(\tilde{\theta}\right)\right)\\
  &  & \left[\exp\left(\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)-\sum_{i=1}^{n}\left(\ln\hat{w}_{i}\left(\theta\right)-\ln\hat{w}_{i}\left(\tilde{\theta}\right)\right)\right)-1\right]\diff n^{-\frac{1}{2}}Y.
 \end{eqnarray*}
-By \lemref{near-mean-2nd-order-bound}, and Taylor expansion, the
+By Lemma \ref{lem:near-mean-2nd-order-bound-2}, and Taylor expansion, the
 above equation can be bounded by 
 \begin{eqnarray*}
  &  & \int_{\left\{ \left|B\left(\theta-\tilde{\theta}\right)\right|\le\delta_{2}\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)\left|\exp\left(-\frac{n^{-\frac{K+2}{2}}}{\left(K+4\right)!}\left[\left(\theta-\tilde{\theta}\right)\nabla\right]^{K+4}\hat{l}\left(\theta^{*}\right)\right)-1\right|\diff n^{-\frac{1}{2}}Y\\
  & = & n^{-\frac{1}{2}}\int_{\left\{ \sqrt{Y^{T}Y}\le\delta_{2}\sqrt{n}\right\} }\exp\left(-\frac{Y^{T}Y}{4}\right)\left|\exp\left(-\frac{n^{-\frac{K+2}{2}}}{\left(K+4\right)!}\left(Y^{T}B^{-T}\nabla\right)^{K+4}\hat{l}\left(\theta^{*}\right)\right)-1\right|\diff Y.
 \end{eqnarray*}
-By \lemref{control-higher-order-derivative-l}, we know that $\nabla^{K+4}\hat{l}\left(\theta^{*}\right)$
+By Lemma \ref{lem:control-higher-order-derivative-2}, we know that $\nabla^{K+4}\hat{l}\left(\theta^{*}\right)$
 are bounded by some constants. Note that for any $Y$, and any vector
 $a$, there exists a constant $C_{1}$, such that 
 \begin{equation}
@@ -340,7 +339,9 @@ and therefore, the lemma holds.
 
 \begin{lemma}
 \label{lem:central-expansion-post-prod-2}%
- Under  Assumptions 1 , 3 , 4 and 5 ,  there exists  $\delta_{4}>0$, and constants
+ Under  Assumptions \ref{assu:consistency-m-est}, \ref{assu:lil-m-est}, \ref{assu:lil-m-est-2} and 
+\ref{assu:finite-theoretic-moment},
+  there exists  $\delta_{4}>0$, and constants
 $M_{4}$, $N_{6}$, such that 
 \begin{equation}
 \left|\int_{\left\{ \left|B\left(\theta-\tilde{\theta}\right)\right|\le\delta\right\} \cap H_{n}}\exp\left(-\frac{1}{2}Y^{T}Y+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}\right)\rho_{K}\left(\theta\right)-\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\tilde{\theta}\right)}\rho\left(\theta\right)\diff n^{-\frac{1}{2}}Y\right|\le M_{2}n^{-\frac{1}{2}\left(K+2\right)},\:\ascv.\label{eq:central-exp-post-2}
@@ -364,12 +365,12 @@ Now we have
  &  & \le\left|\rho_{K}\left(\theta\right)\right|\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\tilde{\theta}\right)\right)\right)\left|\exp\left(n\left(\hat{l}\left(\tilde{\theta}\right)-\frac{1}{2}Y^{T}Yn^{-1}+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}-\hat{l}\left(\theta\right)\right)\right)-1\right|\\
  &  & +\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\tilde{\theta}\right)\right)\right)\left|\rho_{K}\left(\theta\right)-\rho\left(\theta\right)\right|.
 \end{eqnarray*}
-For the first part of the above formula, by \lemref{central-expansion-llik},
+For the first part of the above formula, by Lemma \ref{lem:central-expansion-llik-2},
 we have it to be bounded by 
 \[
 \max_{\theta\in\left\{ \left\{ B\left(\theta-\tilde{\theta}\right)\le\delta_{2}\right\} \cap H_{n}\right\} }\rho_{K}\left(\theta\right)M_{1}n^{-\frac{1}{2}\left(K+3\right)}.
 \]
-For the second part, by \lemref{near-mean-2nd-order-bound}, Taylor
+For the second part, by Lemma \ref{lem:near-mean-2nd-order-bound-2}, Taylor
 expansion in $\rho\left(\theta\right)$, and \eqref{average-inequality},
 we have the upper bound to be 
 \begin{eqnarray*}
@@ -445,7 +446,7 @@ For the first term%
 \begin{comment}
 change the first second term ref into ref eq
 \end{comment}
-, by \lemref{exponential-decay-tail}, we have
+, by Lemma \ref{lemma:exponential-decay-tail-2}, we have
 \begin{eqnarray*}
  &  & \left|\int_{A\cap H_{n}\cap A_{1}}\prod_{i=1}^{n}\frac{\hat{w}_{i}\left(\theta\right)}{\hat{w}_{i}\left(\tilde{\theta}\right)}\rho\left(\theta\right)-\exp\left(-\frac{Y^{T}Y}{2}\right)\sum_{h=0}^{K}\alpha_{h}\left(Y,n\right)n^{-\frac{h}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
  & \le & \int_{A\cap H_{n}\cap A_{1}}\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\tilde{\theta}\right)\right)\right)\rho\left(\theta\right)\diff n^{-\frac{1}{2}}Y\\
@@ -506,7 +507,7 @@ Hence, \eqref{1} can be bounded by
  & \le & \frac{C_{5}^{K+2}n^{K+2}}{\left(K+2\right)!}\left|\int_{A\cap H_{n}}\exp\left(-C_{4}Y^{T}Y\right)\left(\delta_{3}\hat{l}\right)^{K+2}n^{-\frac{3\left(K+2\right)}{2}}\diff n^{-\frac{1}{2}}Y\right|\\
  & \le & \frac{C_{5}^{K+2}}{\left(K+2\right)!}\left|\int_{A\cap H_{n}}\exp\left(-C_{4}Y^{T}Y\right)\left(\delta_{3}\hat{l}\right)^{K+2}\diff Y\right|n^{-\frac{K+3}{2}}.
 \end{eqnarray*}
-Add all the parts together, we get the inequality in %
+Add all the parts together, we get the inequality in Theorem \ref{thm:main-theorem-2}%
 \begin{comment}
 add ref to main theorem
 \end{comment}
