@@ -74,7 +74,7 @@ the probability mass assigned to $X_{i}\left(i=1,\ldots,n\right)$
 satisfying the constraints 
 \begin{equation}
 \begin{cases}
-w_{i}>0,\mathrm{for\: all\: i;}\\
+w_{i}>0,\text{for all } i;\\
 \sum_{i=1}^{n}w_{i}=1;\\
 \sum_{i=1}^{n}w_{i}g\left(X_{i},\theta\right)=0.
 \end{cases}\label{eq:constraint-el}
@@ -375,7 +375,7 @@ at $\tilde{\theta}$. Let $\rho_{K}\left(\theta\right)=\rho\left(\tilde{\theta}\r
 Further denote the higher-order derivatives of (pseudo) log empirical
 likelihood as 
 \[
-a_{kn}\left(\theta\right)=\frac{1}{k!}\sum_{i=1}^{n}\frac{\diff^{k}\tilde{l}\left(\theta\right)}{\diff\theta^{k}},\: k=3,\ldots,K+3.
+a_{kn}\left(\theta\right)=\frac{1}{k!}\frac{\diff^{k}\tilde{l}\left(\theta\right)}{\diff\theta^{k}},\: k=3,\ldots,K+3.
 \]
  Define the summation index set 
 \[
@@ -542,7 +542,7 @@ P_{K}^{N}\left(\xi,n\right)=\sum_{k=0}^{K}\left\{ \int_{Y_{\left(1\right)}}^{\xi
 Applying the same argument as in the proof of Theorem \ref{thm:asym-exp-post-cdf},
 the asymptotic expansion of the posterior mean is 
 \[
-E\left\{ \sqrt{n}b\left(\theta-\tilde{\theta}\right)\mid X\right\} =\left\{ \frac{\rho'\left(\tilde{\theta}\right)}{\rho\left(\tilde{\theta}\right)b}\frac{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}y^{2}\varphi\left(y\right)\diff y}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}+\frac{a_{3n}}{b^{3}}\frac{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}y^{4}\varphi\left(y\right)\diff y}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}\right\} n^{-1}+O_{P}\left(n^{-\frac{3}{2}}\right).
+E\left\{ \sqrt{n}b\left(\theta-\tilde{\theta}\right)\mid X\right\} =\left\{ \frac{\rho'\left(\tilde{\theta}\right)}{\rho\left(\tilde{\theta}\right)b}\frac{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}y^{2}\varphi\left(y\right)\diff y}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}+\frac{a_{3n}}{b^{3}}\frac{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}y^{4}\varphi\left(y\right)\diff y}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}\right\} n^{-1/2}+O_{P}\left(n^{-1}\right).
 \]
 Since $ Y_{\left( n \right )} \rightarrow + \infty $ and $ Y_{\left (1\right )} \rightarrow - \infty\ascv $ as $n\rightarrow\infty$,
 \[

@@ -111,8 +111,8 @@ where $\mu\equiv\mu\left(\theta\right)$ and $\nu\equiv\nu\left(\theta\right)$
 satisfy 
 \begin{equation}
 \begin{cases}
-\sum_{i=1}^{n}\left(\mu+\nu^{T}Tg\left(X_{i},\theta\right)\right)^{-\frac{1}{\lambda+1}}=n,\\
-\sum_{i=1}^{n}\left(\mu+\nu^{T}g\left(X_{i},\theta\right)\right)^{-\frac{1}{\lambda+1}}X_{i}=0.
+\sum_{i=1}^{n}\left(\mu+\nu^{T}g\left(X_{i},\theta\right)\right)^{-\frac{1}{\lambda+1}}=n,\\
+\sum_{i=1}^{n}\left(\mu+\nu^{T}g\left(X_{i},\theta\right)\right)^{-\frac{1}{\lambda+1}}g\left(X_{i},\theta \right)=0.
 \end{cases}\label{eq:lag-mul-cr-el}
 \end{equation}
 
@@ -613,7 +613,7 @@ we need to prove that the Hessian matrices of the empirical likelihood, the expo
 Under  Assumptions \ref{ass:denom-not-zero} and \ref{ass:first-order-smooth-g}, 
 there exists an $N$, 
 such that for any $n\ge N$,
-${\partial^{2}\tilde{l}_n\left(\tilde{\theta} \right)} / {\partial\theta \partial\theta^T}$ is positive definite,
+${\partial^{2}\tilde{l}_n\left(\tilde{\theta} \right)} / {\partial\theta \partial\theta^T}$ is negative definite,
 where $\tilde{l}\left(\theta\right)=n^{-1}\sum_{i=1}^{n}\log\hat{w}_{i}\left(\theta\right)$
 where $\hat{w}_{i}$ is either $\hat{w}_{i}^{\mathrm{EL}}$, $\hat{w}_{i}^{\mathrm{ET}}$
 or $\hat{w}_{i}^{\mathrm{CR}}$ $\left(i=1,\ldots,n\right)$.
