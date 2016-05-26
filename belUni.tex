@@ -516,6 +516,7 @@ to get Eq. (\ref{eq:asym-exp-post-prob}).
 \end{proof}
 Let $K=2$. Then we get asymptotic normality of the posterior distribution. 
 \begin{corollary}[Bernstein-von Mises  Theorem]
+\label{cor:bernstein-von-Mises}
 Use the assumption in Theorem \ref{thm:main-thm} with $K=2$, then
 the posterior distribution converges in distribution to normal distribution
 almost surely, that is 
@@ -543,6 +544,7 @@ Applying the same argument as in the proof of Theorem \ref{thm:asym-exp-post-cdf
 the asymptotic expansion of the posterior mean is 
 \[
 E\left\{ \sqrt{n}b\left(\theta-\tilde{\theta}\right)\mid X\right\} =\left\{ \frac{\rho'\left(\tilde{\theta}\right)}{\rho\left(\tilde{\theta}\right)b}\frac{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}y^{2}\varphi\left(y\right)\diff y}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}+\frac{a_{3n}}{b^{3}}\frac{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}y^{4}\varphi\left(y\right)\diff y}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}\right\} n^{-1/2}+O_{P}\left(n^{-1}\right).
+\label{eq:expand-posterior-mean}
 \]
 Since $ Y_{\left( n \right )} \rightarrow + \infty $ and $ Y_{\left (1\right )} \rightarrow - \infty\ascv $ as $n\rightarrow\infty$,
 \[
@@ -587,10 +589,46 @@ In {the} special case,  $g\left(x,\theta\right)=x-\theta$, {by} Corollary \ref{c
 	\rho\left(\theta\right)=\exp\left(\int_{-\infty}^{\theta}\frac{E\left\{\left(X_1-s\right)^3\right\}}{\left[E\left\{\left(X_1-s\right)^2\right\}\right]^4}\diff s\right).
 \]
 
+ \begin{remark}
+ Because the posterior mean is the most widely used Bayesian estimator,
+ this result could provide a useful tools for higher order analysis.
+ For example, our result would produce the same result in \citep{vexler2014computing},
+ which estimates the quantile using the posterior mean of Bayesian empirical likelihood based on smoothed estimating equation. 
+ 
+ 
+Let $K(x)=\int_{-\infty}^x k(u)\diff u $ be a kernel smoothing function, 
+and $K_h(\cdot)=K(\cdot/h)h $.
+The smoothed constraint of the empirical likelihoods to estimate the $\alpha$ quantile $\theta $ is 
+\[
+	\sum_{i=1}^n w_i \left [ K_h \left( \theta -X_i \right) -(1-\alpha )\right]=0,
+\]
+and $g\left(\theta,X_i\right)=K_h \left( \theta -X_i \right) -(1-\alpha )$. 
+Hence the asymptotic variance is 
+\begin{eqnarray*}
+b^2&=& \left. \left( \frac{1}{n} \sum_{i=1}^n \left. \frac{\partial g\left(\theta,X_i\right)}{\partial \theta} \right |_{\theta=\tilde{\theta}}\right) \right/ \frac{1}{n}\sum_{i=1}^n g^2\left(\tilde{\theta},X_i\right) \\
+& =& \left. \left( \frac{1}{n} \sum_{i=1}^n \left. \frac{\partial K_h \left( \theta -X_i \right)}{\partial \theta} \right |_{\theta=\tilde{\theta}}\right) \right/ \frac{1}{n}\sum_{i=1}^n \left[ K_h \left( \tilde{\theta} -X_i \right) -(1-\alpha )\right]^2 \\
+&=& \left. \left( \frac{1}{n} \sum_{i=1}^n k_h \left(\tilde{\theta}-X_i\right)\right) \right/ \frac{1}{n}\sum_{i=1}^n \left[ K_h \left( \tilde{\theta} -X_i \right) -(1-\alpha )\right]^2. 
+\end{eqnarray*}
+If the prior on $\theta$ is normal with parameters $\mu_0$ and $\sigma_0$, then 
+\[
+  \left. \frac{\rho'(\theta)}{\rho(\theta)} \right|_{\theta=\tilde{\theta}} =
+  -\frac{\tilde{\theta}-\mu_0}{\sigma_0^2}.
+\]
+Hence, by Eq. \ref{eq:expand-posterior-mean}, we have 
+\[
+	E\left( \theta \mid X_1,\ldots,X_n \right) \approx \tilde{\theta} 
+	-\frac{\tilde{\theta}-\mu_0}{\sigma_0^2 b^2} n^{-1},
+\]
+which is the same as the formula in Remark 1 of \cite{vexler2014computing}. 
+ \end{remark}
+ 
 \section{Simulation Results }
 
 
-In this section, we give some simulation results. Here we take $g\left(X_{i},\theta\right)=X_{i}-\theta,\: i=1,\ldots,n$.
+In this section, we give some simulation results. 
+
+\subsection{{Heavy Tailed Distribution}}
+{ First} we take $g\left(X_{i},\theta\right)=X_{i}-\theta,\: i=1,\ldots,n$.
 Let $K=3$, we compare the first order approximation with normal approximation
 and second order approximation. By heavy algebra, we get for all the
 three empirical likelihoods, 
@@ -609,7 +647,7 @@ polynomial is
  &  & -\frac{Y_{\left(1\right)}^{2}\varphi\left(Y_{\left(1\right)}\right)+2\varphi\left(Y_{\left(1\right)}\right)-Y_{\left(n\right)}^{2}\varphi\left(Y_{\left(n\right)}\right)-2\varphi\left(Y_{\left(n\right)}\right)}{\int_{Y_{\left(1\right)}}^{Y_{\left(n\right)}}\varphi\left(y\right)\diff y}\Phi\left(\xi\mid R_{n}\right)\Big\}\Bigg].
 \end{eqnarray*}
 We take  samples of size $n=10,\mathrm{\, and}\:80$ from a $t$ distribution
-with degrees of freedom $100$, and the Cauchy prior.
+with degrees of freedom { $6$}, and the Cauchy prior.
 Set Cressie--Read divergence parameter $\lambda=2$ . Then 
 \begin{eqnarray*}
 \rho\left(\overline{X}\right) & = & \frac{1}{\pi\left(1+\overline{X}^{2}\right)},\\
@@ -643,6 +681,69 @@ with each other, which means that the approximations are quite successful.
 \end{center}
 
 \end{figure}
+{  \subsection{Skewed Distribution and Different Priors}
+
+Here we use gamma distribution with shape parameter 2 and scale parameter 0.2,
+so that the skewness is $2/ \sqrt{2}=\sqrt{2}$ and the mean is 0.4. 
+We stil use one dimension constraint $g\left(X,\theta \right)=X-\theta$ to estimate mean. 
+The priors are Cauchy distributions with different means $\mu_0$ and different variances $\sigma_0^2$.
+We use the accuracy defined as
+\[E_{X}\left(\max_{y}\left|P\left(\theta\le y\mid X\right)-\tilde{P}\left(\theta\le y\mid X\right)\right|\right)\]
+to measure the performance of our approximations  $\tilde{P}\left(\theta\le y\mid X\right)$ with respect to true Bayesian empirical likelihood posteriors.
+The results are summarized in Table \ref{tab:skew-priors}.
+The table is organized as follows:
+\begin{itemize}
+\item The two columns under Empirical Likelihood means the true posteriors are based on the empirical likelihood.
+\begin{itemize}
+\item The Normal column under Empirical Likelihood column documents the simulated accuracies when we use normal approximations to estimate the true posteriors based on the empirical likelihoods. 
+\item The 1st Order column under Empirical Likelihood documentclass the simulated accuracies when we use first order approximations to estimate the true posteriors based on the empirical likelihoods.
+ \end{itemize}
+ \end{itemize}
+ Other columns can be intepretted similarly. 
+  The table justifies our theoretical results well.
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc||cc|cc|cc}      \hline         &               &                   &            \multicolumn{2}{c|}{Empirical Likelihood}  &       \multicolumn{2}{c|}{Exponentially Tilted}  &       \multicolumn{2}{c}{Cressie--Read}  \\ \cline{4-9}  & & & Normal  & 1st Order  & Normal & 1st Order  & Normal  & 1st Order  \\\hline         \multirow{9}{*}{n=10}  &  \multirow{3}{*}{$\mu_0=-1$}  &  $\sigma_0=0.3$      & 0.04166535 & 0.05608144 & 0.06198109 & 0.07127635 & 0.04587988 & 0.06154626 \\            &               &  $\sigma_0=1$    &     0.04269603 & 0.05521513 & 0.06228949 & 0.07030473 & 0.04726596 & 0.06027904 \\            &               &  $\sigma_0=3$       & 0.04953253 & 0.05399422 & 0.06566947 & 0.06831232 & 0.05355389 & 0.05800109 \\    \cline{2-9}       &  \multirow{3}{*}{$\mu_0=1$}   &  $\sigma_0=0.3$      & 0.13363552 & 0.06961599 & 0.11520667 & 0.07063596 & 0.13266656 & 0.06834147 \\           &               &  $\sigma_0=1$        & 0.07357471 & 0.05402597 & 0.07786468 & 0.06578799 & 0.07542830 & 0.05625210 \\           &               &  $\sigma_0=3$        & 0.05634101 & 0.05388468 & 0.06874722 & 0.06733112 & 0.05962448 & 0.05717406 \\       \cline{2-9}     &  \multirow{3}{*}{$\mu_0=10$}  &  $\sigma_0=0.3$      & 0.05821990 & 0.05405803 & 0.06952773 & 0.06709110 & 0.06130577 & 0.05717008 \\            &               &  $\sigma_0=1$        & 0.05817543 & 0.05405649 & 0.06950697 & 0.06709608 & 0.06126515 & 0.05717179 \\            &               &  $\sigma_0=3$       & 0.05782123 & 0.05404464 & 0.06934366 & 0.06713593 & 0.06094122 & 0.05718592 \\ \hline     \multirow{9}{*}{n=20}  &  \multirow{3}{*}{$\mu_0=-1$}  &  $\sigma_0=0.3$      & 0.03328264 & 0.04989900 & 0.03686717 & 0.05286841 & 0.03558281 & 0.05285382 \\           &               &  $\sigma_0=1$        & 0.03695059 & 0.05003231 & 0.03935446 & 0.05187539 & 0.03904766 & 0.05243753 \\            &               &  $\sigma_0=3$        & 0.04660946 & 0.05078330 & 0.04614958 & 0.05018861 & 0.04774750 & 0.05198988 \\   \cline{2-9}         &  \multirow{3}{*}{$\mu_0=1$}   &  $\sigma_0=0.3$      & 0.11907174 & 0.06780413 & 0.10792071 & 0.05384767 & 0.11668472 & 0.06335011 \\            &               &  $\sigma_0=1$        & 0.07049115 & 0.05356046 & 0.06526060 & 0.04819664 & 0.06982661 & 0.05236812 \\            &               &  $\sigma_0=3$        & 0.05384019 & 0.05159166 & 0.05158108 & 0.04940994 & 0.05419649 & 0.05192170 \\  \cline{2-9}          &  \multirow{3}{*}{$\mu_0=10$}  &  $\sigma_0=0.3$      & 0.05571512 & 0.05195748 & 0.05289689 & 0.04927547 & 0.05581734 & 0.05201414 \\            &               &  $\sigma_0=1$        & 0.05567054 & 0.05195129 & 0.05286355 & 0.04927905 & 0.05577730 & 0.05201316 \\            &               &  $\sigma_0=3$        & 0.05531469 & 0.05190220 & 0.05259759 & 0.04930779 & 0.05545785 & 0.05200547 \\  \hline    \multirow{9}{*}{n=50}  &  \multirow{3}{*}{$\mu_0=-1$}  &  $\sigma_0=0.3$      & 0.02499601 & 0.03688222 & 0.02346425 & 0.03572603 & 0.02372277 & 0.03567098 \\            &               &  $\sigma_0=1$        & 0.02851346 & 0.03730437 & 0.02636817 & 0.03554214 & 0.02664273 & 0.03560466 \\            &               &  $\sigma_0=3$        & 0.03579487 & 0.03841149 & 0.03258508 & 0.03537196 & 0.03290249 & 0.03562648 \\     \cline{2-9}      &  \multirow{3}{*}{$\mu_0=1$}   &  $\sigma_0=0.3$      & 0.08041895 & 0.04803801 & 0.07635618 & 0.04132049 & 0.07659416 & 0.04185756 \\            &               &  $\sigma_0=1$        & 0.05098351 & 0.04079481 & 0.04729626 & 0.03595425 & 0.04747160 & 0.03635713 \\            &               &  $\sigma_0=3$        & 0.04055929 & 0.03918625 & 0.03690585 & 0.03541921 & 0.03722152 & 0.03577027 \\    \cline{2-9}        &  \multirow{3}{*}{$\mu_0=10$}  &  $\sigma_0=0.3$      & 0.04169634 & 0.03944210 & 0.03793657 & 0.03548402 & 0.03824527 & 0.03585027 \\            &               &  $\sigma_0=1$        & 0.04166898 & 0.03943726 & 0.03791057 & 0.03548285 & 0.03821955 & 0.03584875 \\            &               &  $\sigma_0=3$        & 0.04145002 & 0.03939871 & 0.03770335 & 0.03547390 & 0.03801432 & 0.03583730 \\     \hline \end{tabular}
+\caption{Accuracy of Approximation under Different Priors and Different Sample Sizes}
+\label{tab:skew-priors}
+\end{table}
+
+\subsection{Comparison with Parametric Bayesian Model}
+By our Corollary \ref{cor:bernstein-von-Mises}, 
+we know the asymptotic variance of the Bayesian empirical likelihood is the inverse of Godambe information number,
+ while in parametric Bayesian model,
+ the asymptotic variance is the inverse of Fisher information number. 
+Generally speaking, the Fisher information number will be larger than the Godambe information number. 
+The difference between the asymptotic variances serves as a ``payment'' to use a semiparametric model instead of a full parametric model. 
+We also do some simulation to further justify this statements.
+Let $X_i \sim \exp\left(\lambda_0\right)$, be i.i.d samples,
+ where $ EX_1=\lambda_0^{-1}=1$. 
+ Let the prior on $\lambda$ be a gamma distribution with shape parameter $\alpha=2$ and scale parameter $\beta=1$.
+ The the parametric posterior of $\lambda$ is $\Gamma \left(\alpha +n, \left( \beta^{-1}+\sum_{i=1}^n X_i \right)^{-1}\right)$. 
+ The parameter of interest is still the population mean, which is inverse of $\lambda_0$. 
+ We compare the full parametric approaches under the true model and the misspecified model and the empirical likelihood approaches by measuring the Bayesian risk of the mean under square loss.
+ In the full parametric approach under the true model, we can directly calculate the theoretical Bayes risk,
+  \[  E_{X}E_\lambda \left(\left(\lambda^{-1}-\lambda_{0}^{-1}\right)^{2}\mid X\right)=  \frac{\left(1+n\right)^{2}+n}{n\left(n+1\right)^{2}}+\frac{n}{\left(n+1\right)^{2}}.  \] 
+ In the full parametric approach under the misspecified model,
+ we assume the data are drawn from $\chi^2_\nu$.
+ We use inverse gamma distribution with $\alpha=2$ and $\beta=1$ as the prior on $\nu$,
+ so that prior distribution on the population mean are the same under the two full parametric approaches and the three empirical likelihood approaches.
+ The posterior distribution under this prior is proportional to 
+ 		\begin{eqnarray*}	& &\left[\Gamma\left(\frac{\nu}{2}\right)\right]^{-n}\nu^{-3}\exp\left(-\frac{1}{\nu}-\frac{n\log2-\sum_{i=1}^{n}\log X_{i}}{2}\nu\right)\\ 	&=&	\left[\Gamma\left(\frac{\nu}{2}\right)\right]^{-n}\left(\prod_{i=1}^{n} X_{i}\right)^{\nu/2}\nu^{-3/2}\exp\left(-\sqrt{2 n\log2}\right)\\ 		&& \times \left\{ \nu^{-3/2}\exp\left(-\frac{2\left[\nu-\sqrt{2/\left(n\log2\right)}\right]^{2}}{2\left[2/\left(n\log2\right)\right]\nu}\right)\right\} . 		\end{eqnarray*}
+ The last line of above equations are the kernel of inverse Gaussion distribution with mean parameter $\mu=\sqrt{2/(n\log 2)}$ and scale parameter $\lambda=2$. 
+ Let $V$ be the inverse Gaussion random variable with above parameters,
+ we can calculate the Bayes risk using Monte Calro integration by 
+ \[ 	E_{X_1,\ldots,X_n} \left ( 	\frac{E_V\left\{ \left(V-1\right )^2 \left[\Gamma\left(V/2\right)\right]^n \left(\prod_{i=1}^n X_i \right)^{V/2} V^{-3/2}\right\}}{E_V \left\{\left[\Gamma\left(V/2\right)\right]^n \left(\prod_{i=1}^n X_i \right)^{V/2} V^{-3/2}\right\}} 	\right).  \]
+ In the empirical likelihood approaches, we need the simulation. The results are summarized in Table \ref{tab:cmp-parm-el}.
+ We can see the Bayes risks of all the tree empirical likelihoods are larger than the full parametric approach under the true model,
+but are smaller than that of misspecified model,
+which substantiates the robustness of our nonparametric approaches against model misspecification. 
+  
+\begin{table}[ht] \centering \begin{tabular}{rrrrrr}   \hline  & EL & ETEL & CREL & True & Misspecified\\    \hline n=10 & 0.1602696 & 0.1560124 & 0.1590662 & 0.0586777 & 0.7499204 \\    n=20 & 0.0906427 & 0.0883737 & 0.0895608 & 0.0159864 & 0.7860900 \\    n=50 & 0.0366288 & 0.0357060 & 0.0360126 & 0.0026990 & 0.8293515\\    n=100 & 0.0192969 & 0.0189246 & 0.0189719 & 0.0006872 & 0.8571012 \\     \hline \end{tabular} 
+\caption{Comparision with the full parametric and the empirical likelihood approaches} 
+\label{tab:cmp-parm-el} \end{table}
+
+}
  
 \section{Discussion}
 The paper provides an asymptotic expansion of the posterior based on an empirical likelihood subject to a linear constraint. The Bernstein --von Mises theorem and asymptotic expansions of the cumulative distribution function and the posterior mean are obtained as corollaries. Future work will include an extension to the multivariate case as well as expansions subject to multiple constraints. 

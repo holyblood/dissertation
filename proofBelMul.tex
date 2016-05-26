@@ -18,7 +18,7 @@ First, we prove the lemma for the empirical likelihood.
 Let $g_{i}=\left(g_{j}\left(X_{i},\theta\right)\right)$, $\nabla g_{i}=\left({\partial g_{j}\left(X_{i},\theta\right)} / {\partial\theta_{k}}\right)$. By (\ref{eq:decreasing-theta-to-nu-2}), 
 
 \begin{eqnarray*}
-\frac{\partial\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}}&=&-\frac{1}{n}\left\{ \sum_{i=1}^{n}\omega_{i}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}-\nu^{T}\sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} ^{T}\left\{ \sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)g^{T}\left(X_{i},\tilde{\theta}\right)\right\} \\&&\left\{ \sum_{i=1}^{n}\omega_{i}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}-\nu^{T}\sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} -\frac{\nu^{T}}{n}\sum_{i=1}^{n}\omega_{i}\frac{\partial^{2}g\left(X_{i},\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}}\\&&+\frac{1}{n}\sum_{i=1}^{n}\omega_{i}^{2}\left\{ \nu^{T}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} \left\{ \nu^{T}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} ^{T}.
+\frac{\partial\tilde{l}\left(\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}}&=&-\frac{1}{n}\left\{ \sum_{i=1}^{n}\omega_{i}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}-\nu^{T}\sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} ^{T}\left\{ \sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)g^{T}\left(X_{i},\tilde{\theta}\right)\right\}^{-1} \\&&\left\{ \sum_{i=1}^{n}\omega_{i}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}-\nu^{T}\sum_{i=1}^{n}\omega_{i}^{2}g\left(X_{i},\tilde{\theta}\right)\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} -\frac{\nu^{T}}{n}\sum_{i=1}^{n}\omega_{i}\frac{\partial^{2}g\left(X_{i},\tilde{\theta}\right)}{\partial\theta\partial\theta^{T}}\\&&+\frac{1}{n}\sum_{i=1}^{n}\omega_{i}^{2}\left\{ \nu^{T}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} \left\{ \nu^{T}\frac{\partial g\left(X_{i},\tilde{\theta}\right)}{\partial\theta}\right\} ^{T}.
 \end{eqnarray*}
 By a similar argument as Lemma \ref{lem:finite-empirical-weight-moment}, we find 
 \[
@@ -360,7 +360,7 @@ Now we have
  &  & \le\left|\rho_{K}\left(\theta\right)\right|\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\tilde{\theta}\right)\right)\right)\left|\exp\left(n\left(\hat{l}\left(\tilde{\theta}\right)-\frac{1}{2}Y^{T}Yn^{-1}+\sum_{k=3}^{K+3}\delta_{k}\hat{l}n^{-\frac{k-2}{2}}-\hat{l}\left(\theta\right)\right)\right)-1\right|\\
  &  & +\exp\left(n\left(\hat{l}\left(\theta\right)-\hat{l}\left(\tilde{\theta}\right)\right)\right)\left|\rho_{K}\left(\theta\right)-\rho\left(\theta\right)\right|.
 \end{eqnarray*}
-For the first part of the above formula, by Lemma \ref{lem:central-expansion-llik-2},
+For the first part of the above formula, by Lemma \ref{lem:central-expansion-lik-2},
 we have it to be bounded by 
 \[
 \max_{\theta\in\left\{ \left\{ B\left(\theta-\tilde{\theta}\right)\le\delta_{2}\right\} \cap H_{n}\right\} }\rho_{K}\left(\theta\right)M_{1}n^{-\frac{1}{2}\left(K+3\right)}.
