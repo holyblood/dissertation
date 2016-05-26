@@ -476,45 +476,42 @@ the following trivial assumptions.
 \begin{assumption}
 \label{assu:joint-normal-inconsist-stat}The joint distribution of
 $S_{1},\ldots,S_{q}$ converges in distribution to a multivariate
-normal distribution $N\left(h\left(\theta_{0}\right),n^{-1/2}\Sigma\left(\theta_{0}\right)\right)$.
-And each $S_{i}$ converges to $h_{i}\left(\theta_{0}\right)$ almost
+normal distribution $N\left(h\left(\theta_{0}\right),n^{-1/2}\Sigma\left(\theta_{0}\right)\right)$,
+and each $S_{i}$ converges to $h_{i}\left(\theta_{0}\right)$ almost
 surely. Further, assume $\Sigma\left(\theta_{0}\right)$ {{}
-} {is } positive definite. 
-\end{assumption}
-Assumption \ref{assu:joint-normal-inconsist-stat} characterizes the
-statement independent information. Because if $\Sigma\left(\theta_{0}\right)$
-has a lower rank, then some of $S_{i}$ can be expressed as  {a
-}linear combination of {{} } {other } $S_{j}$
-asymptotically. Then the partial posterior can be reduced to partial
-posterior based solely on $S_{j}$.
-
-In order to prove the theorem, we need some more technical assumptions.
-\begin{assumption}
-\label{assu:consist-linear-functional}Let $h\left(\theta_{0}\right)$
-be a linear functional of the distribution function, that is 
+}\textcolor{black}{is } positive definite, and $h\left(\theta_{0}\right)$
+is a linear functional of the distribution function, that is 
 \[
 h\left(\theta_{0}\right)=\int_{\mathbb{R}}g\left(x\right)f\left(x\mid\theta_{0}\right)\diff x,
 \]
 where $g\left(x\right)\in\mathbb{R}^{q}$. 
+\end{assumption}
+Assumption \ref{assu:joint-normal-inconsist-stat} characterizes the
+ independent information statement. Because if $\Sigma\left(\theta_{0}\right)$
+has a lower rank, then some of $S_{i}$ can be expressed as \textcolor{black}{
+}linear combinations of {{} }\textcolor{black}{other } $S_{j}$
+asymptotically. Then the partial posterior can be reduced to a partial
+posterior based solely on the $S_{j}$. The functional form of $h$ is
+a natural consequence when we apply some version of strong law of
+large numbers to prove convergence of statistics. 
+
+In order to prove the theorem, we need some more technical assumptions.
 \begin{assumption}
 \label{assu:super-strong-consistent}Let $S=\left(S_{1},\ldots,S_{q}\right)$,
 assume 
 \[
-\lim_{n\rightarrow\infty}\sqrt{n}\left(\frac{1}{n}\sum_{i=1}^{n}g\left(X_{i}\right)-S\right)=0,\ascv.
+\lim_{n\rightarrow\infty}n^{1/2}\left\{ \frac{1}{n}\sum_{i=1}^{n}g\left(X_{i}\right)-S\right\} =0,\ascv.
 \]
 and there exists a strongly consistent estimator $\tilde{\Sigma}$
 of $\Sigma\left(\theta_{0}\right)$
 \end{assumption}
-\end{assumption}
-Assumption \ref{assu:consist-linear-functional} is a natural consequence
-when we apply some version of strong law of large numbers to prove
-convergence of statistics. Only Assumption \ref{assu:super-strong-consistent}
-seems quite restrictive. Based on all these assumptions, the theorem
-describing the partial posterior conditioned on less informative statistics
-can be found as following.
+Only Assumption \ref{assu:super-strong-consistent} seems quite restrictive.
+Based on all these assumptions, the theorem describing the partial
+posterior conditioned on less informative statistics can be found
+as follows:
 \begin{thm}
 \label{thm:bernsten-von-mise-inconsist-multv}Under the Assumptions
-\ref{assu:joint-normal-inconsist-stat}, \ref{assu:consist-linear-functional},
+\ref{assu:joint-normal-inconsist-stat},
 \ref{assu:super-strong-consistent} and conditions of Theorem 2.1
 in \citet{rivoirard2012bernstein}, for any vector $a\in\mathbb{R}^{q}$,
 \[
@@ -575,6 +572,20 @@ summary statistics, we can compare the asymptotic credible sets with
 and without the current statistic. If the difference is small, then
 we can safely throw the current statistic away. 
 
+The following is a simple example to illustrate this phenomenon.
+\begin{example}
+\textcolor{black}{Let $X_{i}$ are i.i.d. sample from $N\left(\mu,\mu^{2}\right)$
+and we calculate the partial posterior $\pi\left(\mu\mid s^{2}\right)$,
+where $s^{2}$ is the sample standard deviation.  The prior of $\mu^{2}$
+is assumed to be inverse gamma distribution with shape parameter $\alpha$
+and scale parameter $\beta$. We know the $s^{2}\sim\mu^{2}\chi_{n-1}^{2}/\left(n-1\right)$,
+hence the partial posterior of $\mu^{2}$ conditioning on $s^{2}$
+is an inverse gamma distribution with shape parameter $\left\{ \alpha-1+\left(n-1\right)/2\right\} $
+and scale parameter $\left\{ \beta+\left(n-1\right)s^{2}/2\right\} $.
+This leads to a bimodal partial posterior for $\mu$. Hence, we can
+only get the absolute value of $\mu$ without sign information from
+this partial posterior.}
+\end{example}
 
 \section{\label{sec:abc-sdr}Approximate Bayesian Computation {{}
 } {via } Nonlinear Sufficient Dimension Reduction}
@@ -682,8 +693,57 @@ ABC is in Step \ref{enu:direct-sampling}, where each prior sample
 $\theta_{i}$ produces exact $n$ simulated data, because the nonparametric
 estimator of statistics should take $n$ arguments so that it can
 be evaluated at both observed data and simulated data.
+\subsection{Robustness of PSVM}
+
+\textcolor{black}{The discrepancy between the asymptotic behavior
+of ABC and settings in SDR requires new properties of PSVM, namely
+robustness, which suggests that $\hat{\Gamma}$ from PSVM would be
+in the vicinity of the true summary statistics function $\Gamma$
+in some sense even if the partial posterior is only close to the full
+posterior. Here is the theorem which validates this property.}
+\begin{theorem}[Robustness of PSVM]
+\textcolor{black}{\label{thm:robust-psvm} Assume 
+\[
+\lim_{n\rightarrow\infty}\sup_{s}\left|P\left\{ \theta\le s\mid\Gamma_{n}^{T}\left(X_{1},\ldots,X_{n}\right)\right\} -P\left(\theta\le s\mid X_{1},\ldots,X_{n}\right)\right|=0,
+\]
+where $\Gamma\in\mathbb{R}^{n\times d}$, with $d$ fixed. Further
+assume all the conditions in Theorem 4 and 5 in \cite{li2011principal}. Let $\hat{\Gamma}_{n}$
+be the result from PSVM. Then 
+\[
+\hat{\Gamma}_{n}-\Gamma_{n}\overset{p}{\rightarrow}0.
+\]
+}\end{theorem}
+\begin{proof}
+\textcolor{black}{See Appendix E. }
+\end{proof}
+
+\subsection{\textcolor{black}{Simulation Example }}
+
+\textcolor{black}{First, we will show a simple simulation example
+to illustrate the robustness of SVM, which serves as the foundation
+of the robustness of PSVM.}
+\begin{example}
+\textcolor{black}{Let $\theta\mid X_{1},X_{2}\sim N\left(2X_{1}+X_{2}+0.001\left(X_{1}^{2}+X_{2}^{2}\right),1\right)$.
+Hence the conditional distribution of $\theta$ on $X_{1},X_{2}$
+is close to $N\left(2X_{1}+X_{2},1\right)$. Then the normal vectors
+of sliced SVM should be in vicinity of $\left(2,1\right)$. We choose
+the slicing point $s=1.5$. The results are summarized in Fig \ref{fig:Normal-Vectors-sliced-svm}.
+The dots are normal vectors, the solid line is the principal component
+direction of normal vectors, and the reference dashed line is $\psi_{1}=2\psi_{2}$.
+We can see the principal component direction is quite close to the
+reference line.}
+
+\begin{figure}
+{\includegraphics[scale=0.5]{normalVec}\protect\caption{\textcolor{black}{Normal Vectors of Separate Hyperplanes in Sliced
+SVM}\label{fig:Normal-Vectors-sliced-svm}}
+}
+
+\end{figure}
+
+\end{example}
 
 Next, we will show a simple simulation example to illustrate our algorithm.
+
 \begin{example}
 Autoregressive model with lag one, AR(1). 
 \[

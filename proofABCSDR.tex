@@ -400,3 +400,79 @@ by $\sqrt{n}a^{T}S$, and finally obtain
 The remainder of the proof uses the same argument used in the proof
 of Theorem \ref{thm:bernstein-von-mises-mle}. 
 \end{proof}
+
+\section{Proof of Theorem 4}\label{sec:Proof-of-Theorem-4}
+\begin{proof}
+\textcolor{black}{First we will prove for a single slice, the support
+vector machine is robust by showing the normal vectors of separate
+hyperplanes $\psi$ are continuous functionals of conditional probability
+of $\tilde{\theta}$ given $X_{1},\ldots,X_{n}$, where $\tilde{\theta}=I_{\left[\theta\le s\right]}-I_{\left[\theta>s\right]}$
+is sliced $\theta$. Using notations in \cite{li2011principal},
+Let 
+\[
+m\left(\psi,t,X,\tilde{\theta}\right)=\psi^{T}\Sigma\psi+\lambda\left\{ 1-\tilde{\theta}\left(\psi^{T}X-t\right)\right\} ^{+},
+\]
+be the sample version of the Lagrangian of SVM. The population normal
+vectors $\psi$ are defined as the solution of the first order condition
+of the optimization problem in SVM,
+\begin{equation}
+0=D_{\left(\psi,t\right)}E\left\{ m\left(\psi,t,X,\tilde{\theta}\right)\right\} =\left(2\psi^{T}\Sigma,0\right)^{T}-\lambda E\left[\left(X,-1\right)^{T}\tilde{\theta}I_{\left\{ 1-\tilde{\theta}\left(\psi^{T}X-t\right)>0\right\} }\right],\label{eq:first-order-svm}
+\end{equation}
+where $D_{\left(\psi,t\right)}$ are partial derivatives over $\psi$
+and $t$. Let the conditional probability of $\tilde{\theta}$ given
+$X_{1},\ldots,X_{n}$ be $p\left(x\right)=P\left(\tilde{\theta}=1\mid X_{1}=x_{1},\ldots,X_{n}=x_{n}\right)$.
+We need to show that $\psi\left(p\right)$ as a functional of $p\left(x\right)$
+defined by \ref{eq:first-order-svm} is continuous. The main theorem
+we rely on is Theorem 3.1.2 in \cite{lebedev2003functional}. Next,
+we will check the three conditions in that theorem.}
+
+\textcolor{black}{Condition (i) is trivial. For verifying Condition
+(ii), we first view $p\left(X\right)$ as an element from Banach space
+$\left\{ p\left(x\right):\sup_{x}\left|p\left(x\right)\right|<\infty\right\} $,
+with the norm $\sup_{x}\left|\cdot\right|$. Let 
+\[
+g\left(X,\psi,t\right)=\begin{cases}
+2p\left(X\right)-1, & \psi^{T}X-t<1,\\
+p\left(X\right), & \psi^{T}X-t\ge1,\\
+p\left(X\right)-1, & \psi^{T}X-t\le-1.
+\end{cases}
+\]
+Then the second term in \ref{eq:first-order-svm}, which is the only
+term containing $p\left(X\right)$ can be written as 
+\begin{eqnarray*}
+ &  & E\left[\left(X,-1\right)^{T}\tilde{\theta}I_{\left\{ 1-\tilde{\theta}\left(\psi^{T}X-t\right)>0\right\} }\right]\\
+ & = & E_{X}\left(\left(X,-1\right)^{T}E_{\tilde{\theta}\mid X}\left[\tilde{\theta}I_{\left\{ 1-\left(\psi X-t\right)\tilde{\theta}>0\right\} }\right]\right)\\
+ & = & E_{X}\left\{ \left(X,-1\right)^{T}g\left(X,\psi,t\right)\right\} \\
+ & = & \int_{\left\{ \psi^{T}X-t<1\right\} }\left(x,-1\right)^{T}\left(2p\left(x\right)-1\right)\diff F\left(x\right)+\int_{\left\{ \psi^{T}X-t\ge1\right\} }\left(x,-1\right)^{T}p\left(x\right)\diff F\left(x\right)\\
+ &  & +\int_{\left\{ \psi^{T}X-t\le-1\right\} }\left(x,-1\right)^{T}\left(p\left(x\right)-1\right)\diff F\left(x\right),
+\end{eqnarray*}
+where $F\left(x\right)$ is the CDF of marginal distribution of $X_{1},\ldots,X_{n}$.
+This is a continuous linear functional map $p\left(x\right)\mapsto E\left[\left(X,-1\right)^{T}\tilde{\theta}I_{\left\{ 1-\left(\psi X+t\right)\tilde{\theta}>0\right\} }\right]$.
+So Condition (ii) holds. By Theorem 5 in \cite{li2011principal},
+$D_{\left(\psi,t\right)}E\left\{ m\left(\psi,t,X,\tilde{\theta}\right)\right\} $
+can be further differentiated around the solutions. Hence, Condition
+(iii) holds. By Theorem 3.1.2 in \cite{lebedev2003functional}, $\psi$
+is continuous in $p\left(x\right)$. }
+
+\textcolor{black}{Let $\psi_{1}=\psi\left(P\left(\tilde{\theta}=1\mid X_{1},\ldots,X_{n}\right)\right)$,
+$\psi_{2}=\psi\left(P\left(\tilde{\theta}=1\mid\Gamma_{n}^{T}\left(X_{1},\ldots,X_{n}\right)\right)\right)$,
+while by Theorem 2 in \cite{li2011principal}, $\mathrm{span}\left(\psi_{2}\right)\subset\mathrm{span}\left(\Gamma_{n}\right)$.
+Then for any $\varepsilon>0$, there exist an $N_{1}$ and a $\delta$
+such that for any $n>N_{1}$, 
+\begin{eqnarray*}
+ &  & \left|P\left\{ \tilde{\theta}=1\mid\Gamma_{n}^{T}\left(X_{1},\ldots,X_{n}\right)\right\} -P\left(\tilde{\theta}=1\mid X_{1},\ldots,X_{n}\right)\right|\\
+ & = & \left|P\left\{ \theta\le s\mid\Gamma_{n}^{T}\left(X_{1},\ldots,X_{n}\right)\right\} -P\left(\theta\le s\mid X_{1},\ldots,X_{n}\right)\right|<\delta,
+\end{eqnarray*}
+and hence $\left|\psi_{1}-\psi_{2}\right|<\varepsilon$. By Theorem
+6 in \cite{li2011principal}, the sample version of normal vectors
+$\hat{\psi}_{1}$ is weakly consistent to the population ones. Hence
+there exists an $N_{2}\ge N_{1}$, such that for any $n>N_{2},$
+\begin{eqnarray*}
+ &  & P\left(\left|\hat{\psi}_{1}-\psi_{2}\right|\ge2\varepsilon\right)\\
+ & \le & P\left(\left\{ \left|\hat{\psi}_{1}-\psi_{1}\right|\ge\varepsilon\right\} \cup\left\{ \left|\psi_{1}-\psi_{2}\right|\ge\varepsilon\right\} \right)\\
+ & = & P\left(\left|\hat{\psi}_{1}-\psi_{1}\right|\ge\varepsilon\right)\le\eta.
+\end{eqnarray*}
+Hence $\hat{\psi}_{1}-\psi_{2}\overset{p}{\rightarrow}0.$ By Theorem
+1 in \cite{bura2008distribution}, $\hat{\Gamma}_{n}$ and $\Gamma_{n}$
+being eigenvectors satisfy $\hat{\Gamma}_{n}-\Gamma_{n}\overset{p}{\rightarrow}0$. }
+\end{proof}
